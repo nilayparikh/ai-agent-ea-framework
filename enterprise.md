@@ -43,15 +43,15 @@ However, we understand that some organizations have specific requirements that m
 
 ## When to Consider Enterprise
 
-| Scenario | Open Source (MPL 2.0) | Enterprise License |
-|----------|----------------------|-------------------|
-| Internal use with attribution | ✅ | ✅ |
-| Public products with attribution | ✅ | ✅ |
-| Private derivative works | ❌ | ✅ |
-| Remove attribution requirements | ❌ | ✅ |
-| Priority support | ❌ | ✅ |
-| Custom framework modifications | ❌ | ✅ |
-| Training and workshops | ❌ | ✅ |
+| Scenario                         | Open Source (MPL 2.0) | Enterprise License |
+| -------------------------------- | --------------------- | ------------------ |
+| Internal use with attribution    | ✅                    | ✅                 |
+| Public products with attribution | ✅                    | ✅                 |
+| Private derivative works         | ❌                    | ✅                 |
+| Remove attribution requirements  | ❌                    | ✅                 |
+| Priority support                 | ❌                    | ✅                 |
+| Custom framework modifications   | ❌                    | ✅                 |
+| Training and workshops           | ❌                    | ✅                 |
 
 ---
 
@@ -78,4 +78,3 @@ We remain committed to the open-source community. The MPL 2.0 license ensures th
 - ✅ Community-driven improvements
 
 Enterprise licensing is an **additional option**, not a replacement for open source.
-
