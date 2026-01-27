@@ -6,6 +6,8 @@ category: GSC
 
 # Governance, Security & Compliance (GSC) Principles
 
+**Status**: 🔍 Under Peer Review
+
 **Category Code**: GSC
 **Principle Count**: 7
 **Focus**: AI Tool Permissions, Sandboxing, Access Controls, and Compliance

@@ -6,6 +6,8 @@ category: TTA
 
 # Team Training & Adoption (TTA) Principles
 
+**Status**: 🔍 Under Peer Review
+
 **Category Code**: TTA
 **Principle Count**: 3
 **Focus**: Building Team Capability for AI-Assisted Development

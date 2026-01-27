@@ -5,6 +5,8 @@ title: Enterprise Architecture Principles
 
 # Enterprise Architecture Principles
 
+**Status**: 🔍 Under Peer Review
+
 The LocalM-AiD Framework defines **27 principles** across **7 categories** for **operating, managing, and securing AI-assisted software development**.
 
 > **Scope**: These principles govern **how to operate AI coding tools safely** — NOT general software engineering practices. See [Mandate](/docs/mandate/) for scope definition.

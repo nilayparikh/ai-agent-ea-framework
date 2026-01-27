@@ -6,6 +6,8 @@ category: DC
 
 # Development & Coding (DC) Principles
 
+**Status**: 🔍 Under Peer Review
+
 **Category Code**: DC
 **Principle Count**: 4
 **Focus**: AI-Assisted Code Generation and Development Practices

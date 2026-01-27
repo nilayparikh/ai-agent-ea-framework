@@ -6,6 +6,8 @@ category: TQC
 
 # Testing & Quality Control (TQC) Principles
 
+**Status**: 🔍 Under Peer Review
+
 **Category Code**: TQC
 **Principle Count**: 4
 **Focus**: Quality Assurance for AI-Assisted Development

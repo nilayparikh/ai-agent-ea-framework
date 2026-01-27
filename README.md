@@ -2,6 +2,8 @@
 
 **LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Software Development**
 
+> **⚠️ Work in Progress**: This framework is actively under development as we assess additional operational areas, refine existing principles, and gather community feedback. Content structure and principles may evolve as the framework matures.
+
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 [![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://nilayparikh.github.io/ai-agent-ea-framework/)
 [![Header Check](https://github.com/nilayparikh/ai-agent-ea-framework/workflows/Header%20Check/badge.svg)](https://github.com/nilayparikh/ai-agent-ea-framework/actions)

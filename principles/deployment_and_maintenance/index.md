@@ -6,6 +6,8 @@ category: DM
 
 # Deployment & Maintenance (DM) Principles
 
+**Status**: 🔍 Under Peer Review
+
 **Category Code**: DM
 **Principle Count**: 2
 **Focus**: AI Operations Lifecycle

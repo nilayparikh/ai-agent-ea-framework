@@ -6,6 +6,8 @@ category: TSI
 
 # Tool Selection & Integration (TSI) Principles
 
+**Status**: 🔍 Under Peer Review
+
 **Category Code**: TSI
 **Principle Count**: 3
 **Focus**: AI Tool Evaluation, Selection, and Integration

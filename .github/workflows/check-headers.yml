@@ -6,31 +6,21 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-name: Header Check
+# DISABLED: Header check no longer needed - using visible License sections instead
+# Headers were moved from hidden HTML comments to visible License sections on each principle page
+
+name: Header Check (Disabled)
 
 on:
-  push:
-    branches: [ main, develop ]
-  pull_request:
-    branches: [ main, develop ]
+  workflow_dispatch:  # Manual trigger only
 
 jobs:
   check-headers:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      
-    - name: Check MPL 2.0 headers
-      shell: pwsh
+    - name: Workflow disabled
       run: |
-        Write-Host "Checking headers in all Markdown files..."
-        ./Check-Headers.ps1 -ShowDetails
-        
-    - name: Report results
-      if: failure()
-      run: |
-        echo "❌ Some files are missing the required MPL 2.0 header."
-        echo "Please run './Check-Headers.ps1 -Fix' locally to add headers."
-        exit 1
+        echo "✅ This workflow is disabled."
+        echo "License compliance is now enforced through visible License sections on principle pages."
+        echo "See LICENSE file for complete MPL 2.0 + Attribution Notice requirements."

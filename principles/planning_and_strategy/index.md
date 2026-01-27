@@ -6,6 +6,8 @@ category: PS
 
 # Planning & Strategy (PS) Principles
 
+**Status**: 🔍 Under Peer Review
+
 **Category Code**: PS
 **Principle Count**: 4
 **Focus**: Strategic AI Tool Adoption & Operations Planning
