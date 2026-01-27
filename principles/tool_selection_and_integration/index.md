@@ -1,16 +1,32 @@
 ---
 layout: default
 title: Tool Selection & Integration Principles
+description: Enterprise Architecture principles for evaluating, selecting, and integrating AI development tools into software development workflows.
 category: TSI
 ---
 
 # Tool Selection & Integration (TSI) Principles
 
-**Status**: 🔍 Under Peer Review
+Enterprise Architecture principles for evaluating, selecting, and integrating AI development tools.
 
-**Category Code**: TSI
-**Principle Count**: 3
-**Focus**: AI Tool Evaluation, Selection, and Integration
+<div class="page-meta-table">
+  <div class="page-meta-item">
+    <span class="page-meta-label">Category</span>
+    <span class="page-meta-value">TSI</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Principles</span>
+    <span class="page-meta-value">3</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Focus</span>
+    <span class="page-meta-value">AI Tool Evaluation, Selection, and Integration</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Status</span>
+    <span class="page-meta-value">🔍 Under Peer Review</span>
+  </div>
+</div>
 
 ---
 

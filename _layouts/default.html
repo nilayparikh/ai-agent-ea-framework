@@ -40,117 +40,130 @@
 
     <div class="content-wrapper">
       <!-- Sidebar Navigation -->
-    <aside class="sidebar" id="sidebar">
-      <div class="sidebar-header">
-        <a href="{{ '/' | relative_url }}" class="sidebar-logo">
-          <div class="sidebar-logo-icon">L-A</div>
-          <div>
-            <span class="sidebar-logo-text">LocalM-AiD</span>
-            <span class="sidebar-logo-sub">EA Framework</span>
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <a href="{{ '/' | relative_url }}" class="sidebar-logo">
+            <div class="sidebar-logo-icon">L-A</div>
+            <div>
+              <span class="sidebar-logo-text">LocalM-AiD</span>
+              <span class="sidebar-logo-sub">EA Framework</span>
+            </div>
+          </a>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Main navigation">
+          <!-- Main Navigation -->
+          <div class="nav-section">
+            <div class="nav-section-title">Navigation</div>
+            <ul class="nav-tree">
+              <li class="nav-item">
+                <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
+                  <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                    </path>
+                  </svg>
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ '/principles/' | relative_url }}"
+                  class="nav-link {% if page.url contains '/principles' %}active{% endif %}">
+                  <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4">
+                    </path>
+                  </svg>
+                  Principles
+                  <span class="nav-link-badge">27</span>
+                </a>
+              </li>
+            </ul>
           </div>
-        </a>
-      </div>
 
-      <nav class="sidebar-nav" aria-label="Main navigation">
-        <!-- Main Navigation -->
-        <div class="nav-section">
-          <div class="nav-section-title">Navigation</div>
-          <ul class="nav-tree">
-            <li class="nav-item">
-              <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
-                <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
-                  </path>
-                </svg>
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="{{ '/principles/' | relative_url }}"
-                class="nav-link {% if page.url contains '/principles' %}active{% endif %}">
-                <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4">
-                  </path>
-                </svg>
-                Principles
-                <span class="nav-link-badge">27</span>
-              </a>
-            </li>
-          </ul>
+          <!-- Principles Categories -->
+          <div class="nav-section">
+            <div class="nav-section-title">Categories</div>
+            <ul class="nav-tree">
+              {% for item in site.data.navigation.principles %}
+              {% if item.code %}
+              <li class="nav-item">
+                <a href="{{ item.url | relative_url }}" class="nav-link {% if page.url == item.url %}active{% endif %}">
+                  <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z">
+                    </path>
+                  </svg>
+                  {{ item.code }}
+                  <span class="nav-link-badge">{{ item.count }}</span>
+                </a>
+              </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div class="nav-section">
+            <div class="nav-section-title">Resources</div>
+            <ul class="nav-tree">
+              <li class="nav-item">
+                <a href="{{ '/guides/' | relative_url }}"
+                  class="nav-link {% if page.url contains '/guides' %}active{% endif %}">
+                  <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                    </path>
+                  </svg>
+                  Guides
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ '/reference/' | relative_url }}"
+                  class="nav-link {% if page.url contains '/reference' %}active{% endif %}">
+                  <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                  </svg>
+                  Reference
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ '/appendix/' | relative_url }}"
+                  class="nav-link {% if page.url contains '/appendix' %}active{% endif %}">
+                  <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
+                  </svg>
+                  Appendix
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Community -->
+          <div class="nav-section">
+            <div class="nav-section-title">Community</div>
+            <ul class="nav-tree">
+              <li class="nav-item">
+                <a href="https://www.reddit.com/r/agentic_sdlc/" class="nav-link" target="_blank" rel="noopener">
+                  <i class="fab fa-reddit nav-link-icon"></i>
+                  r/agentic_sdlc
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="sidebar-footer">
+          <p>© 2024-2025 <a href="https://x.com/nilayparikh" target="_blank">Nilay Parikh</a></p>
+          <p><a href="https://opensource.org/licenses/MPL-2.0" target="_blank"><i class="fas fa-balance-scale"></i> MPL 2.0</a></p>
+          <p class="enterprise-contact"><a href="mailto:nilay@localm.dev"><i class="fas fa-building"></i> Enterprise License</a></p>
         </div>
+      </aside>
 
-        <!-- Principles Categories -->
-        <div class="nav-section">
-          <div class="nav-section-title">Categories</div>
-          <ul class="nav-tree">
-            {% for item in site.data.navigation.principles %}
-            {% if item.code %}
-            <li class="nav-item">
-              <a href="{{ item.url | relative_url }}" class="nav-link {% if page.url == item.url %}active{% endif %}">
-                <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z">
-                  </path>
-                </svg>
-                {{ item.code }}
-                <span class="nav-link-badge">{{ item.count }}</span>
-              </a>
-            </li>
-            {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-
-        <!-- Resources -->
-        <div class="nav-section">
-          <div class="nav-section-title">Resources</div>
-          <ul class="nav-tree">
-            <li class="nav-item">
-              <a href="{{ '/guides/' | relative_url }}"
-                class="nav-link {% if page.url contains '/guides' %}active{% endif %}">
-                <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
-                  </path>
-                </svg>
-                Guides
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="{{ '/reference/' | relative_url }}"
-                class="nav-link {% if page.url contains '/reference' %}active{% endif %}">
-                <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                </svg>
-                Reference
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="{{ '/appendix/' | relative_url }}"
-                class="nav-link {% if page.url contains '/appendix' %}active{% endif %}">
-                <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
-                </svg>
-                Appendix
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="sidebar-footer">
-        <p>© 2024-2025 <a href="https://x.com/nilayparikh" target="_blank">Nilay Parikh</a></p>
-        <p><a href="https://opensource.org/licenses/MPL-2.0" target="_blank"><i class="fas fa-balance-scale"></i> MPL
-            2.0</a></p>
-      </div>
-    </aside>
-
-    <!-- Main Content -->
-    <main class="main-content">
+      <!-- Main Content -->
+      <main class="main-content">
         <!-- Top Header (Sticky) -->
         <header class="top-header">
           <div class="header-left">
@@ -169,45 +182,49 @@
 
           <div class="header-actions">
             <span class="follow-label">Follow:</span>
-            <a href="https://www.linkedin.com/in/niparikh/" class="social-link" target="_blank" rel="noopener" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/niparikh/" class="social-link" target="_blank" rel="noopener"
+              title="LinkedIn">
               <i class="fab fa-linkedin"></i>
             </a>
             <a href="https://x.com/nilayparikh" class="social-link" target="_blank" rel="noopener" title="X">
               <i class="fab fa-x-twitter"></i>
             </a>
-            <a href="https://www.reddit.com/r/agentic_sdlc/" class="social-link" target="_blank" rel="noopener" title="Reddit">
+            <a href="https://www.reddit.com/user/QuarterbackMonk/" class="social-link" target="_blank" rel="noopener"
+              title="Reddit">
               <i class="fab fa-reddit"></i>
             </a>
-            <a href="https://github.com/nilayparikh/ai-agent-ea-framework" class="social-link" target="_blank" rel="noopener" title="GitHub">
+            <a href="https://github.com/nilayparikh/ai-agent-ea-framework" class="social-link" target="_blank"
+              rel="noopener" title="GitHub">
               <i class="fab fa-github"></i>
             </a>
           </div>
         </header>
 
-      <!-- Page Content -->
-      <article class="page-content">
-        <!-- Share Widget (appears under title on principle pages) -->
-        {% if page.layout != 'home' %}
-        <div class="content-share-widget">
-          <button class="content-share-btn" onclick="shareOn('twitter')" title="Share on X">
-            <i class="fab fa-x-twitter"></i>
-          </button>
-          <button class="content-share-btn" onclick="shareOn('linkedin')" title="Share on LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </button>
-          <button class="content-share-btn" onclick="shareOn('reddit')" title="Share on Reddit">
-            <i class="fab fa-reddit"></i>
-          </button>
-          <button class="content-share-btn" onclick="copyLink()" title="Copy link">
-            <i class="fas fa-link"></i>
-          </button>
-        </div>
-        {% endif %}
+        <!-- Page Content -->
+        <article class="page-content">
+          {{ content }}
 
-        {{ content }}
-      </article>
+          <!-- Share Widget (appears after content) -->
+          {% if page.layout != 'home' %}
+          <div class="content-share-widget">
+            <span class="share-label">Share this page:</span>
+            <button class="content-share-btn" onclick="shareOn('twitter')" title="Share on X">
+              <i class="fab fa-x-twitter"></i>
+            </button>
+            <button class="content-share-btn" onclick="shareOn('linkedin')" title="Share on LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </button>
+            <button class="content-share-btn" onclick="shareOn('reddit')" title="Share on Reddit">
+              <i class="fab fa-reddit"></i>
+            </button>
+            <button class="content-share-btn" onclick="copyLink()" title="Copy link">
+              <i class="fas fa-link"></i>
+            </button>
+          </div>
+          {% endif %}
+        </article>
 
-<!-- Footer (Compact) -->
+        <!-- Footer (Compact) -->
         <footer class="site-footer">
           <div class="footer-content">
             <div class="footer-left">
@@ -229,31 +246,57 @@
     </div>
   </div>
 
-  <!-- Mermaid Charts -->
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-    
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: 'base',
-      themeVariables: {
-        primaryColor: '#6366f1',
-        primaryTextColor: '#1e293b',
-        primaryBorderColor: '#4f46e5',
-        lineColor: '#64748b',
-        secondaryColor: '#e0f2fe',
-        tertiaryColor: '#f1f5f9',
-        fontFamily: 'Inter, sans-serif',
-        fontSize: '14px'
-      },
-      flowchart: {
-        htmlLabels: true,
-        curve: 'basis'
-      }
-    });
+  <!-- Mermaid Charts (Classic Script for Better Compatibility) -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: 'default',
+        themeVariables: {
+          primaryColor: '#818cf8',
+          primaryTextColor: '#1e293b',
+          primaryBorderColor: '#6366f1',
+          lineColor: '#64748b',
+          secondaryColor: '#e0f2fe',
+          tertiaryColor: '#f1f5f9',
+          background: '#ffffff',
+          fontFamily: 'Inter, sans-serif',
+          fontSize: '14px'
+        },
+        flowchart: {
+          htmlLabels: true,
+          curve: 'basis',
+          useMaxWidth: true
+        },
+        securityLevel: 'loose'
+      });
 
-    // Re-render on page load
-    window.addEventListener('DOMContentLoaded', () => {
+      // Find all mermaid code blocks and render them
+      const mermaidBlocks = document.querySelectorAll('pre code.language-mermaid, .language-mermaid code, pre > code');
+      mermaidBlocks.forEach((block, index) => {
+        const code = block.textContent.trim();
+        if (code.startsWith('flowchart') || code.startsWith('graph') || code.startsWith('sequenceDiagram') || code.startsWith('classDiagram') || code.startsWith('stateDiagram') || code.startsWith('erDiagram') || code.startsWith('journey') || code.startsWith('gantt') || code.startsWith('pie') || code.startsWith('gitGraph')) {
+          const container = document.createElement('div');
+          container.className = 'mermaid';
+          container.textContent = code;
+          block.parentElement.replaceWith(container);
+        }
+      });
+
+      // Also check for pre tags containing mermaid directly
+      const preTags = document.querySelectorAll('pre');
+      preTags.forEach((pre) => {
+        const code = pre.textContent.trim();
+        if (code.startsWith('flowchart') || code.startsWith('graph') || code.startsWith('sequenceDiagram')) {
+          const container = document.createElement('div');
+          container.className = 'mermaid';
+          container.textContent = code;
+          pre.replaceWith(container);
+        }
+      });
+
+      // Render all mermaid diagrams
       mermaid.run();
     });
   </script>
