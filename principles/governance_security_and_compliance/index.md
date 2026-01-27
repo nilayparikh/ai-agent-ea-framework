@@ -16,7 +16,7 @@ Enterprise Architecture principles for AI tool permissions, sandboxing, access c
   </div>
   <div class="page-meta-item">
     <span class="page-meta-label">Principles</span>
-    <span class="page-meta-value">7</span>
+    <span class="page-meta-value">10</span>
   </div>
   <div class="page-meta-item">
     <span class="page-meta-label">Focus</span>
@@ -34,7 +34,7 @@ Enterprise Architecture principles for AI tool permissions, sandboxing, access c
 
 ```mermaid
 flowchart TB
-    subgraph AIAgent["AI Agent (Claude Code, Copilot, Cursor, Aider, etc.)"]
+    subgraph AIAgent["AI Coding Agent"]
         Agent["AI Agent"]
     end
 
@@ -71,6 +71,9 @@ flowchart TB
 | GSC-005 | Data Classification    | Data exposure controls       |
 | GSC-006 | Audit & Traceability   | Logging and compliance       |
 | GSC-007 | Responsible AI Ops     | Ethical operations           |
+| GSC-008 | Network Security       | AI network access controls   |
+| GSC-009 | AI Agent Identity      | Service account management   |
+| GSC-010 | Secret Management      | Credential protection        |
 
 ---
 
@@ -85,6 +88,9 @@ flowchart TB
 | GSC-005 | [Data Classification](#gsc-005)       | Control data exposure to AI       |
 | GSC-006 | [Audit & Traceability](#gsc-006)      | Maintain AI activity audit trails |
 | GSC-007 | [Responsible AI Operations](#gsc-007) | Ethical AI tool usage             |
+| GSC-008 | [Network Security](#gsc-008)          | Control AI network access         |
+| GSC-009 | [AI Agent Identity](#gsc-009)         | Manage AI service identities      |
+| GSC-010 | [Secret Management](#gsc-010)         | Protect AI-related credentials    |
 
 ---
 
@@ -193,14 +199,14 @@ flowchart TB
 | Secrets/Credentials     | **NEVER**      | Security requirement   |
 | Production Systems      | **NEVER**      | Safety requirement     |
 
-#### Tool-Specific Permissions
+#### Permission Modes by Capability
 
-| Tool           | Default Mode | Agent Mode                 |
-| -------------- | ------------ | -------------------------- |
-| GitHub Copilot | Suggestions  | PR creation (no merge)     |
-| Claude Code    | Ask mode     | Auto-edit (with approval)  |
-| Cursor         | Normal       | Agent (file + terminal)    |
-| Aider          | --yes=false  | Auto-commit (feature only) |
+| Capability Level | Suggestion Mode      | Auto-Edit Mode               |
+| ---------------- | -------------------- | ---------------------------- |
+| Basic            | Code completion only | Edit with explicit approval  |
+| Standard         | Multi-file awareness | Edit with diff preview       |
+| Advanced         | Full context access  | Agent mode (file + terminal) |
+| Autonomous       | PR/MR creation       | Auto-commit (feature only)   |
 
 | Area        | Implication                                           |
 | ----------- | ----------------------------------------------------- |
@@ -286,14 +292,14 @@ flowchart TB
     Audit -.->|"Controlled Access"| Trusted
 ```
 
-#### Tool Sandboxing Capabilities
+#### Sandboxing Capability Assessment
 
-| Tool           | Built-in Sandbox | Network Control | Resource Limits |
-| -------------- | ---------------- | --------------- | --------------- |
-| Claude Code    | ✅ Yes           | ✅ Yes          | ✅ Yes          |
-| Cursor         | ⚠️ Partial       | ❌ No           | ❌ No           |
-| GitHub Copilot | ⚠️ Cloud-based   | N/A             | N/A             |
-| Aider          | ❌ No            | ❌ No           | ❌ No           |
+| Capability       | Required for L1 | Required for L2 | Required for L3 |
+| ---------------- | --------------- | --------------- | --------------- |
+| Built-in Sandbox | Recommended     | Required        | Required        |
+| Network Control  | Recommended     | Required        | Required        |
+| Resource Limits  | Optional        | Recommended     | Required        |
+| Audit Logging    | Required        | Required        | Required        |
 
 | Area        | Implication                                            |
 | ----------- | ------------------------------------------------------ |
@@ -377,21 +383,21 @@ flowchart TB
 
 #### Branch Naming for AI
 
-**Pattern:** `ai/<tool>/<description>`
+**Pattern:** `ai/<task-type>/<description>`
 
 **Examples:**
 
-- `ai/copilot/fix-auth-bug`
-- `ai/claude/implement-feature-123`
-- `ai/cursor/refactor-api-handler`
+- `ai/bugfix/fix-auth-validation`
+- `ai/feature/implement-user-auth`
+- `ai/refactor/optimize-api-handler`
 
 #### Commit Attribution
 
 **Required trailer for AI-generated commits:**
 
 ```
-Co-authored-by: AI Assistant <ai@example.com>
-AI-Tool: claude-code/cursor/copilot
+Co-authored-by: AI Assistant <ai@organization.com>
+AI-Tool: <tool-identifier>
 AI-Session: <session-id>
 ```
 
@@ -702,10 +708,278 @@ AI-Session: <session-id>
 4. **Data classification prevents exposure** - Secrets never reach AI
 5. **Audit trails enable oversight** - Log everything for accountability
 6. **Responsible operations build trust** - Ethics are non-negotiable
+7. **Network controls prevent exfiltration** - AI cannot access unauthorized endpoints
+8. **Identity management enables accountability** - Every AI action has an identity
+9. **Secret management protects credentials** - No credentials in AI context
 
 ---
 
-## Next Steps
+<a name="gsc-008"></a>
+
+## GSC-008: Network Security
+
+### Statement
+
+> **Control and monitor all network communications for AI coding tools, preventing unauthorized data transmission and ensuring secure connectivity.**
+
+### Rationale
+
+| Dimension              | Justification                                              |
+| ---------------------- | ---------------------------------------------------------- |
+| **Business Value**     | Prevents intellectual property and sensitive data leakage  |
+| **Technical Foundation** | Network controls are fundamental security layer          |
+| **Risk Mitigation**    | Blocks data exfiltration and unauthorized API access       |
+| **Human Agency**       | Humans define network boundaries; AI operates within them  |
+
+### Implications
+
+```mermaid
+flowchart TB
+    subgraph AITool["AI Coding Tool"]
+        Agent["AI Agent"]
+    end
+
+    subgraph NetworkControls["Network Security Layer"]
+        Egress["Egress Filtering"]
+        TLS["TLS/mTLS"]
+        DNS["DNS Controls"]
+    end
+
+    subgraph Endpoints["Authorized Endpoints"]
+        Approved["Approved AI APIs"]
+        Internal["Internal Services"]
+    end
+
+    subgraph Blocked["Blocked"]
+        Unauthorized["Unauthorized APIs"]
+        External["External Destinations"]
+    end
+
+    Agent --> NetworkControls
+    NetworkControls --> Endpoints
+    NetworkControls -.->|"BLOCKED"| Blocked
+```
+
+#### Network Controls Matrix
+
+| Control Type         | Requirement      | Purpose                          |
+| -------------------- | ---------------- | -------------------------------- |
+| Egress Filtering     | Required         | Block unauthorized destinations  |
+| TLS Encryption       | Required         | Protect data in transit          |
+| DNS Control          | Recommended      | Prevent rogue endpoint access    |
+| Network Segmentation | Recommended      | Isolate AI workloads             |
+| Rate Limiting        | Required         | Prevent abuse and exfiltration   |
+| Traffic Logging      | Required         | Enable security monitoring       |
+
+| Area        | Implication                                       |
+| ----------- | ------------------------------------------------- |
+| Development | Configure allowed endpoints for AI tools          |
+| Governance  | Network policies documented and enforced          |
+| Skills      | Train teams on network security configuration     |
+| Tools       | Use tools that support network isolation          |
+
+### Maturity Alignment
+
+| Level           | Requirements                                        |
+| --------------- | --------------------------------------------------- |
+| **Base (L1)**   | Basic egress filtering; TLS required                |
+| **Medium (L2)** | Network segmentation; traffic logging               |
+| **High (L3)**   | Zero-trust network; real-time threat detection      |
+
+### Governance
+
+#### Compliance Measures
+
+- [ ] Allowed endpoint list maintained
+- [ ] Network policies configured and tested
+- [ ] Traffic monitoring enabled
+- [ ] Incident response procedures defined
+
+### Related Principles
+
+- **GSC-003**: Sandboxing & Isolation
+- **GSC-005**: Data Classification
+- **GSC-006**: Audit & Traceability
+
+---
+
+<a name="gsc-009"></a>
+
+## GSC-009: AI Agent Identity
+
+### Statement
+
+> **Assign distinct, managed identities to all AI agents and tools, enabling accountability, access control, and audit trail attribution.**
+
+### Rationale
+
+| Dimension              | Justification                                               |
+| ---------------------- | ----------------------------------------------------------- |
+| **Business Value**     | Enables accountability for all AI-initiated actions         |
+| **Technical Foundation** | Identity is the foundation of access control              |
+| **Risk Mitigation**    | Prevents over-privileged AI operations                      |
+| **Human Agency**       | Humans control identity assignment and permissions          |
+
+### Implications
+
+```mermaid
+flowchart TB
+    subgraph IdentityMgmt["Identity Management"]
+        Managed["Managed Identity"]
+        ServicePrincipal["Service Principal"]
+        OAuth["OAuth Tokens"]
+    end
+
+    subgraph AIAgent["AI Agent"]
+        Agent["Agent Instance"]
+    end
+
+    subgraph Controls["Access Controls"]
+        RBAC["Role-Based Access"]
+        Conditional["Conditional Access"]
+        Scope["Scope Limits"]
+    end
+
+    subgraph Resources["Resources"]
+        Code["Code Repositories"]
+        APIs["APIs"]
+        Data["Data Stores"]
+    end
+
+    IdentityMgmt --> AIAgent
+    AIAgent --> Controls
+    Controls --> Resources
+```
+
+#### Identity Requirements
+
+| Requirement            | Base (L1) | Medium (L2) | High (L3) |
+| ---------------------- | --------- | ----------- | --------- |
+| Distinct AI Identity   | Required  | Required    | Required  |
+| No Shared Credentials  | Required  | Required    | Required  |
+| Identity Lifecycle Mgmt| Manual    | Automated   | Automated |
+| Scope Limitation       | Basic     | Granular    | Dynamic   |
+| Activity Attribution   | Required  | Required    | Required  |
+
+| Area        | Implication                                          |
+| ----------- | ---------------------------------------------------- |
+| Development | Configure AI tools with managed identities           |
+| Governance  | Identity policies and lifecycle documented           |
+| Skills      | Train teams on identity configuration                |
+| Tools       | Use tools that support managed identity              |
+
+### Maturity Alignment
+
+| Level           | Requirements                                         |
+| --------------- | ---------------------------------------------------- |
+| **Base (L1)**   | Distinct identities; no embedded credentials         |
+| **Medium (L2)** | Managed identities; automated lifecycle              |
+| **High (L3)**   | Just-in-time access; continuous identity validation  |
+
+### Governance
+
+#### Compliance Measures
+
+- [ ] AI identity inventory maintained
+- [ ] No embedded credentials in tools
+- [ ] Identity lifecycle procedures documented
+- [ ] Regular access review conducted
+
+### Related Principles
+
+- **GSC-001**: Governance Framework
+- **GSC-002**: Permission Boundaries
+- **GSC-006**: Audit & Traceability
+
+---
+
+<a name="gsc-010"></a>
+
+## GSC-010: Secret Management
+
+### Statement
+
+> **Protect all credentials, API keys, and tokens used with AI tools through centralized secret management, automatic rotation, and strict access controls.**
+
+### Rationale
+
+| Dimension              | Justification                                               |
+| ---------------------- | ----------------------------------------------------------- |
+| **Business Value**     | Prevents credential compromise and unauthorized access      |
+| **Technical Foundation** | Secrets are primary attack vector for AI tool abuse       |
+| **Risk Mitigation**    | Automatic rotation limits exposure window                   |
+| **Human Agency**       | Humans control secret policies and access                   |
+
+### Implications
+
+```mermaid
+flowchart TB
+    subgraph SecretMgmt["Secret Management"]
+        Vault["Secret Vault"]
+        Rotation["Auto-Rotation"]
+        Audit["Access Audit"]
+    end
+
+    subgraph AITool["AI Tool"]
+        Agent["AI Agent"]
+        Config["Configuration"]
+    end
+
+    subgraph NEVER["NEVER IN"]
+        Prompts["Prompts"]
+        Context["Context Windows"]
+        Logs["Log Output"]
+    end
+
+    Vault --> Agent
+    Agent -.->|"NEVER"| NEVER
+    Rotation --> Vault
+    Audit --> Vault
+```
+
+#### Secret Handling Rules
+
+| Secret Type          | Storage          | Rotation     | AI Exposure    |
+| -------------------- | ---------------- | ------------ | -------------- |
+| API Keys             | Secret Vault     | 90 days      | **NEVER**      |
+| Service Credentials  | Managed Identity | Automatic    | **NEVER**      |
+| Database Passwords   | Secret Vault     | 90 days      | **NEVER**      |
+| Encryption Keys      | Key Management   | Annual       | **NEVER**      |
+| Session Tokens       | Memory Only      | Per-session  | **NEVER**      |
+
+| Area        | Implication                                          |
+| ----------- | ---------------------------------------------------- |
+| Development | Use environment variables for secret injection       |
+| Governance  | Secret policies and rotation schedules documented    |
+| Skills      | Train teams on secure secret handling                |
+| Tools       | Use tools with secret vault integration              |
+
+### Maturity Alignment
+
+| Level           | Requirements                                         |
+| --------------- | ---------------------------------------------------- |
+| **Base (L1)**   | Centralized vault; no hardcoded secrets              |
+| **Medium (L2)** | Automatic rotation; access logging                   |
+| **High (L3)**   | Just-in-time secrets; anomaly detection              |
+
+### Governance
+
+#### Compliance Measures
+
+- [ ] All secrets in centralized vault
+- [ ] Rotation schedules configured
+- [ ] No secrets in prompts or context
+- [ ] Secret access audited
+
+### Related Principles
+
+- **GSC-005**: Data Classification
+- **GSC-006**: Audit & Traceability
+- **GSC-009**: AI Agent Identity
+
+---
+
+## Category Summary
 
 | Action               | Link                                                 |
 | -------------------- | ---------------------------------------------------- |

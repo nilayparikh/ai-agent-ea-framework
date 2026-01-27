@@ -42,15 +42,14 @@ The LocalM-AiD Framework defines **27 principles** across **7 categories** for *
 | Audit trails & compliance    | Coding standards (general)   |
 | Autonomy level governance    | Language/framework selection |
 
-**Target Tools:**
+**Applicable Tool Categories:**
 
-- GitHub Copilot (IDE, Chat, CLI)
-- Claude Code (Terminal Agent)
-- Cursor / Windsurf
-- MCP Servers & A2A Protocols
-- Amazon Q Developer
-- Cody (Sourcegraph)
-- Aider, Continue.dev
+- IDE-integrated AI assistants
+- Terminal-based AI agents
+- Agentic coding environments
+- Model Context Protocol (MCP) servers
+- Agent-to-Agent (A2A) protocols
+- Code completion and suggestion tools
 
 ---
 

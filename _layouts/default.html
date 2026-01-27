@@ -277,22 +277,22 @@
         code = code.replace(/&gt;/g, '>');
         code = code.replace(/&quot;/g, '"');
         code = code.replace(/&#39;/g, "'");
-        
+
         // Remove HTML italic tags and convert to plain text
         code = code.replace(/<i>([^<]*)<\/i>/g, '$1');
         code = code.replace(/<em>([^<]*)<\/em>/g, '$1');
         code = code.replace(/<b>([^<]*)<\/b>/g, '$1');
         code = code.replace(/<strong>([^<]*)<\/strong>/g, '$1');
-        
+
         // Remove markdown bold/italic syntax
         code = code.replace(/\*\*([^*]+)\*\*/g, '$1');
         code = code.replace(/\*([^*]+)\*/g, '$1');
         code = code.replace(/_([^_]+)_/g, '$1');
-        
+
         // Remove empty brackets
         code = code.replace(/\[\"\"\]/g, '');
         code = code.replace(/\[\s*\]/g, '');
-        
+
         return code;
       }
 
@@ -302,7 +302,7 @@
         let code = block.textContent.trim();
         if (code.startsWith('flowchart') || code.startsWith('graph') || code.startsWith('sequenceDiagram') || code.startsWith('classDiagram') || code.startsWith('stateDiagram') || code.startsWith('erDiagram') || code.startsWith('journey') || code.startsWith('gantt') || code.startsWith('pie') || code.startsWith('gitGraph')) {
           code = cleanMermaidCode(code);
-          
+
           const container = document.createElement('div');
           container.className = 'mermaid';
           container.textContent = code;
@@ -316,7 +316,7 @@
         let code = pre.textContent.trim();
         if (code.startsWith('flowchart') || code.startsWith('graph') || code.startsWith('sequenceDiagram') || code.startsWith('classDiagram') || code.startsWith('stateDiagram')) {
           code = cleanMermaidCode(code);
-          
+
           const container = document.createElement('div');
           container.className = 'mermaid';
           container.textContent = code;

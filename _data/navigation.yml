@@ -42,7 +42,7 @@ principles:
   - title: "Governance, Security & Compliance (GSC)"
     url: /principles/governance_security_and_compliance/
     code: GSC
-    count: 2
+    count: 10
 
 maturity:
   - title: "Overview"
