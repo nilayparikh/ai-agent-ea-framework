@@ -13,47 +13,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-  <!-- Mermaid for diagrams -->
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: 'base',
-      themeVariables: {
-        primaryColor: '#6366f1',
-        primaryTextColor: '#1e293b',
-        primaryBorderColor: '#4f46e5',
-        lineColor: '#64748b',
-        secondaryColor: '#e0f2fe',
-        tertiaryColor: '#f1f5f9',
-        background: '#ffffff',
-        mainBkg: '#ffffff',
-        secondBkg: '#f8fafc',
-        mainContrastColor: '#1e293b',
-        darkMode: false,
-        fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif',
-        fontSize: '14px'
-      },
-      flowchart: {
-        curve: 'basis',
-        padding: 20
-      },
-      securityLevel: 'loose'
-    });
-  </script>
+
 </head>
 
 <body>
-  <div class="site-wrapper">
+  <!-- Animated background -->
+  <div class="bg-animation">
+    <div class="bg-gradient"></div>
+    <div class="bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+  </div>
+
+  <div class="site-container">
     <!-- Mobile backdrop -->
     <div class="sidebar-backdrop" onclick="toggleSidebar()"></div>
 
-    <!-- Sidebar Navigation -->
+    <div class="content-wrapper">
+      <!-- Sidebar Navigation -->
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-header">
         <a href="{{ '/' | relative_url }}" class="sidebar-logo">
@@ -158,52 +144,45 @@
 
       <div class="sidebar-footer">
         <p>© 2024-2025 <a href="https://x.com/nilayparikh" target="_blank">Nilay Parikh</a></p>
-        <p><a href="https://opensource.org/licenses/MPL-2.0" target="_blank"><i class="fas fa-balance-scale"></i> MPL 2.0</a></p>
+        <p><a href="https://opensource.org/licenses/MPL-2.0" target="_blank"><i class="fas fa-balance-scale"></i> MPL
+            2.0</a></p>
       </div>
     </aside>
 
     <!-- Main Content -->
     <main class="main-content">
-      <!-- Top Header (Sticky) -->
-      <header class="top-header">
-        <div class="header-left">
-          <button class="menu-toggle" onclick="toggleSidebar()" aria-label="Toggle menu">
-            <i class="fas fa-bars"></i>
-          </button>
+        <!-- Top Header (Sticky) -->
+        <header class="top-header">
+          <div class="header-left">
+            <button class="menu-toggle" onclick="toggleSidebar()" aria-label="Toggle menu">
+              <i class="fas fa-bars"></i>
+            </button>
 
-          <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="{{ '/' | relative_url }}"><i class="fas fa-home"></i> Home</a>
-            {% if page.url != '/' %}
-            <span class="breadcrumb-separator">/</span>
-            <span>{{ page.title }}</span>
-            {% endif %}
-          </nav>
-        </div>
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="{{ '/' | relative_url }}"><i class="fas fa-home"></i> Home</a>
+              {% if page.url != '/' %}
+              <span class="breadcrumb-separator">/</span>
+              <span>{{ page.title }}</span>
+              {% endif %}
+            </nav>
+          </div>
 
-        <div class="header-actions">
-          <span class="follow-label">Follow:</span>
-          <a href="https://www.linkedin.com/in/niparikh/" class="social-link linkedin" target="_blank" rel="noopener"
-            title="Follow on LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://x.com/nilayparikh" class="social-link twitter" target="_blank" rel="noopener"
-            title="Follow on X">
-            <i class="fab fa-x-twitter"></i>
-          </a>
-          <a href="https://www.reddit.com/r/agentic_sdlc/" class="social-link reddit" target="_blank" rel="noopener"
-            title="Join r/agentic_sdlc">
-            <i class="fab fa-reddit"></i>
-          </a>
-          <a href="https://www.reddit.com/user/QuarterbackMonk/" class="social-link reddit-user" target="_blank"
-            rel="noopener" title="Follow u/QuarterbackMonk">
-            <i class="fas fa-user-circle"></i>
-          </a>
-          <a href="https://github.com/nilayparikh/ai-agent-ea-framework" class="social-link github" target="_blank"
-            rel="noopener" title="View on GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </header>
+          <div class="header-actions">
+            <span class="follow-label">Follow:</span>
+            <a href="https://www.linkedin.com/in/niparikh/" class="social-link" target="_blank" rel="noopener" title="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/nilayparikh" class="social-link" target="_blank" rel="noopener" title="X">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://www.reddit.com/r/agentic_sdlc/" class="social-link" target="_blank" rel="noopener" title="Reddit">
+              <i class="fab fa-reddit"></i>
+            </a>
+            <a href="https://github.com/nilayparikh/ai-agent-ea-framework" class="social-link" target="_blank" rel="noopener" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </header>
 
       <!-- Page Content -->
       <article class="page-content">
@@ -228,52 +207,56 @@
         {{ content }}
       </article>
 
-      <!-- Footer -->
-      <footer class="site-footer">
-        <div class="footer-content">
-          <div class="footer-main">
-            <div class="footer-brand">
-              <strong>LocalM-AiD Framework</strong>
-              <p>Enterprise Architecture Principles for AI-Assisted Software Development Operations</p>
+<!-- Footer (Compact) -->
+        <footer class="site-footer">
+          <div class="footer-content">
+            <div class="footer-left">
+              <strong>© 2024-2025 Nilay Parikh</strong>
+              <span class="footer-sep">•</span>
+              <a href="https://opensource.org/licenses/MPL-2.0" target="_blank">MPL 2.0</a>
             </div>
-            <div class="footer-contact">
-              <h4>Contact</h4>
-              <p>
-                <i class="fab fa-x-twitter"></i> 
-                <a href="https://x.com/nilayparikh" target="_blank">@nilayparikh</a>
-              </p>
-              <p>
-                <i class="fab fa-linkedin"></i> 
-                <a href="https://www.linkedin.com/in/niparikh/" target="_blank">Nilay Parikh on LinkedIn</a>
-              </p>
-            </div>
-          </div>
-          <div class="footer-bottom">
-            <div class="footer-legal">
-              <p><strong>© 2024-2025 Nilay Parikh. All rights reserved.</strong></p>
-              <p>
-                Licensed under the 
-                <a href="https://opensource.org/licenses/MPL-2.0" target="_blank">Mozilla Public License 2.0</a>
-              </p>
-              <p class="footer-attribution">
-                This work is subject to the terms of the Mozilla Public License, v. 2.0. 
-                If a copy of the MPL was not distributed with this file, You can obtain one at 
-                <a href="https://mozilla.org/MPL/2.0/" target="_blank">mozilla.org/MPL/2.0/</a>
-              </p>
-            </div>
-            <div class="footer-links">
+            <div class="footer-right">
               <a href="https://github.com/nilayparikh/ai-agent-ea-framework" target="_blank">
-                <i class="fab fa-github"></i> Repository
+                <i class="fab fa-github"></i>
               </a>
               <a href="https://www.reddit.com/r/agentic_sdlc/" target="_blank">
-                <i class="fab fa-reddit"></i> Community
+                <i class="fab fa-reddit"></i>
               </a>
             </div>
           </div>
-        </div>
-      </footer>
-    </main>
+        </footer>
+      </main>
+    </div>
   </div>
+
+  <!-- Mermaid Charts -->
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'base',
+      themeVariables: {
+        primaryColor: '#6366f1',
+        primaryTextColor: '#1e293b',
+        primaryBorderColor: '#4f46e5',
+        lineColor: '#64748b',
+        secondaryColor: '#e0f2fe',
+        tertiaryColor: '#f1f5f9',
+        fontFamily: 'Inter, sans-serif',
+        fontSize: '14px'
+      },
+      flowchart: {
+        htmlLabels: true,
+        curve: 'basis'
+      }
+    });
+
+    // Re-render on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      mermaid.run();
+    });
+  </script>
 
   <script>
     function toggleSidebar() {
