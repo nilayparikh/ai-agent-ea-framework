@@ -1,3 +1,18 @@
+LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
+  
+  Copyright (c) 2025 Nilay Parikh
+  
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+  
+  Author: Nilay Parikh
+  Contact: 
+    - Twitter: @nilayparikh
+    - LinkedIn: https://www.linkedin.com/in/niparikh/
+  
+  Feel free to contact for questions or queries.
+
 ---
 layout: default
 title: "The Hidden Compliance Crisis: Why AI-Generated Code Demands Enterprise Architecture Governance"
@@ -419,19 +434,19 @@ While this article focuses on major frameworks like PCI-DSS, SOX, HIPAA, and GDP
 
 ### International AI Regulatory Overview
 
-| Country/Region | Framework | Status | Key AI Code Implications |
-|----------------|-----------|--------|--------------------------|
-| **EU** | <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689" target="_blank" rel="noopener">EU AI Act</a> | Enacted | Risk classification, conformity assessment, human oversight |
-| **Singapore** | <a href="https://www.pdpc.gov.sg/help-and-resources/2020/01/model-ai-governance-framework" target="_blank" rel="noopener">Model AI Governance Framework</a> | Voluntary | Explainable AI, AI Verify testing framework |
-| **China** | PIPL + Generative AI Measures | Enacted | Algorithm registration, content moderation, data localization |
-| **Canada** | AIDA (Bill C-27) | Proposed | High-impact AI assessment, algorithmic impact assessment |
-| **Australia** | AI Ethics Framework | Voluntary | 8 AI ethics principles, proposed mandatory guardrails |
-| **Japan** | Social Principles for Human-Centric AI | Voluntary | Human-centric design, education requirements |
-| **Brazil** | LGPD + AI Bill | Mixed | GDPR-style protection, AI governance under development |
-| **South Korea** | PIPA + AI Basic Act | Proposed | AI impact assessments, transparency requirements |
-| **India** | DPDP Act 2023 | Enacted | Digital data protection, sector-specific AI guidance developing |
-| **UK** | Pro-Innovation AI Approach | Framework | Principles-based, existing regulators apply AI standards |
-| **International** | <a href="https://www.iso.org/standard/81230.html" target="_blank" rel="noopener">ISO/IEC 42001:2023</a> | Standard | AI Management System certification |
+| Country/Region    | Framework                                                                                                                                                   | Status    | Key AI Code Implications                                        |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | --------------------------------------------------------------- |
+| **EU**            | <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689" target="_blank" rel="noopener">EU AI Act</a>                                 | Enacted   | Risk classification, conformity assessment, human oversight     |
+| **Singapore**     | <a href="https://www.pdpc.gov.sg/help-and-resources/2020/01/model-ai-governance-framework" target="_blank" rel="noopener">Model AI Governance Framework</a> | Voluntary | Explainable AI, AI Verify testing framework                     |
+| **China**         | PIPL + Generative AI Measures                                                                                                                               | Enacted   | Algorithm registration, content moderation, data localization   |
+| **Canada**        | AIDA (Bill C-27)                                                                                                                                            | Proposed  | High-impact AI assessment, algorithmic impact assessment        |
+| **Australia**     | AI Ethics Framework                                                                                                                                         | Voluntary | 8 AI ethics principles, proposed mandatory guardrails           |
+| **Japan**         | Social Principles for Human-Centric AI                                                                                                                      | Voluntary | Human-centric design, education requirements                    |
+| **Brazil**        | LGPD + AI Bill                                                                                                                                              | Mixed     | GDPR-style protection, AI governance under development          |
+| **South Korea**   | PIPA + AI Basic Act                                                                                                                                         | Proposed  | AI impact assessments, transparency requirements                |
+| **India**         | DPDP Act 2023                                                                                                                                               | Enacted   | Digital data protection, sector-specific AI guidance developing |
+| **UK**            | Pro-Innovation AI Approach                                                                                                                                  | Framework | Principles-based, existing regulators apply AI standards        |
+| **International** | <a href="https://www.iso.org/standard/81230.html" target="_blank" rel="noopener">ISO/IEC 42001:2023</a>                                                     | Standard  | AI Management System certification                              |
 
 ### Key Observation
 
@@ -605,24 +620,28 @@ Each principle follows TOGAF-aligned structure with maturity levels enabling pro
 ### Cloud Provider AI Governance Documentation
 
 #### Microsoft Azure
+
 19. <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/govern" target="_blank" rel="noopener">Microsoft Azure</a> - Govern AI (Cloud Adoption Framework)
 20. <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/secure" target="_blank" rel="noopener">Microsoft Azure</a> - Secure AI Workloads
 21. <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization" target="_blank" rel="noopener">Microsoft Azure</a> - AI Agent Governance and Security
 22. <a href="https://www.microsoft.com/ai/responsible-ai" target="_blank" rel="noopener">Microsoft</a> - Responsible AI Principles
 
 #### Google Cloud
+
 23. <a href="https://cloud.google.com/responsible-ai" target="_blank" rel="noopener">Google Cloud</a> - Responsible AI
 24. <a href="https://ai.google/principles/" target="_blank" rel="noopener">Google AI</a> - AI Principles
 25. <a href="https://cloud.google.com/explainable-ai" target="_blank" rel="noopener">Google Cloud</a> - Explainable AI
 26. <a href="https://ai.google/responsibilities/responsible-ai-practices/" target="_blank" rel="noopener">Google AI</a> - Responsible AI Practices
 
 #### Amazon Web Services
+
 27. <a href="https://aws.amazon.com/ai/responsible-ai/" target="_blank" rel="noopener">AWS</a> - Responsible AI
 28. <a href="https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html" target="_blank" rel="noopener">AWS</a> - Well-Architected Responsible AI Lens
 29. <a href="https://aws.amazon.com/bedrock/guardrails/" target="_blank" rel="noopener">AWS</a> - Amazon Bedrock Guardrails
 30. <a href="https://aws.amazon.com/ai/responsible-ai/resources/#service" target="_blank" rel="noopener">AWS</a> - AI Service Cards
 
 ### International AI Standards
+
 31. <a href="https://www.iso.org/standard/81230.html" target="_blank" rel="noopener">ISO/IEC</a> - ISO/IEC 42001:2023 AI Management System
 32. <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689" target="_blank" rel="noopener">European Union</a> - EU AI Act (Regulation 2024/1689)
 33. <a href="https://www.pdpc.gov.sg/help-and-resources/2020/01/model-ai-governance-framework" target="_blank" rel="noopener">Singapore PDPC</a> - Model AI Governance Framework

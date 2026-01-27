@@ -1,0 +1,223 @@
+LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
+  
+  Copyright (c) 2025 Nilay Parikh
+  
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+  
+  Author: Nilay Parikh
+  Contact: 
+    - Twitter: @nilayparikh
+    - LinkedIn: https://www.linkedin.com/in/niparikh/
+  
+  Feel free to contact for questions or queries.
+
+---
+layout: default
+title: Attribution & Licensing
+description: Attribution requirements for the LocalM™ AiD Framework and enterprise licensing options
+---
+
+# Attribution & Licensing
+
+<div class="license-banner">
+  <div class="license-badge">MPL 2.0 + Attribution</div>
+  <span class="license-separator">|</span>
+  <div class="license-badge enterprise">Enterprise</div>
+</div>
+
+---
+
+## License Overview
+
+The **LocalM<sup>™</sup> AiD Framework** is dual-licensed:
+
+| Option | Use Case | Requirements |
+|--------|----------|--------------|
+| **MPL 2.0 + Attribution** | Open-source, non-commercial, educational | Attribution required |
+| **Enterprise License** | Commercial, proprietary, enterprise | Contact for licensing |
+
+---
+
+## Attribution Requirements
+
+When using the LocalM™ AiD Framework under the MPL 2.0 + Attribution license, you **must** provide visible attribution including:
+
+### Required Attribution
+
+```
+LocalM™ AiD Framework
+Created by Nilay Parikh
+https://localm.ai
+```
+
+### Attribution Examples
+
+**In Documentation:**
+> This project uses the LocalM™ AiD Framework, created by Nilay Parikh. Learn more at [localm.ai](https://localm.ai).
+
+**In Code Comments:**
+```
+// Based on LocalM™ AiD Framework
+// Created by Nilay Parikh | localm.ai
+// Licensed under MPL 2.0 + Attribution
+```
+
+**In README Files:**
+```markdown
+## Acknowledgments
+
+- [LocalM™ AiD Framework](https://localm.ai) by Nilay Parikh
+```
+
+### Attribution Placement
+
+| Context | Location |
+|---------|----------|
+| **Documentation** | README, footer, or dedicated acknowledgments section |
+| **Applications** | About page, credits, or settings/info screen |
+| **Presentations** | Opening or closing slide |
+| **Publications** | References or acknowledgments section |
+
+---
+
+## What's Allowed (MPL 2.0 + Attribution)
+
+✅ **You CAN:**
+- Use the framework for any purpose (personal, educational, commercial*)
+- Modify and create derivative works
+- Distribute the framework and modifications
+- Use in open-source projects
+- Reference principles in your governance documentation
+
+⚠️ **You MUST:**
+- Provide attribution to the framework, Nilay Parikh, and localm.ai
+- Include the original license in distributed copies
+- Disclose source code of modifications to the framework itself
+- Use the same license for modifications to framework files
+
+❌ **You CANNOT:**
+- Remove or obscure attribution
+- Claim the framework as your own work
+- Use without attribution in any context
+
+*Commercial use requires attribution. For commercial use without attribution requirements, see Enterprise License.
+
+---
+
+## Enterprise License
+
+For organizations requiring:
+
+| Benefit | Description |
+|---------|-------------|
+| **No Attribution** | Deploy without public attribution requirements |
+| **Keep Derivatives Private** | Adopt and derive without open-sourcing your enterprise work |
+| **Privacy** | Internal use without disclosure requirements |
+| **Expert Support** | Priority technical support and guidance |
+| **Training** | On-demand training for your teams |
+| **AI Coaching** | Personalized guidance on AI governance implementation |
+| **Custom Policies** | Tailored governance policies for your organization |
+
+### Enterprise Pricing
+
+Contact us for enterprise licensing tailored to your organization's size and needs.
+
+<div class="cta-box">
+  <h3>Need Enterprise Licensing?</h3>
+  <p>Contact us to discuss your requirements and explore enterprise options.</p>
+  <a href="https://localm.ai/enterprise" class="cta-button" target="_blank" rel="noopener">Contact Enterprise Sales</a>
+</div>
+
+---
+
+## Trademark Notice
+
+**LocalM™** and **LocalM AiD™** are trademarks of localm.ai. Use of these marks is subject to trademark guidelines:
+
+- ✅ Reference the framework by name with appropriate trademark symbols (™)
+- ✅ Link to the official framework when mentioning it
+- ❌ Do not use LocalM™ trademarks to imply endorsement
+- ❌ Do not create confusingly similar marks
+
+---
+
+## Questions?
+
+For licensing questions or to discuss enterprise options:
+
+- **Email:** [enterprise@localm.ai](mailto:enterprise@localm.ai)
+- **Website:** [localm.ai/enterprise](https://localm.ai/enterprise)
+
+<style>
+.license-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(255, 184, 0, 0.1) 0%, rgba(255, 107, 53, 0.1) 100%);
+  border: 1px solid rgba(255, 184, 0, 0.3);
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.license-badge {
+  padding: 0.5rem 1rem;
+  background: rgba(255, 184, 0, 0.2);
+  border: 1px solid rgba(255, 184, 0, 0.4);
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  color: #FFB800;
+  font-weight: 600;
+}
+
+.license-badge.enterprise {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: rgba(99, 102, 241, 0.4);
+  color: #818cf8;
+}
+
+.license-separator {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.5rem;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.cta-box h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.cta-box p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+  color: #fff;
+}
+</style>

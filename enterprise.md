@@ -1,16 +1,43 @@
+LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
+  
+  Copyright (c) 2025 Nilay Parikh
+  
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+  
+  Author: Nilay Parikh
+  Contact: 
+    - Twitter: @nilayparikh
+    - LinkedIn: https://www.linkedin.com/in/niparikh/
+  
+  Feel free to contact for questions or queries.
+
 ---
 layout: default
 title: Enterprise Licensing
-description: Enterprise licensing options for the LocalM AiD Framework
+description: Enterprise licensing options for the LocalM-AiD Framework
 ---
 
 # Enterprise Licensing
 
 ## Beyond Open Source
 
-The LocalM AiD™ Framework is available under the **Mozilla Public License 2.0 (MPL 2.0)**, which allows free use, modification, and distribution with proper attribution.
+The LocalM<sup>™</sup> AiD Framework is available under dual licensing:
 
-However, we understand that some organizations have specific requirements that may not align with open-source licensing terms.
+<div class="license-comparison">
+
+| **MPL 2.0 + Attribution** | **Enterprise License** |
+|---------------------------|------------------------|
+| Free and open source | Commercial license |
+| Attribution required | No attribution required |
+| Modifications disclosed | Keep derivatives private |
+| Community support | Expert support |
+| Self-service | Training & coaching |
+
+</div>
+
+[View MPL 2.0 + Attribution requirements →](attribution)
 
 ---
 
@@ -18,63 +45,74 @@ However, we understand that some organizations have specific requirements that m
 
 <div class="enterprise-grid">
   <div class="enterprise-card">
-    <i class="fas fa-file-contract"></i>
-    <h3>Custom Licensing</h3>
-    <p>Flexible licensing terms tailored to your organization's legal and compliance requirements.</p>
+    <i class="fas fa-eye-slash"></i>
+    <h3>Keep Derivatives Private</h3>
+    <p>Adopt and derive work without disclosing or open-sourcing your enterprise customizations.</p>
   </div>
   <div class="enterprise-card">
     <i class="fas fa-user-shield"></i>
-    <h3>Private Deployment</h3>
-    <p>Deploy the framework internally without MPL 2.0 attribution requirements.</p>
+    <h3>No Attribution Required</h3>
+    <p>Deploy without public attribution requirements—use the framework privately and internally.</p>
   </div>
   <div class="enterprise-card">
     <i class="fas fa-headset"></i>
-    <h3>Priority Support</h3>
-    <p>Direct access to framework authors for implementation guidance and customization.</p>
+    <h3>Expert Support</h3>
+    <p>Priority technical support and implementation guidance from framework authors.</p>
+  </div>
+  <div class="enterprise-card">
+    <i class="fas fa-chalkboard-teacher"></i>
+    <h3>Training (On Demand)</h3>
+    <p>Workshops and training sessions tailored to your teams and adoption journey.</p>
+  </div>
+  <div class="enterprise-card">
+    <i class="fas fa-robot"></i>
+    <h3>AI Coaching</h3>
+    <p>Personalized guidance on AI governance implementation and best practices.</p>
   </div>
   <div class="enterprise-card">
     <i class="fas fa-cogs"></i>
-    <h3>Custom Development</h3>
-    <p>Tailored principles and guidance specific to your organization's AI adoption strategy.</p>
+    <h3>Custom Policies</h3>
+    <p>Tailored governance policies and principles specific to your organization.</p>
   </div>
 </div>
 
 ---
 
-## When to Consider Enterprise
+## When to Choose Enterprise
 
-| Scenario                         | Open Source (MPL 2.0) | Enterprise License |
-| -------------------------------- | --------------------- | ------------------ |
-| Internal use with attribution    | ✅                    | ✅                 |
-| Public products with attribution | ✅                    | ✅                 |
-| Private derivative works         | ❌                    | ✅                 |
-| Remove attribution requirements  | ❌                    | ✅                 |
-| Priority support                 | ❌                    | ✅                 |
-| Custom framework modifications   | ❌                    | ✅                 |
-| Training and workshops           | ❌                    | ✅                 |
+| Scenario                               | MPL 2.0 + Attribution | Enterprise |
+| -------------------------------------- | --------------------- | ---------- |
+| Internal use with attribution          | ✅                    | ✅         |
+| Open-source projects                   | ✅                    | ✅         |
+| Private derivative works               | ❌                    | ✅         |
+| Remove attribution requirements        | ❌                    | ✅         |
+| Expert support & guidance              | ❌                    | ✅         |
+| Custom framework modifications         | ❌                    | ✅         |
+| Training and workshops                 | ❌                    | ✅         |
+| AI coaching and consulting             | ❌                    | ✅         |
 
 ---
 
 ## Contact Us
 
-Interested in enterprise licensing? We'd love to discuss how LocalM AiD™ can support your organization's AI-assisted development journey.
-
 <div class="contact-cta">
-  <a href="mailto:nilay@localm.dev" class="btn-primary">
-    <i class="fas fa-envelope"></i> Contact for Enterprise License
+  <h3>Ready for Enterprise?</h3>
+  <p>Contact us to discuss your requirements and explore enterprise options.</p>
+  <a href="https://localm.ai/enterprise" class="btn-primary" target="_blank" rel="noopener">
+    <i class="fas fa-building"></i> Contact Enterprise Sales
   </a>
-  <p>Or reach out on <a href="https://www.linkedin.com/in/niparikh/" target="_blank">LinkedIn</a></p>
+  <p style="margin-top: 1rem; font-size: 0.9em; opacity: 0.7;">Or email <a href="mailto:enterprise@localm.ai">enterprise@localm.ai</a></p>
 </div>
 
 ---
 
 ## Open Source Commitment
 
-We remain committed to the open-source community. The MPL 2.0 license ensures that:
+We remain committed to the open-source community. Enterprise licensing is an **additional option** for organizations with specific requirements—not a replacement for open source.
 
-- ✅ The framework remains freely available
+The MPL 2.0 + Attribution license ensures:
+
+- ✅ Framework remains freely available
 - ✅ Contributions benefit everyone
 - ✅ Transparency in AI development practices
 - ✅ Community-driven improvements
-
-Enterprise licensing is an **additional option**, not a replacement for open source.
