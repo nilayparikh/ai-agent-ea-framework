@@ -188,25 +188,15 @@ Docs: Improve contribution guidelines
 
 All Markdown files must include the MPL 2.0 header comment. Use the template from `.eaf_header.txt`:
 
-```html
-<!--
-  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
-  
-  Copyright (c) 2025 Nilay Parikh
-  
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
-  
-  Author: Nilay Parikh
-  Contact: 
-    - Email: nilayparikh@gmail.com
-    - Twitter: @nilayparikh
-    - LinkedIn: https://www.linkedin.com/in/niparikh/
-  
-  Feel free to contact on Twitter/LinkedIn for questions or queries.
--->
+```markdown
+[comment]: # (LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development)
+[comment]: # (Copyright (c) 2025 Nilay Parikh)
+[comment]: # (This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.)
+[comment]: # (If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.)
+[comment]: # (SPDX-License-Identifier: MPL-2.0)
 ```
+
+**Note**: This uses Markdown's invisible comment syntax `[comment]: #` which won't display when rendered.
 
 ## Style Guide
 
