@@ -1,35 +1,35 @@
-<!-- 
+<!--
   LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
-  
+
   Copyright (c) 2025 Nilay Parikh
-  
+
   This Source Code Form is subject to the terms of the Mozilla Public
   License, v. 2.0. If a copy of the MPL was not distributed with this
   file, You can obtain one at http://mozilla.org/MPL/2.0/.
-  
+
   Author: Nilay Parikh
-  Contact: 
+  Contact:
     - Twitter: @nilayparikh
     - LinkedIn: https://www.linkedin.com/in/niparikh/
-  
+
   Feel free to contact on Twitter/LinkedIn for questions or queries.
 -->
 
 ````markdown
 <!--
   LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
-  
+
   Copyright (c) 2025 Nilay Parikh
-  
+
   This Source Code Form is subject to the terms of the Mozilla Public
   License, v. 2.0. If a copy of the MPL was not distributed with this
   file, You can obtain one at http://mozilla.org/MPL/2.0/.
-  
+
   Author: Nilay Parikh
-  Contact: 
+  Contact:
     - Twitter: @nilayparikh
     - LinkedIn: https://www.linkedin.com/in/niparikh/
-  
+
   Feel free to contact on Twitter/LinkedIn for questions or queries.
 -->
 
@@ -149,6 +149,7 @@ This project is licensed under the Mozilla Public License 2.0 - see the [LICENSE
 ## Contact
 
 **Nilay Parikh**
+
 - Twitter: [@nilayparikh](https://twitter.com/nilayparikh)
 - LinkedIn: [niparikh](https://www.linkedin.com/in/niparikh/)
 - Email: nilayparikh@gmail.com
@@ -160,3 +161,4 @@ Feel free to reach out on Twitter/LinkedIn for questions or queries.
 - [Project Structure](../docs/project_structure.md)
 - [Naming Conventions](../docs/naming_conventions.md)
 - [Structured Material](../structured_material/README.md)
+````
