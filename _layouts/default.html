@@ -141,6 +141,43 @@
             </ul>
           </div>
 
+          <!-- About & Contributing -->
+          <div class="nav-section">
+            <div class="nav-section-title">About</div>
+            <ul class="nav-tree">
+              <li class="nav-item">
+                <a href="{{ '/about' | relative_url }}"
+                  class="nav-link {% if page.url == '/about' or page.url == '/about/' %}active{% endif %}">
+                  <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ '/research' | relative_url }}"
+                  class="nav-link {% if page.url == '/research' or page.url == '/research/' %}active{% endif %}">
+                  <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Research
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ '/contributing' | relative_url }}"
+                  class="nav-link {% if page.url == '/contributing' or page.url == '/contributing/' %}active{% endif %}">
+                  <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                  Contribute
+                </a>
+              </li>
+            </ul>
+          </div>
+
           <!-- Community -->
           <div class="nav-section">
             <div class="nav-section-title">Community</div>
@@ -149,6 +186,18 @@
                 <a href="https://www.reddit.com/r/agentic_sdlc/" class="nav-link" target="_blank" rel="noopener">
                   <i class="fab fa-reddit nav-link-icon"></i>
                   r/agentic_sdlc
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://x.com/nilayparikh" class="nav-link" target="_blank" rel="noopener">
+                  <i class="fab fa-x-twitter nav-link-icon"></i>
+                  @nilayparikh
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.linkedin.com/in/niparikh/" class="nav-link" target="_blank" rel="noopener">
+                  <i class="fab fa-linkedin nav-link-icon"></i>
+                  LinkedIn
                 </a>
               </li>
             </ul>
@@ -206,24 +255,24 @@
         <!-- Page Content -->
         <article class="page-content">
           {{ content }}
-        </article>
 
-        <!-- Share Widget (positioned after metadata via JS) -->
-        <div class="content-share-widget" id="shareWidget">
-          <span class="share-label">Share this page:</span>
-          <button class="content-share-btn" onclick="shareOn('twitter')" title="Share on X">
-            <i class="fab fa-x-twitter"></i>
-          </button>
-          <button class="content-share-btn" onclick="shareOn('linkedin')" title="Share on LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </button>
-          <button class="content-share-btn" onclick="shareOn('reddit')" title="Share on Reddit">
-            <i class="fab fa-reddit"></i>
-          </button>
-          <button class="content-share-btn" onclick="copyPageLink()" title="Copy link">
-            <i class="fas fa-link"></i>
-          </button>
-        </div>
+          <!-- Share Widget -->
+          <div class="content-share-widget" id="shareWidget">
+            <span class="share-label">Share this page:</span>
+            <button class="content-share-btn" onclick="shareOn('twitter')" title="Share on X">
+              <i class="fab fa-x-twitter"></i>
+            </button>
+            <button class="content-share-btn" onclick="shareOn('linkedin')" title="Share on LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </button>
+            <button class="content-share-btn" onclick="shareOn('reddit')" title="Share on Reddit">
+              <i class="fab fa-reddit"></i>
+            </button>
+            <button class="content-share-btn" onclick="copyPageLink()" title="Copy link">
+              <i class="fas fa-link"></i>
+            </button>
+          </div>
+        </article>
 
         <!-- Footer (Compact) -->
         <footer class="site-footer">
@@ -235,11 +284,14 @@
             <span class="footer-sep">•</span>
             <a href="https://opensource.org/licenses/MPL-2.0" target="_blank">MPL 2.0</a>
             <span class="footer-sep">•</span>
+            <a href="{{ '/contributing' | relative_url }}">Contribute</a>
+            <span class="footer-sep">•</span>
             <a href="{{ '/enterprise' | relative_url }}">Enterprise</a>
             <span class="footer-sep">•</span>
-            <a href="https://github.com/nilayparikh/ai-agent-ea-framework" target="_blank"><i
+            <a href="https://github.com/nilayparikh/ai-agent-ea-framework" target="_blank" title="GitHub"><i
                 class="fab fa-github"></i></a>
-            <a href="https://www.reddit.com/r/agentic_sdlc/" target="_blank"><i class="fab fa-reddit"></i></a>
+            <a href="https://www.reddit.com/r/agentic_sdlc/" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+            <a href="https://x.com/nilayparikh" target="_blank" title="X"><i class="fab fa-x-twitter"></i></a>
           </div>
         </footer>
       </main>
@@ -399,21 +451,6 @@
         }, 1500);
       });
     }
-
-    // Position share widget after metadata table
-    document.addEventListener('DOMContentLoaded', function () {
-      const metaTable = document.querySelector('.page-meta-table');
-      const shareWidget = document.getElementById('shareWidget');
-      if (metaTable && shareWidget) {
-        metaTable.after(shareWidget);
-      } else if (shareWidget) {
-        // If no meta table, insert at top of page content
-        const pageContent = document.querySelector('.page-content');
-        if (pageContent && pageContent.firstChild) {
-          pageContent.insertBefore(shareWidget, pageContent.children[1] || null);
-        }
-      }
-    });
   </script>
 </body>
 

@@ -824,9 +824,9 @@ h1 {
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
-  margin: var(--spacing-lg) 0;
-  padding: var(--spacing-md) 0;
-  border-bottom: 1px solid var(--color-border-light);
+  margin-top: var(--spacing-2xl);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-border-light);
 }
 
 .share-label {

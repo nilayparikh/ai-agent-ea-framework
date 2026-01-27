@@ -35,7 +35,7 @@ flowchart TB
         T3["CONTINUOUS VALIDATION<br/>Quality gates throughout"]
         T4["TRACEABILITY<br/>All interactions auditable"]
         T5["PROGRESSIVE MATURITY<br/>Grow responsibly"]
-        
+
         T1 --- T2 --- T3
         T4 --- T5
     end

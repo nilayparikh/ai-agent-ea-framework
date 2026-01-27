@@ -5,38 +5,61 @@ title: Appendix
 
 # Appendix
 
-Supporting materials and research foundation for the LocalM™-AiD framework.
+Supporting materials and resources for the LocalM™-AiD framework.
+
+<div class="page-meta-table">
+  <div class="page-meta-item">
+    <span class="page-meta-label">PURPOSE</span>
+    <span class="page-meta-value">Supporting Materials</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">CONTENT</span>
+    <span class="page-meta-value">Research, History, Resources</span>
+  </div>
+</div>
+
+---
+
+## Quick Links
+
+| Resource | Description |
+|----------|-------------|
+| [About LocalM™-AiD](../about) | Framework overview and purpose |
+| [Research Sources](../research) | Full research bibliography |
+| [How to Contribute](../contributing) | Community contribution guide |
+| [Implementation Guides](../guides/) | Practical implementation help |
 
 ---
 
 ## Research Foundation
 
-The LocalM™-AiD framework synthesizes insights from peer-reviewed research, industry practitioners, and emerging standards in AI-assisted software development.
+The LocalM™-AiD framework synthesizes insights from peer-reviewed research, industry practitioners, and emerging standards.
 
-### Academic & Research Sources
+### Primary Academic Sources
 
 | Source | Authors | Contribution |
 |--------|---------|--------------|
-| AI4SE Taxonomy | Schieferdecker et al., 2025 | Systematic classification of AI applications in software engineering lifecycle stages |
-| Metacognitive Framework for AI Programming | Phung et al., 2025 | Educational principles for developing critical evaluation skills with AI coding tools |
-| Ten Simple Rules for AI-Assisted Coding | Poldrack et al., 2025 | Evidence-based guidelines for effective human-AI collaboration in programming |
+| AI4SE Taxonomy | Schieferdecker et al., 2025 | Systematic AI classification in SE lifecycle |
+| Metacognitive Framework | Phung et al., 2025 | AI education and critical evaluation |
+| Ten Simple Rules | Poldrack et al., 2025 | Evidence-based coding guidelines |
 
-### Industry Practitioner Sources
+### Primary Industry Sources
 
 | Source | Author/Org | Contribution |
 |--------|------------|--------------|
-| V-Bounce Model | Hymel, 2024 | AI-native SDLC methodology balancing automation with human oversight |
-| Single Conversation Methodology | Escobedo, 2025 | Session management patterns for maintaining context in AI interactions |
-| Karpathy Guidelines | Andrej Karpathy, 2025 | Security-focused rules for AI coding agents based on production experience |
+| V-Bounce Model | Hymel, 2024 | AI-native SDLC methodology |
+| Single Conversation | Escobedo, 2025 | Session management patterns |
+| Karpathy Guidelines | Karpathy, 2025 | Security rules for AI agents |
 
-### Emerging Standards
+### Standards Referenced
 
 | Standard | Organization | Relevance |
 |----------|--------------|-----------|
-| AGENTS.md | Community Standard | Agent capability declaration and permission boundaries |
-| SKILL.md | Community Standard | Reusable skill definitions for AI agents |
-| Model Context Protocol (MCP) | Anthropic | Standardized AI-tool integration protocol |
-| Agent-to-Agent (A2A) | Google | Inter-agent communication patterns |
+| AGENTS.md | Community | Agent capability declaration |
+| Model Context Protocol | Anthropic | AI-tool integration |
+| TOGAF | The Open Group | EA principle structure |
+
+➡️ See [Research Sources](../research) for complete bibliography.
 
 ---
 
@@ -48,8 +71,23 @@ The LocalM™-AiD framework synthesizes insights from peer-reviewed research, in
 
 ---
 
-## Quick Links
+## Glossary
 
-- [Principles Overview](../principles/)
-- [Implementation Guides](../guides/)
-- [Reference Documentation](../reference/)
+| Term | Definition |
+|------|------------|
+| **AI Agent** | An AI system that can take actions autonomously |
+| **Agentic Development** | Development where AI takes autonomous actions |
+| **Context Engineering** | Optimizing information provided to AI |
+| **Human Agency** | Human maintains control over AI actions |
+| **Maturity Level** | Stage of organizational AI adoption capability |
+| **Permission Boundary** | Defined limits on what AI can access |
+| **Sandboxing** | Isolating AI execution environments |
+| **Vibe Coding** | Unstructured, ad-hoc AI-assisted coding |
+
+---
+
+## Related Pages
+
+- [Principles Overview](../principles/) - All 27 EA principles
+- [Guides](../guides/) - Implementation guidance
+- [Reference](../reference/) - Technical reference
