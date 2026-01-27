@@ -1,16 +1,32 @@
 ---
 layout: default
 title: Governance, Security & Compliance Principles
+description: Enterprise Architecture principles for AI tool permissions, sandboxing, access controls, and compliance.
 category: GSC
 ---
 
 # Governance, Security & Compliance (GSC) Principles
 
-**Status**: 🔍 Under Peer Review
+Enterprise Architecture principles for AI tool permissions, sandboxing, access controls, and compliance.
 
-**Category Code**: GSC
-**Principle Count**: 7
-**Focus**: AI Tool Permissions, Sandboxing, Access Controls, and Compliance
+<div class="page-meta-table">
+  <div class="page-meta-item">
+    <span class="page-meta-label">Category</span>
+    <span class="page-meta-value">GSC</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Principles</span>
+    <span class="page-meta-value">7</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Focus</span>
+    <span class="page-meta-value">AI Tool Permissions, Sandboxing, Access Controls, and Compliance</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Status</span>
+    <span class="page-meta-value">🔍 Under Peer Review</span>
+  </div>
+</div>
 
 ---
 

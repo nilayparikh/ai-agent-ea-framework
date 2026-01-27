@@ -1,16 +1,32 @@
 ---
 layout: default
 title: Testing & Quality Control Principles
+description: Enterprise Architecture principles for quality assurance in AI-assisted development.
 category: TQC
 ---
 
 # Testing & Quality Control (TQC) Principles
 
-**Status**: 🔍 Under Peer Review
+Enterprise Architecture principles for quality assurance in AI-assisted development.
 
-**Category Code**: TQC
-**Principle Count**: 4
-**Focus**: Quality Assurance for AI-Assisted Development
+<div class="page-meta-table">
+  <div class="page-meta-item">
+    <span class="page-meta-label">Category</span>
+    <span class="page-meta-value">TQC</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Principles</span>
+    <span class="page-meta-value">4</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Focus</span>
+    <span class="page-meta-value">Quality Assurance for AI-Assisted Development</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Status</span>
+    <span class="page-meta-value">🔍 Under Peer Review</span>
+  </div>
+</div>
 
 ---
 

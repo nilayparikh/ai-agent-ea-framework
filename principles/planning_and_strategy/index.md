@@ -1,16 +1,32 @@
 ---
 layout: default
 title: Planning & Strategy Principles
+description: Enterprise Architecture principles for strategic AI tool adoption and operations planning.
 category: PS
 ---
 
 # Planning & Strategy (PS) Principles
 
-**Status**: 🔍 Under Peer Review
+Enterprise Architecture principles for strategic AI tool adoption and operations planning.
 
-**Category Code**: PS
-**Principle Count**: 4
-**Focus**: Strategic AI Tool Adoption & Operations Planning
+<div class="page-meta-table">
+  <div class="page-meta-item">
+    <span class="page-meta-label">Category</span>
+    <span class="page-meta-value">PS</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Principles</span>
+    <span class="page-meta-value">4</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Focus</span>
+    <span class="page-meta-value">Strategic AI Tool Adoption & Operations Planning</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Status</span>
+    <span class="page-meta-value">🔍 Under Peer Review</span>
+  </div>
+</div>
 
 ---
 

@@ -204,6 +204,23 @@
         <!-- Page Content -->
         <article class="page-content">
           {{ content }}
+
+          <!-- Share Widget -->
+          <div class="content-share-widget">
+            <span class="share-label">Share this page:</span>
+            <button class="content-share-btn" onclick="shareOn('twitter')" title="Share on X">
+              <i class="fab fa-x-twitter"></i>
+            </button>
+            <button class="content-share-btn" onclick="shareOn('linkedin')" title="Share on LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </button>
+            <button class="content-share-btn" onclick="shareOn('reddit')" title="Share on Reddit">
+              <i class="fab fa-reddit"></i>
+            </button>
+            <button class="content-share-btn" onclick="copyPageLink()" title="Copy link">
+              <i class="fas fa-link"></i>
+            </button>
+          </div>
         </article>
 
         <!-- Footer (Compact) -->
@@ -244,7 +261,7 @@
           nodeBorder: '#6366f1'
         },
         flowchart: {
-          htmlLabels: false,
+          htmlLabels: true,
           curve: 'basis',
           useMaxWidth: true,
           padding: 15
@@ -252,17 +269,40 @@
         securityLevel: 'loose'
       });
 
+      // Helper function to clean mermaid code
+      function cleanMermaidCode(code) {
+        // Decode HTML entities
+        code = code.replace(/&amp;/g, '&');
+        code = code.replace(/&lt;/g, '<');
+        code = code.replace(/&gt;/g, '>');
+        code = code.replace(/&quot;/g, '"');
+        code = code.replace(/&#39;/g, "'");
+        
+        // Remove HTML italic tags and convert to plain text
+        code = code.replace(/<i>([^<]*)<\/i>/g, '$1');
+        code = code.replace(/<em>([^<]*)<\/em>/g, '$1');
+        code = code.replace(/<b>([^<]*)<\/b>/g, '$1');
+        code = code.replace(/<strong>([^<]*)<\/strong>/g, '$1');
+        
+        // Remove markdown bold/italic syntax
+        code = code.replace(/\*\*([^*]+)\*\*/g, '$1');
+        code = code.replace(/\*([^*]+)\*/g, '$1');
+        code = code.replace(/_([^_]+)_/g, '$1');
+        
+        // Remove empty brackets
+        code = code.replace(/\[\"\"\]/g, '');
+        code = code.replace(/\[\s*\]/g, '');
+        
+        return code;
+      }
+
       // Find all mermaid code blocks and render them
       const mermaidBlocks = document.querySelectorAll('pre code.language-mermaid, .language-mermaid code, pre > code');
       mermaidBlocks.forEach((block, index) => {
         let code = block.textContent.trim();
         if (code.startsWith('flowchart') || code.startsWith('graph') || code.startsWith('sequenceDiagram') || code.startsWith('classDiagram') || code.startsWith('stateDiagram') || code.startsWith('erDiagram') || code.startsWith('journey') || code.startsWith('gantt') || code.startsWith('pie') || code.startsWith('gitGraph')) {
-          // Remove markdown bold syntax **text** -> text
-          code = code.replace(/\*\*([^*]+)\*\*/g, '$1');
-          // Remove any empty nodes or labels
-          code = code.replace(/\[\"\"\]/g, '');
-          code = code.replace(/\[\s*\]/g, '');
-
+          code = cleanMermaidCode(code);
+          
           const container = document.createElement('div');
           container.className = 'mermaid';
           container.textContent = code;
@@ -275,12 +315,8 @@
       preTags.forEach((pre) => {
         let code = pre.textContent.trim();
         if (code.startsWith('flowchart') || code.startsWith('graph') || code.startsWith('sequenceDiagram') || code.startsWith('classDiagram') || code.startsWith('stateDiagram')) {
-          // Remove markdown bold syntax
-          code = code.replace(/\*\*([^*]+)\*\*/g, '$1');
-          // Remove empty brackets
-          code = code.replace(/\[\"\"\]/g, '');
-          code = code.replace(/\[\s*\]/g, '');
-
+          code = cleanMermaidCode(code);
+          
           const container = document.createElement('div');
           container.className = 'mermaid';
           container.textContent = code;
@@ -303,8 +339,6 @@
     document.addEventListener('click', function (e) {
       const sidebar = document.getElementById('sidebar');
       const toggle = document.querySelector('.menu-toggle');
-      const shareMenu = document.getElementById('shareMenu');
-      const shareButton = document.querySelector('.share-button');
 
       if (window.innerWidth <= 768 &&
         !sidebar.contains(e.target) &&
@@ -312,17 +346,7 @@
         sidebar.classList.contains('open')) {
         toggleSidebar();
       }
-
-      // Close share menu when clicking outside
-      if (shareMenu && !shareMenu.contains(e.target) && !shareButton.contains(e.target)) {
-        shareMenu.classList.remove('visible');
-      }
     });
-
-    // Share menu toggle
-    function toggleShareMenu() {
-      document.getElementById('shareMenu').classList.toggle('visible');
-    }
 
     // Share functions
     function shareOn(platform) {
@@ -345,18 +369,18 @@
 
       if (shareUrl) {
         window.open(shareUrl, '_blank', 'width=600,height=400');
-        toggleShareMenu();
       }
     }
 
-    function copyLink() {
+    function copyPageLink() {
       navigator.clipboard.writeText(window.location.href).then(() => {
-        const btn = event.target.closest('.share-option');
+        const btn = event.target.closest('.content-share-btn');
         const originalHTML = btn.innerHTML;
-        btn.innerHTML = '<svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg> Copied!';
+        btn.innerHTML = '<i class="fas fa-check"></i>';
+        btn.style.color = '#10b981';
         setTimeout(() => {
           btn.innerHTML = originalHTML;
-          toggleShareMenu();
+          btn.style.color = '';
         }, 1500);
       });
     }

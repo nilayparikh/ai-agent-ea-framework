@@ -215,8 +215,10 @@ body {
   border-radius: 24px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  overflow: hidden;
   min-height: calc(100vh - var(--spacing-2xl) * 2);
+  /* Allow proper flex behavior for sticky sidebar */
+  overflow: visible;
+  position: relative;
 }
 
 /* ========================================
@@ -224,18 +226,21 @@ body {
    ======================================== */
 .sidebar {
   width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  flex-shrink: 0;
   background: rgba(30, 41, 59, 0.95);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: var(--color-text-sidebar);
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px 0 0 24px;
   position: sticky;
-  top: 0;
+  top: var(--spacing-xl);
   align-self: flex-start;
-  max-height: 100vh;
+  height: calc(100vh - var(--spacing-xl) * 2);
+  overflow-y: auto;
 }
 
 /* TM Trademark Symbol */
@@ -429,6 +434,8 @@ body {
   flex-direction: column;
   min-height: 100%;
   background: transparent;
+  overflow-y: auto;
+  border-radius: 0 24px 24px 0;
 }
 
 /* Top Header Bar (Sticky with Glass Effect) */

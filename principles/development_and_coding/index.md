@@ -1,16 +1,32 @@
 ---
 layout: default
 title: Development & Coding Principles
+description: Enterprise Architecture principles for AI-assisted code generation and development practices.
 category: DC
 ---
 
 # Development & Coding (DC) Principles
 
-**Status**: 🔍 Under Peer Review
+Enterprise Architecture principles for AI-assisted code generation and development practices.
 
-**Category Code**: DC
-**Principle Count**: 4
-**Focus**: AI-Assisted Code Generation and Development Practices
+<div class="page-meta-table">
+  <div class="page-meta-item">
+    <span class="page-meta-label">Category</span>
+    <span class="page-meta-value">DC</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Principles</span>
+    <span class="page-meta-value">4</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Focus</span>
+    <span class="page-meta-value">AI-Assisted Code Generation and Development Practices</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Status</span>
+    <span class="page-meta-value">🔍 Under Peer Review</span>
+  </div>
+</div>
 
 ---
 

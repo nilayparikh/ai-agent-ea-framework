@@ -1,16 +1,32 @@
 ---
 layout: default
 title: Deployment & Maintenance Principles
+description: Enterprise Architecture principles for AI operations lifecycle management.
 category: DM
 ---
 
 # Deployment & Maintenance (DM) Principles
 
-**Status**: 🔍 Under Peer Review
+Enterprise Architecture principles for AI operations lifecycle management.
 
-**Category Code**: DM
-**Principle Count**: 2
-**Focus**: AI Operations Lifecycle
+<div class="page-meta-table">
+  <div class="page-meta-item">
+    <span class="page-meta-label">Category</span>
+    <span class="page-meta-value">DM</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Principles</span>
+    <span class="page-meta-value">2</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Focus</span>
+    <span class="page-meta-value">AI Operations Lifecycle</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Status</span>
+    <span class="page-meta-value">🔍 Under Peer Review</span>
+  </div>
+</div>
 
 ---
 

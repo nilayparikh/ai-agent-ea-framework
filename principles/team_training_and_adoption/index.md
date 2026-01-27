@@ -1,16 +1,32 @@
 ---
 layout: default
 title: Team Training & Adoption Principles
+description: Enterprise Architecture principles for building team capability in AI-assisted development.
 category: TTA
 ---
 
 # Team Training & Adoption (TTA) Principles
 
-**Status**: 🔍 Under Peer Review
+Enterprise Architecture principles for building team capability in AI-assisted development.
 
-**Category Code**: TTA
-**Principle Count**: 3
-**Focus**: Building Team Capability for AI-Assisted Development
+<div class="page-meta-table">
+  <div class="page-meta-item">
+    <span class="page-meta-label">Category</span>
+    <span class="page-meta-value">TTA</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Principles</span>
+    <span class="page-meta-value">3</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Focus</span>
+    <span class="page-meta-value">Building Team Capability for AI-Assisted Development</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">Status</span>
+    <span class="page-meta-value">🔍 Under Peer Review</span>
+  </div>
+</div>
 
 ---
 
