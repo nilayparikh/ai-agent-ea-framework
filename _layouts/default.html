@@ -291,6 +291,14 @@
           </div>
 
           <div class="header-actions">
+            <!-- Font Size Toggle -->
+            <div class="font-size-toggle" title="Adjust text size">
+              <button class="font-size-btn small" onclick="setFontSize('small')" title="Small text">A</button>
+              <button class="font-size-btn normal active" onclick="setFontSize('normal')" title="Normal text">A</button>
+              <button class="font-size-btn large" onclick="setFontSize('large')" title="Large text">A</button>
+              <button class="font-size-btn xlarge" onclick="setFontSize('xlarge')" title="Extra large text">A</button>
+            </div>
+            <span class="header-divider"></span>
             <span class="header-status">v0.0.1 • In Peer Review</span>
             <span class="header-divider"></span>
             <span class="follow-label">Follow:</span>
@@ -523,6 +531,26 @@
         }, 2000);
       });
     }
+
+    // Font Size Toggle
+    function setFontSize(size) {
+      const html = document.documentElement;
+      html.classList.remove('font-size-small', 'font-size-normal', 'font-size-large', 'font-size-xlarge');
+      html.classList.add('font-size-' + size);
+
+      // Update active button
+      document.querySelectorAll('.font-size-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelector('.font-size-btn.' + size).classList.add('active');
+
+      // Save preference
+      localStorage.setItem('localm-font-size', size);
+    }
+
+    // Load saved font size on page load
+    document.addEventListener('DOMContentLoaded', function () {
+      const savedSize = localStorage.getItem('localm-font-size') || 'normal';
+      setFontSize(savedSize);
+    });
   </script>
 </body>
 

@@ -3,8 +3,12 @@
 /* ========================================
    CSS Custom Properties (Design Tokens)
    Amber/Gold Theme matching localm.ai
+   All sizes use rem for responsive scaling
    ======================================== */
 :root {
+  /* Base font size - 10% larger than default */
+  --base-font-size: 17.6px;
+
   /* Colors - LocalM™ AiD Theme */
   --color-primary: #ffb800;
   --color-primary-dark: #e5a600;
@@ -41,10 +45,10 @@
     sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", "SF Mono", Monaco, monospace;
 
-  /* Spacing */
-  --sidebar-width: 280px;
-  --header-height: 64px;
-  --content-max-width: 900px;
+  /* Spacing - all rem based */
+  --sidebar-width: 18rem;
+  --header-height: 4rem;
+  --content-max-width: 56rem;
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
@@ -53,9 +57,9 @@
   --spacing-2xl: 3rem;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-sm: 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 0.25rem 0.375rem -0.0625rem rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 0.625rem 0.9375rem -0.1875rem rgb(0 0 0 / 0.1);
 
   /* Transitions */
   --transition-fast: 150ms ease;
@@ -66,6 +70,27 @@
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
   --radius-xl: 1rem;
+}
+
+/* Font size classes for accessibility */
+html {
+  font-size: var(--base-font-size);
+}
+
+html.font-size-small {
+  --base-font-size: 15.4px;
+}
+
+html.font-size-normal {
+  --base-font-size: 17.6px;
+}
+
+html.font-size-large {
+  --base-font-size: 19.8px;
+}
+
+html.font-size-xlarge {
+  --base-font-size: 22px;
 }
 
 /* ========================================
@@ -1701,7 +1726,7 @@ hr {
 }
 
 /* ========================================
-   License Info Sections
+   License Info Sections - Clean Card Design
    ======================================== */
 .license-info {
   background: linear-gradient(
@@ -1719,6 +1744,140 @@ hr {
   margin: var(--spacing-md) 0;
 }
 
+/* License Cards - New Clean Design */
+.license-cards {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin: var(--spacing-lg) 0;
+  flex-wrap: wrap;
+}
+
+.license-card {
+  flex: 1;
+  min-width: 15rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-base);
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.license-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-0.125rem);
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+}
+
+.license-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.license-card-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.license-card-badge.mpl {
+  background: linear-gradient(135deg, #ffb800 0%, #ff6b35 100%);
+  color: #080500;
+}
+
+.license-card-badge.enterprise {
+  background: linear-gradient(135deg, #00ff94 0%, #00cc75 100%);
+  color: #080500;
+}
+
+.license-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.license-card-desc {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.license-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-md);
+  color: var(--color-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.license-card-link:hover {
+  text-decoration: underline;
+}
+
+/* Compact License Banner */
+.license-banner-compact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  margin: var(--spacing-lg) 0;
+  flex-wrap: wrap;
+}
+
+.license-banner-compact a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.license-banner-compact a.mpl-link {
+  background: rgba(255, 184, 0, 0.15);
+  color: var(--color-primary);
+  border: 1px solid rgba(255, 184, 0, 0.3);
+}
+
+.license-banner-compact a.mpl-link:hover {
+  background: rgba(255, 184, 0, 0.25);
+  text-decoration: none;
+}
+
+.license-banner-compact a.enterprise-link {
+  background: rgba(0, 255, 148, 0.1);
+  color: var(--color-accent);
+  border: 1px solid rgba(0, 255, 148, 0.2);
+}
+
+.license-banner-compact a.enterprise-link:hover {
+  background: rgba(0, 255, 148, 0.2);
+  text-decoration: none;
+}
+
+.license-banner-compact .separator {
+  color: var(--color-text-muted);
+  font-weight: 300;
+}
+
 .license-comparison {
   margin: var(--spacing-lg) 0;
 }
@@ -1733,6 +1892,61 @@ hr {
     rgba(255, 184, 0, 0.2) 0%,
     rgba(255, 107, 53, 0.15) 100%
   );
+}
+
+/* ========================================
+   Font Size Toggle
+   ======================================== */
+.font-size-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.25rem;
+}
+
+.font-size-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  font-family: var(--font-sans);
+}
+
+.font-size-btn:hover {
+  background: var(--color-surface-hover);
+  color: var(--color-text);
+}
+
+.font-size-btn.active {
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.font-size-btn.small {
+  font-size: 0.75rem;
+}
+
+.font-size-btn.normal {
+  font-size: 0.875rem;
+}
+
+.font-size-btn.large {
+  font-size: 1rem;
+}
+
+.font-size-btn.xlarge {
+  font-size: 1.125rem;
 }
 
 /* ========================================

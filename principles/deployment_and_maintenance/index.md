@@ -315,19 +315,17 @@ flowchart LR
 
 ## License
 
-**LocalM AiD Framework Principles**
+<div class="license-banner-compact">
+  <a href="{{ '/attribution' | relative_url }}" class="mpl-link">
+    <i class="fas fa-scale-balanced"></i> MPL 2.0 + Attribution
+  </a>
+  <span class="separator">|</span>
+  <a href="https://localm.ai/enterprise" target="_blank" rel="noopener" class="enterprise-link">
+    <i class="fas fa-building"></i> Enterprise License
+  </a>
+</div>
 
-This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at <a href="http://mozilla.org/MPL/2.0/" target="_blank" rel="noopener">http://mozilla.org/MPL/2.0/</a>.
-
-### Attribution Required
-
-When using or redistributing these principles, you must:
-
-- ✅ **Provide visible credit** to the LocalM™ AiD Framework, Nilay Parikh, and <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
-- ✅ **Keep this license** with any modified versions
-- ✅ **Release modifications** under MPL 2.0
-- ✅ **Indicate changes** you've made to the original
-
+Credit required to **LocalM™ AiD Framework**, **Nilay Parikh**, and **<a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>** when using these principles.
 <!--
   LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
   

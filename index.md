@@ -1,6 +1,25 @@
+<!--
+  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
+
+  Copyright (c) 2025 Nilay Parikh
+
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+  Author: Nilay Parikh
+  Contact:
+    - Twitter: @nilayparikh
+    - LinkedIn: https://www.linkedin.com/in/niparikh/
+
+  Feel free to contact for questions or queries.
+-->
+
 ---
+
 layout: default
 title: LocalM™ AiD Framework
+
 ---
 
 # LocalM<sup>™</sup> AiD Framework
@@ -180,32 +199,21 @@ LocalM-AiD principles align with established EA and AI development standards:
 
 ## License
 
-<div class="license-info">
-
-**LocalM<sup>™</sup> AiD Framework** is available under dual licensing:
-
-| License                                        | Use Case                                                                                             |
-| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| **[MPL 2.0 + Attribution](attribution)**       | Free for any use (including commercial) with attribution. Modifications to MPL files must be shared. |
-| **[Enterprise](https://localm.ai/enterprise)** | No attribution required. Keep all modifications private. Expert support & training included.         |
-
-[View full attribution requirements →](attribution)
-
+<div class="license-cards">
+  <a href="attribution" class="license-card">
+    <div class="license-card-header">
+      <span class="license-card-badge mpl">MPL 2.0 + Attribution</span>
+    </div>
+    <div class="license-card-title">Open Source</div>
+    <div class="license-card-desc">Free for any use including commercial. Credit required to LocalM™ AiD Framework, Nilay Parikh, and localm.ai.</div>
+    <span class="license-card-link">View requirements →</span>
+  </a>
+  <a href="https://localm.ai/enterprise" target="_blank" rel="noopener" class="license-card">
+    <div class="license-card-header">
+      <span class="license-card-badge enterprise">Enterprise</span>
+    </div>
+    <div class="license-card-title">Commercial License</div>
+    <div class="license-card-desc">No attribution required. Keep modifications private. Includes expert support and training.</div>
+    <span class="license-card-link">Contact sales →</span>
+  </a>
 </div>
-
-<!--
-  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
-  
-  Copyright (c) 2025 Nilay Parikh
-  
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
-  
-  Author: Nilay Parikh
-  Contact: 
-    - Twitter: @nilayparikh
-    - LinkedIn: https://www.linkedin.com/in/niparikh/
-  
-  Feel free to contact for questions or queries.
--->

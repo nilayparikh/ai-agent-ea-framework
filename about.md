@@ -157,30 +157,23 @@ See [How to Contribute](contributing) for details.
 
 ## License
 
-<div class="license-info">
-
-**LocalM<sup>™</sup> AiD Framework** is available under dual licensing:
-
-| License                                        | Use Case                                                                                             |
-| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| **[MPL 2.0 + Attribution](attribution)**       | Free for any use (including commercial) with attribution. Modifications to MPL files must be shared. |
-| **[Enterprise](https://localm.ai/enterprise)** | No attribution required. Keep all modifications private. Expert support & training included.         |
-
-**MPL 2.0 allows you to:**
-
-- ✅ Use commercially (with attribution)
-- ✅ Modify and create derivatives
-- ✅ Distribute freely
-- ✅ Use in proprietary projects
-
-**Requirements:**
-
-- Provide visible credit to LocalM™ AiD Framework, Nilay Parikh, and <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
-- Modifications to MPL-licensed files must be shared under MPL 2.0
-- Include original license in distributed copies
-
-[View full attribution requirements →](attribution)
-
+<div class="license-cards">
+  <a href="attribution" class="license-card">
+    <div class="license-card-header">
+      <span class="license-card-badge mpl">MPL 2.0 + Attribution</span>
+    </div>
+    <div class="license-card-title">Open Source</div>
+    <div class="license-card-desc">Free for any use including commercial. Credit required to LocalM™ AiD Framework, Nilay Parikh, and localm.ai.</div>
+    <span class="license-card-link">View requirements →</span>
+  </a>
+  <a href="https://localm.ai/enterprise" target="_blank" rel="noopener" class="license-card">
+    <div class="license-card-header">
+      <span class="license-card-badge enterprise">Enterprise</span>
+    </div>
+    <div class="license-card-title">Commercial License</div>
+    <div class="license-card-desc">No attribution required. Keep modifications private. Includes expert support and training.</div>
+    <span class="license-card-link">Contact sales →</span>
+  </a>
 </div>
 
 <!--
