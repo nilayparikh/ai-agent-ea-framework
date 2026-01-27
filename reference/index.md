@@ -24,23 +24,23 @@ Technical reference materials for the LocalM™-AiD framework.
 
 ### By Category
 
-| Category | Code | Principles | Focus |
-|----------|------|------------|-------|
-| Planning & Strategy | PS | 4 | Strategic AI adoption |
-| Tool Selection & Integration | TSI | 3 | Tool evaluation & integration |
-| Team Training & Adoption | TTA | 3 | Skills development |
-| Development & Coding | DC | 6 | Day-to-day AI usage |
-| Testing & Quality Control | TQC | 3 | Quality assurance |
-| Deployment & Maintenance | DM | 2 | Operational concerns |
-| Governance, Security & Compliance | GSC | 10 | Security & governance |
+| Category                          | Code | Principles | Focus                         |
+| --------------------------------- | ---- | ---------- | ----------------------------- |
+| Planning & Strategy               | PS   | 4          | Strategic AI adoption         |
+| Tool Selection & Integration      | TSI  | 3          | Tool evaluation & integration |
+| Team Training & Adoption          | TTA  | 3          | Skills development            |
+| Development & Coding              | DC   | 6          | Day-to-day AI usage           |
+| Testing & Quality Control         | TQC  | 3          | Quality assurance             |
+| Deployment & Maintenance          | DM   | 2          | Operational concerns          |
+| Governance, Security & Compliance | GSC  | 10         | Security & governance         |
 
 ### By Maturity Level
 
-| Level | Name | Description | Suitable For |
-|-------|------|-------------|--------------|
-| L1 | Foundation | Basic governance, manual oversight | New adopters |
-| L2 | Enhanced | Intermediate automation, team-wide practices | Growing teams |
-| L3 | Advanced | Advanced automation, minimal supervision | Mature organizations |
+| Level | Name       | Description                                  | Suitable For         |
+| ----- | ---------- | -------------------------------------------- | -------------------- |
+| L1    | Foundation | Basic governance, manual oversight           | New adopters         |
+| L2    | Enhanced   | Intermediate automation, team-wide practices | Growing teams        |
+| L3    | Advanced   | Advanced automation, minimal supervision     | Mature organizations |
 
 ---
 
@@ -49,6 +49,7 @@ Technical reference materials for the LocalM™-AiD framework.
 ### AGENTS.md Standard
 
 Project-level instructions for AI agents defining:
+
 - Allowed operations
 - Forbidden actions
 - File access patterns
@@ -59,6 +60,7 @@ Project-level instructions for AI agents defining:
 ### SKILL.md Standard
 
 Modular capability definitions for AI agents:
+
 - Skill declaration
 - Input/output contracts
 - Dependencies
@@ -69,6 +71,7 @@ Modular capability definitions for AI agents:
 ### Model Context Protocol (MCP)
 
 Anthropic's standard for AI-tool integration:
+
 - Tool registration
 - Context passing
 - Response handling
@@ -79,6 +82,7 @@ Anthropic's standard for AI-tool integration:
 ### Agent-to-Agent (A2A)
 
 Google's protocol for inter-agent communication:
+
 - Agent discovery
 - Task delegation
 - Result aggregation
@@ -92,14 +96,14 @@ Google's protocol for inter-agent communication:
 
 LocalM™-AiD principles follow TOGAF's architecture principle structure:
 
-| TOGAF Component | LocalM™-AiD Implementation |
-|-----------------|---------------------------|
-| Statement | Clear, actionable principle statement |
-| Rationale | 4-dimension rationale table |
-| Implications | What changes when applied |
-| — | **+ Maturity Alignment** (L1/L2/L3 requirements) |
-| — | **+ Governance** (Compliance measures) |
-| — | **+ Related Principles** (Cross-references) |
+| TOGAF Component | LocalM™-AiD Implementation                       |
+| --------------- | ------------------------------------------------ |
+| Statement       | Clear, actionable principle statement            |
+| Rationale       | 4-dimension rationale table                      |
+| Implications    | What changes when applied                        |
+| —               | **+ Maturity Alignment** (L1/L2/L3 requirements) |
+| —               | **+ Governance** (Compliance measures)           |
+| —               | **+ Related Principles** (Cross-references)      |
 
 ---
 

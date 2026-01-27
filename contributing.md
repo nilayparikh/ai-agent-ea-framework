@@ -32,13 +32,13 @@ The LocalM™-AiD Framework is developed following **Build-in-Public** principle
 
 We believe in **radical transparency** and **community-driven development**. This means:
 
-| Principle | How We Apply It |
-|-----------|-----------------|
-| **Open Process** | All decisions are discussed publicly before implementation |
-| **Transparent Roadmap** | Development priorities are visible to everyone |
-| **Community Voice** | Feedback shapes the framework's direction |
-| **Learning Together** | Mistakes and iterations are shared openly |
-| **Meritocracy** | Best ideas win, regardless of source |
+| Principle               | How We Apply It                                            |
+| ----------------------- | ---------------------------------------------------------- |
+| **Open Process**        | All decisions are discussed publicly before implementation |
+| **Transparent Roadmap** | Development priorities are visible to everyone             |
+| **Community Voice**     | Feedback shapes the framework's direction                  |
+| **Learning Together**   | Mistakes and iterations are shared openly                  |
+| **Meritocracy**         | Best ideas win, regardless of source                       |
 
 ---
 
@@ -69,6 +69,7 @@ flowchart LR
 Post your suggestion on **[r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/)**
 
 Use one of these flair tags:
+
 - `[Principle Suggestion]` - New or modified principle
 - `[Guide Request]` - Implementation guidance needed
 - `[Bug Report]` - Issue with existing content
@@ -83,6 +84,7 @@ Use one of these flair tags:
 ### Step 3: Formal Proposal
 
 If the idea gains traction:
+
 - A maintainer drafts a formal proposal
 - The proposal follows the framework's templates
 - Draft is shared for final review
@@ -103,13 +105,13 @@ If the idea gains traction:
 
 ## Why Not GitHub Issues?
 
-| GitHub Issues | Subreddit |
-|---------------|-----------|
-| Limited to technical users | Accessible to all practitioners |
-| Isolated from community | Builds community engagement |
-| Hard to discover | Searchable, rankable discussions |
-| Less social interaction | Threaded conversations |
-| No voting system | Built-in upvote/downvote |
+| GitHub Issues              | Subreddit                        |
+| -------------------------- | -------------------------------- |
+| Limited to technical users | Accessible to all practitioners  |
+| Isolated from community    | Builds community engagement      |
+| Hard to discover           | Searchable, rankable discussions |
+| Less social interaction    | Threaded conversations           |
+| No voting system           | Built-in upvote/downvote         |
 
 We use GitHub for **code** and the subreddit for **ideas and feedback**.
 
@@ -147,12 +149,12 @@ We use GitHub for **code** and the subreddit for **ideas and feedback**.
 
 Stay connected through our Build-in-Public channels:
 
-| Platform | Purpose | Link |
-|----------|---------|------|
-| **X (Twitter)** | Daily updates, thoughts, discussions | [@nilayparikh](https://x.com/nilayparikh) |
-| **LinkedIn** | Professional updates, articles | [Nilay Parikh](https://www.linkedin.com/in/niparikh/) |
-| **Reddit** | Community discussions, feedback | [r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/) |
-| **GitHub** | Source code, releases | [ai-agent-ea-framework](https://github.com/nilayparikh/ai-agent-ea-framework) |
+| Platform        | Purpose                              | Link                                                                          |
+| --------------- | ------------------------------------ | ----------------------------------------------------------------------------- |
+| **X (Twitter)** | Daily updates, thoughts, discussions | [@nilayparikh](https://x.com/nilayparikh)                                     |
+| **LinkedIn**    | Professional updates, articles       | [Nilay Parikh](https://www.linkedin.com/in/niparikh/)                         |
+| **Reddit**      | Community discussions, feedback      | [r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/)                      |
+| **GitHub**      | Source code, releases                | [ai-agent-ea-framework](https://github.com/nilayparikh/ai-agent-ea-framework) |
 
 ---
 

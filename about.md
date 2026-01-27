@@ -43,14 +43,14 @@ LocalM™-AiD (Local Model - AI-Integrated Development) is an **Enterprise Archi
 
 LocalM™-AiD is **narrowly focused** on AI tool operations, NOT general software engineering:
 
-| ✅ IN SCOPE | ❌ OUT OF SCOPE |
-|-------------|-----------------|
-| AI tool configuration | Software design patterns |
-| Agent permissions & sandboxing | Architecture styles |
-| Git access controls for AI | General testing methodology |
-| Data classification for AI | DevOps practices (general) |
-| Audit trails & compliance | Coding standards |
-| Maturity progression | Technology stack decisions |
+| ✅ IN SCOPE                    | ❌ OUT OF SCOPE             |
+| ------------------------------ | --------------------------- |
+| AI tool configuration          | Software design patterns    |
+| Agent permissions & sandboxing | Architecture styles         |
+| Git access controls for AI     | General testing methodology |
+| Data classification for AI     | DevOps practices (general)  |
+| Audit trails & compliance      | Coding standards            |
+| Maturity progression           | Technology stack decisions  |
 
 ---
 
@@ -58,13 +58,13 @@ LocalM™-AiD is **narrowly focused** on AI tool operations, NOT general softwar
 
 Five foundational beliefs underpin every principle:
 
-| Tenet | Statement |
-|-------|-----------|
-| **Human Agency** | The programmer directs; AI assists |
-| **Structured Interaction** | Methodology over "vibe coding" |
-| **Continuous Validation** | Quality gates throughout the lifecycle |
-| **Traceability** | All AI interactions documented and auditable |
-| **Progressive Maturity** | Grow capability responsibly |
+| Tenet                      | Statement                                    |
+| -------------------------- | -------------------------------------------- |
+| **Human Agency**           | The programmer directs; AI assists           |
+| **Structured Interaction** | Methodology over "vibe coding"               |
+| **Continuous Validation**  | Quality gates throughout the lifecycle       |
+| **Traceability**           | All AI interactions documented and auditable |
+| **Progressive Maturity**   | Grow capability responsibly                  |
 
 ---
 
@@ -73,6 +73,7 @@ Five foundational beliefs underpin every principle:
 ### The Problem
 
 Organizations are rapidly adopting AI coding assistants without:
+
 - Clear governance frameworks
 - Defined permission boundaries
 - Quality assurance processes
@@ -81,6 +82,7 @@ Organizations are rapidly adopting AI coding assistants without:
 ### The Solution
 
 LocalM™-AiD provides:
+
 - **27 actionable principles** across 7 categories
 - **Maturity model** for progressive adoption
 - **Compliance checklists** for governance
@@ -103,15 +105,15 @@ Every principle follows a modified TOGAF structure:
 
 ### Seven Categories
 
-| Code | Category | Principles |
-|------|----------|------------|
-| PS | Planning & Strategy | 4 |
-| TSI | Tool Selection & Integration | 3 |
-| TTA | Team Training & Adoption | 3 |
-| DC | Development & Coding | 6 |
-| TQC | Testing & Quality Control | 3 |
-| DM | Deployment & Maintenance | 2 |
-| GSC | Governance, Security & Compliance | 10 |
+| Code | Category                          | Principles |
+| ---- | --------------------------------- | ---------- |
+| PS   | Planning & Strategy               | 4          |
+| TSI  | Tool Selection & Integration      | 3          |
+| TTA  | Team Training & Adoption          | 3          |
+| DC   | Development & Coding              | 6          |
+| TQC  | Testing & Quality Control         | 3          |
+| DM   | Deployment & Maintenance          | 2          |
+| GSC  | Governance, Security & Compliance | 10         |
 
 ---
 
@@ -121,14 +123,14 @@ LocalM™-AiD synthesizes insights from academic research, industry practitioner
 
 ### Key Sources
 
-| Source | Authors | Year | Contribution |
-|--------|---------|------|--------------|
-| AI4SE Taxonomy | Schieferdecker et al. | 2025 | AI classification in SE lifecycle |
-| V-Bounce Model | Hymel | 2024 | AI-native SDLC methodology |
-| Ten Simple Rules | Poldrack et al. | 2025 | Evidence-based coding guidelines |
-| Metacognitive Framework | Phung et al. | 2025 | AI education principles |
-| Single Conversation | Escobedo | 2025 | Session management patterns |
-| Karpathy Guidelines | Karpathy | 2025 | Security rules for AI agents |
+| Source                  | Authors               | Year | Contribution                      |
+| ----------------------- | --------------------- | ---- | --------------------------------- |
+| AI4SE Taxonomy          | Schieferdecker et al. | 2025 | AI classification in SE lifecycle |
+| V-Bounce Model          | Hymel                 | 2024 | AI-native SDLC methodology        |
+| Ten Simple Rules        | Poldrack et al.       | 2025 | Evidence-based coding guidelines  |
+| Metacognitive Framework | Phung et al.          | 2025 | AI education principles           |
+| Single Conversation     | Escobedo              | 2025 | Session management patterns       |
+| Karpathy Guidelines     | Karpathy              | 2025 | Security rules for AI agents      |
 
 See [Appendix](appendix/) for complete research bibliography.
 
@@ -156,12 +158,14 @@ See [How to Contribute](contributing) for details.
 This framework is released under the **Mozilla Public License 2.0 (MPL 2.0)**.
 
 You are free to:
+
 - ✅ Use commercially
 - ✅ Modify and adapt
 - ✅ Distribute
 - ✅ Use privately
 
 Requirements:
+
 - Must disclose source
 - Must include license
 - Must state changes
