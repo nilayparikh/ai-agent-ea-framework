@@ -12,13 +12,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Styles -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
   <!-- Mermaid for diagrams -->
   <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ 
+    mermaid.initialize({
       startOnLoad: true,
       theme: 'base',
       themeVariables: {
@@ -154,24 +157,22 @@
       </nav>
 
       <div class="sidebar-footer">
-        <p>© 2025 <a href="https://twitter.com/nilayparikh">Nilay Parikh</a></p>
-        <p>Licensed under <a href="https://opensource.org/licenses/MPL-2.0">MPL 2.0</a></p>
+        <p>© 2024-2025 <a href="https://x.com/nilayparikh" target="_blank">Nilay Parikh</a></p>
+        <p><a href="https://opensource.org/licenses/MPL-2.0" target="_blank"><i class="fas fa-balance-scale"></i> MPL 2.0</a></p>
       </div>
     </aside>
 
     <!-- Main Content -->
     <main class="main-content">
-      <!-- Top Header -->
+      <!-- Top Header (Sticky) -->
       <header class="top-header">
-        <div style="display: flex; align-items: center; gap: 1rem;">
+        <div class="header-left">
           <button class="menu-toggle" onclick="toggleSidebar()" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
+            <i class="fas fa-bars"></i>
           </button>
 
           <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ '/' | relative_url }}"><i class="fas fa-home"></i> Home</a>
             {% if page.url != '/' %}
             <span class="breadcrumb-separator">/</span>
             <span>{{ page.title }}</span>
@@ -180,92 +181,94 @@
         </div>
 
         <div class="header-actions">
-          <!-- Social Media Links -->
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/niparikh/" class="social-link linkedin" target="_blank" rel="noopener" title="Follow on LinkedIn">
-              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-              </svg>
-            </a>
-            <a href="https://x.com/nilayparikh" class="social-link twitter" target="_blank" rel="noopener" title="Follow on X">
-              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
-              </svg>
-            </a>
-            <a href="https://www.reddit.com/r/agentic_sdlc/" class="social-link reddit" target="_blank" rel="noopener" title="Join r/agentic_sdlc">
-              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M6.167 8a.831.831 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661zm1.843 3.647c.315 0 1.403-.038 1.976-.611a.232.232 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83.458 0 .83-.381.83-.83a.831.831 0 0 0-1.66 0z"/>
-                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.203.203 0 0 0-.153.028.186.186 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224c-.02.115-.029.23-.029.353 0 1.795 2.091 3.256 4.669 3.256 2.577 0 4.668-1.451 4.668-3.256 0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165z"/>
-              </svg>
-            </a>
-            <a href="https://www.reddit.com/user/QuarterbackMonk/" class="social-link reddit-user" target="_blank" rel="noopener" title="Follow u/QuarterbackMonk">
-              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
-              </svg>
-            </a>
-            <a href="https://github.com/nilayparikh/ai-agent-ea-framework" class="social-link github" target="_blank" rel="noopener" title="View on GitHub">
-              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-              </svg>
-            </a>
-          </div>
-          
-          <!-- Share Button -->
-          <button class="share-button" onclick="toggleShareMenu()" title="Share this page">
-            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
-            </svg>
-            Share
-          </button>
-          
-          <!-- Share Menu -->
-          <div class="share-menu" id="shareMenu">
-            <div class="share-menu-header">Share this page</div>
-            <div class="share-options">
-              <button class="share-option" onclick="shareOn('twitter')">
-                <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
-                </svg>
-                Share on X
-              </button>
-              <button class="share-option" onclick="shareOn('linkedin')">
-                <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                </svg>
-                Share on LinkedIn
-              </button>
-              <button class="share-option" onclick="shareOn('reddit')">
-                <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                  <path d="M6.167 8a.831.831 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661zm1.843 3.647c.315 0 1.403-.038 1.976-.611a.232.232 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83.458 0 .83-.381.83-.83a.831.831 0 0 0-1.66 0z"/>
-                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.203.203 0 0 0-.153.028.186.186 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224c-.02.115-.029.23-.029.353 0 1.795 2.091 3.256 4.669 3.256 2.577 0 4.668-1.451 4.668-3.256 0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165z"/>
-                </svg>
-                Share on Reddit
-              </button>
-              <button class="share-option" onclick="copyLink()">
-                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/>
-                </svg>
-                Copy Link
-              </button>
-            </div>
-          </div>
+          <span class="follow-label">Follow:</span>
+          <a href="https://www.linkedin.com/in/niparikh/" class="social-link linkedin" target="_blank" rel="noopener"
+            title="Follow on LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://x.com/nilayparikh" class="social-link twitter" target="_blank" rel="noopener"
+            title="Follow on X">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a href="https://www.reddit.com/r/agentic_sdlc/" class="social-link reddit" target="_blank" rel="noopener"
+            title="Join r/agentic_sdlc">
+            <i class="fab fa-reddit"></i>
+          </a>
+          <a href="https://www.reddit.com/user/QuarterbackMonk/" class="social-link reddit-user" target="_blank"
+            rel="noopener" title="Follow u/QuarterbackMonk">
+            <i class="fas fa-user-circle"></i>
+          </a>
+          <a href="https://github.com/nilayparikh/ai-agent-ea-framework" class="social-link github" target="_blank"
+            rel="noopener" title="View on GitHub">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
       </header>
 
       <!-- Page Content -->
       <article class="page-content">
+        <!-- Share Widget (appears under title on principle pages) -->
+        {% if page.layout != 'home' %}
+        <div class="content-share-widget">
+          <button class="content-share-btn" onclick="shareOn('twitter')" title="Share on X">
+            <i class="fab fa-x-twitter"></i>
+          </button>
+          <button class="content-share-btn" onclick="shareOn('linkedin')" title="Share on LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </button>
+          <button class="content-share-btn" onclick="shareOn('reddit')" title="Share on Reddit">
+            <i class="fab fa-reddit"></i>
+          </button>
+          <button class="content-share-btn" onclick="copyLink()" title="Copy link">
+            <i class="fas fa-link"></i>
+          </button>
+        </div>
+        {% endif %}
+
         {{ content }}
       </article>
 
       <!-- Footer -->
       <footer class="site-footer">
         <div class="footer-content">
-          <p>LocalM-AiD Framework — Enterprise Architecture for AI-Assisted Development</p>
-          <div class="footer-links">
-            <a href="https://github.com/nilayparikh/ai-agent-ea-framework">GitHub</a>
-            <a href="https://twitter.com/nilayparikh">Twitter</a>
-            <a href="https://www.linkedin.com/in/niparikh/">LinkedIn</a>
+          <div class="footer-main">
+            <div class="footer-brand">
+              <strong>LocalM-AiD Framework</strong>
+              <p>Enterprise Architecture Principles for AI-Assisted Software Development Operations</p>
+            </div>
+            <div class="footer-contact">
+              <h4>Contact</h4>
+              <p>
+                <i class="fab fa-x-twitter"></i> 
+                <a href="https://x.com/nilayparikh" target="_blank">@nilayparikh</a>
+              </p>
+              <p>
+                <i class="fab fa-linkedin"></i> 
+                <a href="https://www.linkedin.com/in/niparikh/" target="_blank">Nilay Parikh on LinkedIn</a>
+              </p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-legal">
+              <p><strong>© 2024-2025 Nilay Parikh. All rights reserved.</strong></p>
+              <p>
+                Licensed under the 
+                <a href="https://opensource.org/licenses/MPL-2.0" target="_blank">Mozilla Public License 2.0</a>
+              </p>
+              <p class="footer-attribution">
+                This work is subject to the terms of the Mozilla Public License, v. 2.0. 
+                If a copy of the MPL was not distributed with this file, You can obtain one at 
+                <a href="https://mozilla.org/MPL/2.0/" target="_blank">mozilla.org/MPL/2.0/</a>
+              </p>
+            </div>
+            <div class="footer-links">
+              <a href="https://github.com/nilayparikh/ai-agent-ea-framework" target="_blank">
+                <i class="fab fa-github"></i> Repository
+              </a>
+              <a href="https://www.reddit.com/r/agentic_sdlc/" target="_blank">
+                <i class="fab fa-reddit"></i> Community
+              </a>
+            </div>
           </div>
         </div>
       </footer>
@@ -284,33 +287,33 @@
       const toggle = document.querySelector('.menu-toggle');
       const shareMenu = document.getElementById('shareMenu');
       const shareButton = document.querySelector('.share-button');
-      
-      if (window.innerWidth <= 768 && 
-          !sidebar.contains(e.target) && 
-          !toggle.contains(e.target) &&
-          sidebar.classList.contains('open')) {
+
+      if (window.innerWidth <= 768 &&
+        !sidebar.contains(e.target) &&
+        !toggle.contains(e.target) &&
+        sidebar.classList.contains('open')) {
         toggleSidebar();
       }
-      
+
       // Close share menu when clicking outside
       if (shareMenu && !shareMenu.contains(e.target) && !shareButton.contains(e.target)) {
         shareMenu.classList.remove('visible');
       }
     });
-    
+
     // Share menu toggle
     function toggleShareMenu() {
       document.getElementById('shareMenu').classList.toggle('visible');
     }
-    
+
     // Share functions
     function shareOn(platform) {
       const url = encodeURIComponent(window.location.href);
       const title = encodeURIComponent(document.title);
       const text = encodeURIComponent('Check out the LocalM-AiD Framework - Enterprise Architecture for AI-Assisted Development');
-      
+
       let shareUrl;
-      switch(platform) {
+      switch (platform) {
         case 'twitter':
           shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
           break;
@@ -321,13 +324,13 @@
           shareUrl = `https://reddit.com/submit?url=${url}&title=${title}`;
           break;
       }
-      
+
       if (shareUrl) {
         window.open(shareUrl, '_blank', 'width=600,height=400');
         toggleShareMenu();
       }
     }
-    
+
     function copyLink() {
       navigator.clipboard.writeText(window.location.href).then(() => {
         const btn = event.target.closest('.share-option');
@@ -339,16 +342,6 @@
         }, 1500);
       });
     }
-  </script>
-      const sidebar = document.getElementById('sidebar');
-      const toggle = document.querySelector('.menu-toggle');
-      if (window.innerWidth <= 768 &&
-        !sidebar.contains(e.target) &&
-        !toggle.contains(e.target) &&
-        sidebar.classList.contains('open')) {
-        toggleSidebar();
-      }
-    });
   </script>
 </body>
 
