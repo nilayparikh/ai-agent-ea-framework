@@ -1,9 +1,9 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: '[BUG] '
+title: "[BUG] "
 labels: bug
-assignees: ''
+assignees: ""
 ---
 
 **Describe the bug**
@@ -11,6 +11,7 @@ A clear and concise description of what the bug is.
 
 **Location**
 Where in the framework did you find this issue?
+
 - Category: [e.g., Planning & Strategy, Development & Coding]
 - File: [e.g., principles/planning_and_strategy/01_architecture_first.md]
 

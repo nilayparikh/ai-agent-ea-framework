@@ -1,9 +1,9 @@
 ---
 name: Feature request
 about: Suggest a new principle or enhancement
-title: '[FEATURE] '
+title: "[FEATURE] "
 labels: enhancement
-assignees: ''
+assignees: ""
 ---
 
 **Is your feature request related to a problem? Please describe.**
@@ -14,6 +14,7 @@ A clear and concise description of what you want to happen.
 
 **Category**
 Which framework category does this relate to?
+
 - [ ] Planning & Strategy (PS)
 - [ ] Tool Selection & Integration (TSI)
 - [ ] Team Training & Adoption (TTA)
@@ -24,6 +25,7 @@ Which framework category does this relate to?
 
 **Maturity Level**
 Which maturity levels would this apply to?
+
 - [ ] L1: AI-Assisted Options (Base)
 - [ ] L2: AI-Assisted Selection (Medium)
 - [ ] L3: Partial Automation (High)

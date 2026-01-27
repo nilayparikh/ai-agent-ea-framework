@@ -1,9 +1,9 @@
 ---
 name: Principle Proposal
 about: Propose a new Enterprise Architecture principle
-title: '[PRINCIPLE] '
+title: "[PRINCIPLE] "
 labels: principle, enhancement
-assignees: ''
+assignees: ""
 ---
 
 **Proposed Principle ID**
@@ -13,6 +13,7 @@ assignees: ''
 [Short, action-oriented name - 3-7 words]
 
 **Category**
+
 - [ ] Planning & Strategy (PS)
 - [ ] Tool Selection & Integration (TSI)
 - [ ] Team Training & Adoption (TTA)
@@ -64,12 +65,14 @@ What are the main implications of adopting this principle?
 ## Related Principles
 
 List any existing principles that relate to or depend on this one:
+
 - [PS-001](link)
 - [DC-003](link)
 
 ## Research & Citations
 
 Please provide any research, articles, or evidence that supports this principle:
+
 1. [Citation 1]
 2. [Citation 2]
 

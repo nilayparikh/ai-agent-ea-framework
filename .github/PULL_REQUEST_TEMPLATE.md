@@ -13,6 +13,7 @@ Please provide a clear and concise description of the changes in this PR.
 ## Category
 
 Which framework category does this relate to?
+
 - [ ] Planning & Strategy (PS)
 - [ ] Tool Selection & Integration (TSI)
 - [ ] Team Training & Adoption (TTA)

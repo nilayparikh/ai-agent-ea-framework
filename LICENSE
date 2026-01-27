@@ -380,3 +380,39 @@ You may add additional accurate notices of copyright ownership.
 
 This Source Code Form is "Incompatible With Secondary Licenses", as
 defined by the Mozilla Public License, v. 2.0.
+
+---
+
+## Attribution Notice
+
+**This notice applies to the LocalM-AiD Framework principles and documentation.**
+
+In addition to the requirements of the Mozilla Public License v. 2.0, any use, distribution, or derivative work of the materials in the `principles/` directory must include the following attribution:
+
+> **Based on the LocalM-AiD Framework**  
+> Copyright (c) 2025 Nilay Parikh  
+> Licensed under Mozilla Public License v. 2.0  
+> Source: https://github.com/nilayparikh/ai-agent-ea-framework
+
+### Attribution Requirements:
+
+1. **Visible Credit**: Attribution must appear in a reasonably prominent location (e.g., documentation, README, or about page).
+
+2. **Modifications**: If you modify any principle files, you must:
+   - Release modified files under MPL 2.0
+   - Preserve license headers
+   - Provide source of modifications
+   - Clearly indicate what was changed
+
+3. **Redistribution**: Any redistribution of framework principles must:
+   - Include this LICENSE file
+   - Maintain the attribution notice
+   - Link to the original repository
+
+### Contact:
+
+- **Author**: Nilay Parikh
+- **Twitter**: [@nilayparikh](https://twitter.com/nilayparikh)
+- **LinkedIn**: [linkedin.com/in/niparikh](https://www.linkedin.com/in/niparikh/)
+
+For questions or permissions beyond this license, please contact the author.

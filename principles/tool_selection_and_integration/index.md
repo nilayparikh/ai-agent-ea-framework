@@ -1,20 +1,3 @@
-<!--
-  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
-  
-  Copyright (c) 2025 Nilay Parikh
-  
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
-  
-  Author: Nilay Parikh
-  Contact: 
-    - Twitter: @nilayparikh
-    - LinkedIn: https://www.linkedin.com/in/niparikh/
-  
-  Feel free to contact for questions or queries.
--->
-
 ---
 layout: default
 title: Tool Selection & Integration Principles
@@ -386,3 +369,24 @@ flowchart TB
 | Related: Planning    | [PS Principles](../planning_and_strategy/)  |
 | Related: Development | [DC Principles](../development_and_coding/) |
 | Maturity assessment  | [Maturity Model](/maturity/)                |
+
+---
+
+## License
+
+**LocalM-AiD Framework Principles**
+
+Copyright (c) 2025 Nilay Parikh
+
+This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at [http://mozilla.org/MPL/2.0/](http://mozilla.org/MPL/2.0/).
+
+### Attribution Required
+
+When using or redistributing these principles, you must:
+
+- ✅ **Provide visible credit** to the LocalM-AiD Framework and Nilay Parikh
+- ✅ **Keep this license** with any modified versions
+- ✅ **Release modifications** under MPL 2.0
+- ✅ **Indicate changes** you've made to the original
+
+**Contact**: [@nilayparikh](https://twitter.com/nilayparikh) | [LinkedIn](https://www.linkedin.com/in/niparikh/)
