@@ -153,11 +153,11 @@ flowchart LR
 
 #### Compliance Measures
 
-- [ ] Evaluation framework documented and approved
-- [ ] Security criteria defined with minimum thresholds
-- [ ] Tool evaluations documented with scores
-- [ ] Approved tool registry maintained
-- [ ] Annual re-evaluation of existing tools
+- Evaluation framework documented and approved
+- Security criteria defined with minimum thresholds
+- Tool evaluations documented with scores
+- Approved tool registry maintained
+- Annual re-evaluation of existing tools
 
 #### Exception Process
 
@@ -240,11 +240,11 @@ flowchart TB
 
 #### Compliance Measures
 
-- [ ] Integration standards documented
-- [ ] Authentication via enterprise SSO required
-- [ ] All data flows encrypted
-- [ ] Audit logging enabled for all AI tool interactions
-- [ ] Integration testing in CI/CD pipeline
+- Integration standards documented
+- Authentication via enterprise SSO required
+- All data flows encrypted
+- Audit logging enabled for all AI tool interactions
+- Integration testing in CI/CD pipeline
 
 #### Exception Process
 
@@ -335,11 +335,11 @@ flowchart TB
 
 #### Compliance Measures
 
-- [ ] Protocol standards documented
-- [ ] New integrations evaluated for protocol support
-- [ ] MCP servers include audit logging
-- [ ] A2A communications authenticated and authorized
-- [ ] Protocol versions tracked and managed
+- Protocol standards documented
+- New integrations evaluated for protocol support
+- MCP servers include audit logging
+- A2A communications authenticated and authorized
+- Protocol versions tracked and managed
 
 #### Exception Process
 

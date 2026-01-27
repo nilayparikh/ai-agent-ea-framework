@@ -159,11 +159,11 @@ flowchart TB
 
 #### Compliance Measures
 
-- [ ] Operations plan documented for each AI tool
-- [ ] Permission model defined and approved
-- [ ] Governance setup completed before rollout
-- [ ] Training requirements identified and scheduled
-- [ ] Monitoring and audit capabilities configured
+- Operations plan documented for each AI tool
+- Permission model defined and approved
+- Governance setup completed before rollout
+- Training requirements identified and scheduled
+- Monitoring and audit capabilities configured
 
 #### Exception Process
 
@@ -239,11 +239,11 @@ flowchart TB
 
 #### Compliance Measures
 
-- [ ] AI strategy documented and approved by leadership
-- [ ] Executive sponsor identified and actively engaged
-- [ ] Business KPIs defined for AI initiatives
-- [ ] Regular progress reviews conducted
-- [ ] ROI measured and reported
+- AI strategy documented and approved by leadership
+- Executive sponsor identified and actively engaged
+- Business KPIs defined for AI initiatives
+- Regular progress reviews conducted
+- ROI measured and reported
 
 #### Exception Process
 
@@ -319,11 +319,11 @@ flowchart LR
 
 #### Compliance Measures
 
-- [ ] AI risk assessment completed for each project
-- [ ] Risk mitigation strategies documented
-- [ ] Risk acceptance documented with approval
-- [ ] Risk register maintained and reviewed
-- [ ] Incidents analyzed for risk pattern updates
+- AI risk assessment completed for each project
+- Risk mitigation strategies documented
+- Risk acceptance documented with approval
+- Risk register maintained and reviewed
+- Incidents analyzed for risk pattern updates
 
 #### Exception Process
 
@@ -403,11 +403,11 @@ flowchart LR
 
 #### Compliance Measures
 
-- [ ] Prompts stored in version control
-- [ ] Prompt templates exist for common use cases
-- [ ] Production prompts reviewed and approved
-- [ ] Prompt effectiveness tracked and measured
-- [ ] Prompt updates follow change management
+- Prompts stored in version control
+- Prompt templates exist for common use cases
+- Production prompts reviewed and approved
+- Prompt effectiveness tracked and measured
+- Prompt updates follow change management
 
 #### Exception Process
 

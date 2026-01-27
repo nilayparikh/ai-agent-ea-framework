@@ -162,11 +162,11 @@ flowchart TB
 
 #### Compliance Measures
 
-- [ ] Training curriculum documented and approved
-- [ ] Completion tracking system in place
-- [ ] Level 1 completion required before AI tool access
-- [ ] Annual refresher training required
-- [ ] Training effectiveness measured
+- Training curriculum documented and approved
+- Completion tracking system in place
+- Level 1 completion required before AI tool access
+- Annual refresher training required
+- Training effectiveness measured
 
 #### Exception Process
 
@@ -242,11 +242,11 @@ flowchart LR
 
 #### Compliance Measures
 
-- [ ] Adoption stages documented with success criteria
-- [ ] Stage progression requires approval
-- [ ] Metrics collected at each stage
-- [ ] Learnings documented and shared
-- [ ] Rollback procedures defined
+- Adoption stages documented with success criteria
+- Stage progression requires approval
+- Metrics collected at each stage
+- Learnings documented and shared
+- Rollback procedures defined
 
 #### Exception Process
 
@@ -331,11 +331,11 @@ flowchart TB
 
 #### Compliance Measures
 
-- [ ] Knowledge repository established and accessible
-- [ ] Contribution guidelines documented
-- [ ] Content review process defined
-- [ ] Sharing events scheduled regularly
-- [ ] Knowledge usage metrics tracked
+- Knowledge repository established and accessible
+- Contribution guidelines documented
+- Content review process defined
+- Sharing events scheduled regularly
+- Knowledge usage metrics tracked
 
 #### Exception Process
 

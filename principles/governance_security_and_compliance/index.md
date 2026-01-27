@@ -141,11 +141,11 @@ flowchart TB
 
 #### Compliance Measures
 
-- [ ] AI governance board established
-- [ ] AI tool policies documented
-- [ ] Approval workflows defined
-- [ ] Exception process established
-- [ ] Governance training completed
+- AI governance board established
+- AI tool policies documented
+- Approval workflows defined
+- Exception process established
+- Governance training completed
 
 #### Exception Process
 
@@ -227,11 +227,11 @@ flowchart TB
 
 #### Compliance Measures
 
-- [ ] Permission matrix documented for each AI tool
-- [ ] Default permissions set to minimum required
-- [ ] Permission escalation process defined
-- [ ] Regular permission audits conducted
-- [ ] Violations tracked and remediated
+- Permission matrix documented for each AI tool
+- Default permissions set to minimum required
+- Permission escalation process defined
+- Regular permission audits conducted
+- Violations tracked and remediated
 
 #### Exception Process
 
@@ -320,11 +320,11 @@ flowchart TB
 
 #### Compliance Measures
 
-- [ ] Sandboxing requirements defined by use case
-- [ ] Tools evaluated for sandboxing capabilities
-- [ ] Production isolation verified
-- [ ] Resource limits configured
-- [ ] Sandbox escapes monitored and investigated
+- Sandboxing requirements defined by use case
+- Tools evaluated for sandboxing capabilities
+- Production isolation verified
+- Resource limits configured
+- Sandbox escapes monitored and investigated
 
 #### Exception Process
 
@@ -420,11 +420,11 @@ AI-Session: <session-id>
 
 #### Compliance Measures
 
-- [ ] Branch protection rules configured
-- [ ] AI branch naming convention enforced
-- [ ] Commit attribution required and validated
-- [ ] Merge authority limited to humans
-- [ ] Regular audits of AI commit activity
+- Branch protection rules configured
+- AI branch naming convention enforced
+- Commit attribution required and validated
+- Merge authority limited to humans
+- Regular audits of AI commit activity
 
 #### Exception Process
 
@@ -500,11 +500,11 @@ AI-Session: <session-id>
 
 #### Compliance Measures
 
-- [ ] Data classification policy documented
-- [ ] Secret scanning enabled in AI tools
-- [ ] PII/PHI detection configured
-- [ ] Classification violations tracked
-- [ ] Regular data exposure audits
+- Data classification policy documented
+- Secret scanning enabled in AI tools
+- PII/PHI detection configured
+- Classification violations tracked
+- Regular data exposure audits
 
 #### Exception Process
 
@@ -584,11 +584,11 @@ AI-Session: <session-id>
 
 #### Compliance Measures
 
-- [ ] Audit logging enabled for all AI tools
-- [ ] Retention policies configured
-- [ ] Regular audit reviews conducted
-- [ ] Compliance reports generated
-- [ ] Incident investigation procedures documented
+- Audit logging enabled for all AI tools
+- Retention policies configured
+- Regular audit reviews conducted
+- Compliance reports generated
+- Incident investigation procedures documented
 
 #### Exception Process
 
@@ -676,11 +676,11 @@ AI-Session: <session-id>
 
 #### Compliance Measures
 
-- [ ] Responsible AI guidelines documented
-- [ ] Training completed by all AI tool users
-- [ ] Prohibited practices communicated
-- [ ] Ethics violations tracked and addressed
-- [ ] Regular ethics assessments conducted
+- Responsible AI guidelines documented
+- Training completed by all AI tool users
+- Prohibited practices communicated
+- Ethics violations tracked and addressed
+- Regular ethics assessments conducted
 
 #### Exception Process
 
@@ -724,12 +724,12 @@ AI-Session: <session-id>
 
 ### Rationale
 
-| Dimension              | Justification                                              |
-| ---------------------- | ---------------------------------------------------------- |
-| **Business Value**     | Prevents intellectual property and sensitive data leakage  |
-| **Technical Foundation** | Network controls are fundamental security layer          |
-| **Risk Mitigation**    | Blocks data exfiltration and unauthorized API access       |
-| **Human Agency**       | Humans define network boundaries; AI operates within them  |
+| Dimension                | Justification                                             |
+| ------------------------ | --------------------------------------------------------- |
+| **Business Value**       | Prevents intellectual property and sensitive data leakage |
+| **Technical Foundation** | Network controls are fundamental security layer           |
+| **Risk Mitigation**      | Blocks data exfiltration and unauthorized API access      |
+| **Human Agency**         | Humans define network boundaries; AI operates within them |
 
 ### Implications
 
@@ -762,38 +762,38 @@ flowchart TB
 
 #### Network Controls Matrix
 
-| Control Type         | Requirement      | Purpose                          |
-| -------------------- | ---------------- | -------------------------------- |
-| Egress Filtering     | Required         | Block unauthorized destinations  |
-| TLS Encryption       | Required         | Protect data in transit          |
-| DNS Control          | Recommended      | Prevent rogue endpoint access    |
-| Network Segmentation | Recommended      | Isolate AI workloads             |
-| Rate Limiting        | Required         | Prevent abuse and exfiltration   |
-| Traffic Logging      | Required         | Enable security monitoring       |
+| Control Type         | Requirement | Purpose                         |
+| -------------------- | ----------- | ------------------------------- |
+| Egress Filtering     | Required    | Block unauthorized destinations |
+| TLS Encryption       | Required    | Protect data in transit         |
+| DNS Control          | Recommended | Prevent rogue endpoint access   |
+| Network Segmentation | Recommended | Isolate AI workloads            |
+| Rate Limiting        | Required    | Prevent abuse and exfiltration  |
+| Traffic Logging      | Required    | Enable security monitoring      |
 
-| Area        | Implication                                       |
-| ----------- | ------------------------------------------------- |
-| Development | Configure allowed endpoints for AI tools          |
-| Governance  | Network policies documented and enforced          |
-| Skills      | Train teams on network security configuration     |
-| Tools       | Use tools that support network isolation          |
+| Area        | Implication                                   |
+| ----------- | --------------------------------------------- |
+| Development | Configure allowed endpoints for AI tools      |
+| Governance  | Network policies documented and enforced      |
+| Skills      | Train teams on network security configuration |
+| Tools       | Use tools that support network isolation      |
 
 ### Maturity Alignment
 
-| Level           | Requirements                                        |
-| --------------- | --------------------------------------------------- |
-| **Base (L1)**   | Basic egress filtering; TLS required                |
-| **Medium (L2)** | Network segmentation; traffic logging               |
-| **High (L3)**   | Zero-trust network; real-time threat detection      |
+| Level           | Requirements                                   |
+| --------------- | ---------------------------------------------- |
+| **Base (L1)**   | Basic egress filtering; TLS required           |
+| **Medium (L2)** | Network segmentation; traffic logging          |
+| **High (L3)**   | Zero-trust network; real-time threat detection |
 
 ### Governance
 
 #### Compliance Measures
 
-- [ ] Allowed endpoint list maintained
-- [ ] Network policies configured and tested
-- [ ] Traffic monitoring enabled
-- [ ] Incident response procedures defined
+- Allowed endpoint list maintained
+- Network policies configured and tested
+- Traffic monitoring enabled
+- Incident response procedures defined
 
 ### Related Principles
 
@@ -813,12 +813,12 @@ flowchart TB
 
 ### Rationale
 
-| Dimension              | Justification                                               |
-| ---------------------- | ----------------------------------------------------------- |
-| **Business Value**     | Enables accountability for all AI-initiated actions         |
-| **Technical Foundation** | Identity is the foundation of access control              |
-| **Risk Mitigation**    | Prevents over-privileged AI operations                      |
-| **Human Agency**       | Humans control identity assignment and permissions          |
+| Dimension                | Justification                                       |
+| ------------------------ | --------------------------------------------------- |
+| **Business Value**       | Enables accountability for all AI-initiated actions |
+| **Technical Foundation** | Identity is the foundation of access control        |
+| **Risk Mitigation**      | Prevents over-privileged AI operations              |
+| **Human Agency**         | Humans control identity assignment and permissions  |
 
 ### Implications
 
@@ -853,37 +853,37 @@ flowchart TB
 
 #### Identity Requirements
 
-| Requirement            | Base (L1) | Medium (L2) | High (L3) |
-| ---------------------- | --------- | ----------- | --------- |
-| Distinct AI Identity   | Required  | Required    | Required  |
-| No Shared Credentials  | Required  | Required    | Required  |
-| Identity Lifecycle Mgmt| Manual    | Automated   | Automated |
-| Scope Limitation       | Basic     | Granular    | Dynamic   |
-| Activity Attribution   | Required  | Required    | Required  |
+| Requirement             | Base (L1) | Medium (L2) | High (L3) |
+| ----------------------- | --------- | ----------- | --------- |
+| Distinct AI Identity    | Required  | Required    | Required  |
+| No Shared Credentials   | Required  | Required    | Required  |
+| Identity Lifecycle Mgmt | Manual    | Automated   | Automated |
+| Scope Limitation        | Basic     | Granular    | Dynamic   |
+| Activity Attribution    | Required  | Required    | Required  |
 
-| Area        | Implication                                          |
-| ----------- | ---------------------------------------------------- |
-| Development | Configure AI tools with managed identities           |
-| Governance  | Identity policies and lifecycle documented           |
-| Skills      | Train teams on identity configuration                |
-| Tools       | Use tools that support managed identity              |
+| Area        | Implication                                |
+| ----------- | ------------------------------------------ |
+| Development | Configure AI tools with managed identities |
+| Governance  | Identity policies and lifecycle documented |
+| Skills      | Train teams on identity configuration      |
+| Tools       | Use tools that support managed identity    |
 
 ### Maturity Alignment
 
-| Level           | Requirements                                         |
-| --------------- | ---------------------------------------------------- |
-| **Base (L1)**   | Distinct identities; no embedded credentials         |
-| **Medium (L2)** | Managed identities; automated lifecycle              |
-| **High (L3)**   | Just-in-time access; continuous identity validation  |
+| Level           | Requirements                                        |
+| --------------- | --------------------------------------------------- |
+| **Base (L1)**   | Distinct identities; no embedded credentials        |
+| **Medium (L2)** | Managed identities; automated lifecycle             |
+| **High (L3)**   | Just-in-time access; continuous identity validation |
 
 ### Governance
 
 #### Compliance Measures
 
-- [ ] AI identity inventory maintained
-- [ ] No embedded credentials in tools
-- [ ] Identity lifecycle procedures documented
-- [ ] Regular access review conducted
+- AI identity inventory maintained
+- No embedded credentials in tools
+- Identity lifecycle procedures documented
+- Regular access review conducted
 
 ### Related Principles
 
@@ -903,12 +903,12 @@ flowchart TB
 
 ### Rationale
 
-| Dimension              | Justification                                               |
-| ---------------------- | ----------------------------------------------------------- |
-| **Business Value**     | Prevents credential compromise and unauthorized access      |
-| **Technical Foundation** | Secrets are primary attack vector for AI tool abuse       |
-| **Risk Mitigation**    | Automatic rotation limits exposure window                   |
-| **Human Agency**       | Humans control secret policies and access                   |
+| Dimension                | Justification                                          |
+| ------------------------ | ------------------------------------------------------ |
+| **Business Value**       | Prevents credential compromise and unauthorized access |
+| **Technical Foundation** | Secrets are primary attack vector for AI tool abuse    |
+| **Risk Mitigation**      | Automatic rotation limits exposure window              |
+| **Human Agency**         | Humans control secret policies and access              |
 
 ### Implications
 
@@ -939,37 +939,37 @@ flowchart TB
 
 #### Secret Handling Rules
 
-| Secret Type          | Storage          | Rotation     | AI Exposure    |
-| -------------------- | ---------------- | ------------ | -------------- |
-| API Keys             | Secret Vault     | 90 days      | **NEVER**      |
-| Service Credentials  | Managed Identity | Automatic    | **NEVER**      |
-| Database Passwords   | Secret Vault     | 90 days      | **NEVER**      |
-| Encryption Keys      | Key Management   | Annual       | **NEVER**      |
-| Session Tokens       | Memory Only      | Per-session  | **NEVER**      |
+| Secret Type         | Storage          | Rotation    | AI Exposure |
+| ------------------- | ---------------- | ----------- | ----------- |
+| API Keys            | Secret Vault     | 90 days     | **NEVER**   |
+| Service Credentials | Managed Identity | Automatic   | **NEVER**   |
+| Database Passwords  | Secret Vault     | 90 days     | **NEVER**   |
+| Encryption Keys     | Key Management   | Annual      | **NEVER**   |
+| Session Tokens      | Memory Only      | Per-session | **NEVER**   |
 
-| Area        | Implication                                          |
-| ----------- | ---------------------------------------------------- |
-| Development | Use environment variables for secret injection       |
-| Governance  | Secret policies and rotation schedules documented    |
-| Skills      | Train teams on secure secret handling                |
-| Tools       | Use tools with secret vault integration              |
+| Area        | Implication                                       |
+| ----------- | ------------------------------------------------- |
+| Development | Use environment variables for secret injection    |
+| Governance  | Secret policies and rotation schedules documented |
+| Skills      | Train teams on secure secret handling             |
+| Tools       | Use tools with secret vault integration           |
 
 ### Maturity Alignment
 
-| Level           | Requirements                                         |
-| --------------- | ---------------------------------------------------- |
-| **Base (L1)**   | Centralized vault; no hardcoded secrets              |
-| **Medium (L2)** | Automatic rotation; access logging                   |
-| **High (L3)**   | Just-in-time secrets; anomaly detection              |
+| Level           | Requirements                            |
+| --------------- | --------------------------------------- |
+| **Base (L1)**   | Centralized vault; no hardcoded secrets |
+| **Medium (L2)** | Automatic rotation; access logging      |
+| **High (L3)**   | Just-in-time secrets; anomaly detection |
 
 ### Governance
 
 #### Compliance Measures
 
-- [ ] All secrets in centralized vault
-- [ ] Rotation schedules configured
-- [ ] No secrets in prompts or context
-- [ ] Secret access audited
+- All secrets in centralized vault
+- Rotation schedules configured
+- No secrets in prompts or context
+- Secret access audited
 
 ### Related Principles
 

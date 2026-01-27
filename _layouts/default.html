@@ -204,24 +204,24 @@
         <!-- Page Content -->
         <article class="page-content">
           {{ content }}
-
-          <!-- Share Widget -->
-          <div class="content-share-widget">
-            <span class="share-label">Share this page:</span>
-            <button class="content-share-btn" onclick="shareOn('twitter')" title="Share on X">
-              <i class="fab fa-x-twitter"></i>
-            </button>
-            <button class="content-share-btn" onclick="shareOn('linkedin')" title="Share on LinkedIn">
-              <i class="fab fa-linkedin"></i>
-            </button>
-            <button class="content-share-btn" onclick="shareOn('reddit')" title="Share on Reddit">
-              <i class="fab fa-reddit"></i>
-            </button>
-            <button class="content-share-btn" onclick="copyPageLink()" title="Copy link">
-              <i class="fas fa-link"></i>
-            </button>
-          </div>
         </article>
+
+        <!-- Share Widget (positioned after metadata via JS) -->
+        <div class="content-share-widget" id="shareWidget">
+          <span class="share-label">Share this page:</span>
+          <button class="content-share-btn" onclick="shareOn('twitter')" title="Share on X">
+            <i class="fab fa-x-twitter"></i>
+          </button>
+          <button class="content-share-btn" onclick="shareOn('linkedin')" title="Share on LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </button>
+          <button class="content-share-btn" onclick="shareOn('reddit')" title="Share on Reddit">
+            <i class="fab fa-reddit"></i>
+          </button>
+          <button class="content-share-btn" onclick="copyPageLink()" title="Copy link">
+            <i class="fas fa-link"></i>
+          </button>
+        </div>
 
         <!-- Footer (Compact) -->
         <footer class="site-footer">
@@ -279,19 +279,24 @@
         code = code.replace(/&#39;/g, "'");
 
         // Remove HTML italic tags and convert to plain text
-        code = code.replace(/<i>([^<]*)<\/i>/g, '$1');
-        code = code.replace(/<em>([^<]*)<\/em>/g, '$1');
-        code = code.replace(/<b>([^<]*)<\/b>/g, '$1');
-        code = code.replace(/<strong>([^<]*)<\/strong>/g, '$1');
+        code = code.replace(/<i>([^<]*)<\/i>/gi, '$1');
+        code = code.replace(/<em>([^<]*)<\/em>/gi, '$1');
+        code = code.replace(/<b>([^<]*)<\/b>/gi, '$1');
+        code = code.replace(/<strong>([^<]*)<\/strong>/gi, '$1');
 
         // Remove markdown bold/italic syntax
         code = code.replace(/\*\*([^*]+)\*\*/g, '$1');
         code = code.replace(/\*([^*]+)\*/g, '$1');
         code = code.replace(/_([^_]+)_/g, '$1');
 
-        // Remove empty brackets
+        // Remove empty brackets and labels
         code = code.replace(/\[\"\"\]/g, '');
+        code = code.replace(/\[\" \"\]/g, '');
         code = code.replace(/\[\s*\]/g, '');
+
+        // Fix subgraph definitions - remove empty node labels
+        code = code.replace(/(\w+)\[\" \"\]/g, '$1');
+        code = code.replace(/(\w+)\[\"\"\]/g, '$1');
 
         return code;
       }
@@ -384,6 +389,21 @@
         }, 1500);
       });
     }
+
+    // Position share widget after metadata table
+    document.addEventListener('DOMContentLoaded', function() {
+      const metaTable = document.querySelector('.page-meta-table');
+      const shareWidget = document.getElementById('shareWidget');
+      if (metaTable && shareWidget) {
+        metaTable.after(shareWidget);
+      } else if (shareWidget) {
+        // If no meta table, insert at top of page content
+        const pageContent = document.querySelector('.page-content');
+        if (pageContent && pageContent.firstChild) {
+          pageContent.insertBefore(shareWidget, pageContent.children[1] || null);
+        }
+      }
+    });
   </script>
 </body>
 

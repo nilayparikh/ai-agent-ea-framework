@@ -157,11 +157,11 @@ flowchart TB
 
 #### Compliance Measures
 
-- [ ] Tests exist before AI code generation
-- [ ] Test runs documented with results
-- [ ] AI-modified tests flagged for review
-- [ ] Test coverage meets thresholds
-- [ ] Edge cases explicitly tested
+- Tests exist before AI code generation
+- Test runs documented with results
+- AI-modified tests flagged for review
+- Test coverage meets thresholds
+- Edge cases explicitly tested
 
 #### Exception Process
 
@@ -242,11 +242,11 @@ flowchart TB
 
 #### Compliance Measures
 
-- [ ] Security requirements in prompts
-- [ ] Security review completed before merge
-- [ ] No hardcoded credentials
-- [ ] Dependency vulnerabilities addressed
-- [ ] Security scans passing
+- Security requirements in prompts
+- Security review completed before merge
+- No hardcoded credentials
+- Dependency vulnerabilities addressed
+- Security scans passing
 
 #### Exception Process
 
@@ -330,11 +330,11 @@ flowchart LR
 
 #### Compliance Measures
 
-- [ ] Quality standards documented
-- [ ] All code passes lint/style checks
-- [ ] Test coverage meets thresholds
-- [ ] Code review completed and approved
-- [ ] Quality metrics tracked and reported
+- Quality standards documented
+- All code passes lint/style checks
+- Test coverage meets thresholds
+- Code review completed and approved
+- Quality metrics tracked and reported
 
 #### Exception Process
 
@@ -420,11 +420,11 @@ flowchart LR
 
 #### Compliance Measures
 
-- [ ] Validation checkpoints defined per phase
-- [ ] Checkpoint completion documented
-- [ ] Issues tracked and resolved before progression
-- [ ] Validation metrics tracked
-- [ ] Continuous improvement from validation learnings
+- Validation checkpoints defined per phase
+- Checkpoint completion documented
+- Issues tracked and resolved before progression
+- Validation metrics tracked
+- Continuous improvement from validation learnings
 
 #### Exception Process
 

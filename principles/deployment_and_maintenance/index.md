@@ -139,11 +139,11 @@ flowchart LR
 
 #### Compliance Measures
 
-- [ ] All repositories have CI/CD pipeline configured
-- [ ] Security scanning enabled for all code paths
-- [ ] Human approval required before production deployment
-- [ ] Gate failures documented and tracked
-- [ ] Exception requests require documented justification
+- All repositories have CI/CD pipeline configured
+- Security scanning enabled for all code paths
+- Human approval required before production deployment
+- Gate failures documented and tracked
+- Exception requests require documented justification
 
 #### Exception Process
 
@@ -246,11 +246,11 @@ flowchart TB
 
 #### Compliance Measures
 
-- [ ] All services have logging, metrics, and traces configured
-- [ ] Critical alerts have associated runbooks
-- [ ] SLOs defined and tracked for key services
-- [ ] Incident response procedures documented
-- [ ] Regular observability audits conducted
+- All services have logging, metrics, and traces configured
+- Critical alerts have associated runbooks
+- SLOs defined and tracked for key services
+- Incident response procedures documented
+- Regular observability audits conducted
 
 #### Incident Response Process
 

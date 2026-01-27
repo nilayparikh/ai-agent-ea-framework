@@ -153,11 +153,11 @@ flowchart TB
 
 #### Compliance Measures
 
-- [ ] Developer can explain all code they commit
-- [ ] AI-generated code identified in commits
-- [ ] No AI output deployed without human review
-- [ ] Iteration history preserved for audit
-- [ ] Responsibility documented for all code
+- Developer can explain all code they commit
+- AI-generated code identified in commits
+- No AI output deployed without human review
+- Iteration history preserved for audit
+- Responsibility documented for all code
 
 #### Exception Process
 
@@ -229,11 +229,11 @@ flowchart LR
 
 #### Compliance Measures
 
-- [ ] Prompts follow structured format
-- [ ] Production prompts version controlled
-- [ ] Prompt templates available and used
-- [ ] Effectiveness tracked and measured
-- [ ] Failed prompts analyzed for improvement
+- Prompts follow structured format
+- Production prompts version controlled
+- Prompt templates available and used
+- Effectiveness tracked and measured
+- Failed prompts analyzed for improvement
 
 #### Exception Process
 
@@ -329,11 +329,11 @@ flowchart LR
 
 #### Compliance Measures
 
-- [ ] All AI-generated code reviewed before merge
-- [ ] Review checklist completed for each review
-- [ ] Reviewer can explain approved code
-- [ ] Review comments preserved for audit
-- [ ] Defects tracked and analyzed
+- All AI-generated code reviewed before merge
+- Review checklist completed for each review
+- Reviewer can explain approved code
+- Review comments preserved for audit
+- Defects tracked and analyzed
 
 #### Exception Process
 
@@ -430,11 +430,11 @@ flowchart LR
 
 #### Compliance Measures
 
-- [ ] Agent use cases documented and approved
-- [ ] Scope boundaries defined before each session
-- [ ] Baseline committed before agent runs
-- [ ] Human review required for all agent output
-- [ ] Rollback tested and available
+- Agent use cases documented and approved
+- Scope boundaries defined before each session
+- Baseline committed before agent runs
+- Human review required for all agent output
+- Rollback tested and available
 
 #### Exception Process
 
