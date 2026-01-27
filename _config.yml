@@ -57,7 +57,7 @@ header_pages:
 # Framework Metadata
 framework:
   version: "1.0.0"
-  name: "LocalM AiD"
+  name: "LocalM-AiD"
   full_name: "AI-Integrated Development"
 
 # Maturity Model

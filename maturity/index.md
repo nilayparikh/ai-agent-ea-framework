@@ -59,13 +59,13 @@ flowchart TB
 
 **AI Autonomy**: AI-Assisted Options
 
-| Dimension          | Requirement                                           |
-| ------------------ | ----------------------------------------------------- |
-| **Human Oversight** | All AI output requires human review before use        |
-| **Permissions**     | AI has read-only access to approved repositories      |
-| **Training**        | Basic AI tool training completed                      |
-| **Documentation**   | AI interactions logged for audit                      |
-| **Quality**         | Manual review of all AI-generated code                |
+| Dimension           | Requirement                                      |
+| ------------------- | ------------------------------------------------ |
+| **Human Oversight** | All AI output requires human review before use   |
+| **Permissions**     | AI has read-only access to approved repositories |
+| **Training**        | Basic AI tool training completed                 |
+| **Documentation**   | AI interactions logged for audit                 |
+| **Quality**         | Manual review of all AI-generated code           |
 
 **Suitable For**: Organizations new to AI-assisted development
 
@@ -75,13 +75,13 @@ flowchart TB
 
 **AI Autonomy**: AI-Assisted Selection
 
-| Dimension          | Requirement                                           |
-| ------------------ | ----------------------------------------------------- |
-| **Human Oversight** | AI can suggest, human approves significant changes    |
-| **Permissions**     | AI can create branches, submit PRs for review         |
-| **Training**        | Advanced prompt engineering training                  |
-| **Documentation**   | Structured prompting standards enforced               |
-| **Quality**         | Automated quality gates + selective human review      |
+| Dimension           | Requirement                                        |
+| ------------------- | -------------------------------------------------- |
+| **Human Oversight** | AI can suggest, human approves significant changes |
+| **Permissions**     | AI can create branches, submit PRs for review      |
+| **Training**        | Advanced prompt engineering training               |
+| **Documentation**   | Structured prompting standards enforced            |
+| **Quality**         | Automated quality gates + selective human review   |
 
 **Suitable For**: Teams with established AI practices
 
@@ -91,8 +91,8 @@ flowchart TB
 
 **AI Autonomy**: Partial Automation
 
-| Dimension          | Requirement                                           |
-| ------------------ | ----------------------------------------------------- |
+| Dimension           | Requirement                                           |
+| ------------------- | ----------------------------------------------------- |
 | **Human Oversight** | AI autonomous for low-risk tasks, human for high-risk |
 | **Permissions**     | AI can merge to non-protected branches                |
 | **Training**        | Continuous AI capability development                  |
@@ -111,27 +111,27 @@ Rate your organization (1-5) on each dimension below. Be honest - underestimatin
 
 ### Assessment Questions
 
-| # | Dimension | Question | Score (1-5) |
-|---|-----------|----------|-------------|
-| 1 | **Governance** | Do you have documented AI usage policies? | |
-| 2 | **Governance** | Are AI tool permissions explicitly defined? | |
-| 3 | **Training** | Have developers completed AI tool training? | |
-| 4 | **Training** | Do teams practice structured prompting? | |
-| 5 | **Security** | Are AI permissions sandboxed appropriately? | |
-| 6 | **Security** | Is sensitive data classified and protected from AI? | |
-| 7 | **Process** | Is all AI-generated code reviewed before merge? | |
-| 8 | **Process** | Do you have quality gates for AI output? | |
-| 9 | **Measurement** | Do you track AI usage and effectiveness? | |
-| 10 | **Measurement** | Can you audit AI interactions when needed? | |
+| #   | Dimension       | Question                                            | Score (1-5) |
+| --- | --------------- | --------------------------------------------------- | ----------- |
+| 1   | **Governance**  | Do you have documented AI usage policies?           |             |
+| 2   | **Governance**  | Are AI tool permissions explicitly defined?         |             |
+| 3   | **Training**    | Have developers completed AI tool training?         |             |
+| 4   | **Training**    | Do teams practice structured prompting?             |             |
+| 5   | **Security**    | Are AI permissions sandboxed appropriately?         |             |
+| 6   | **Security**    | Is sensitive data classified and protected from AI? |             |
+| 7   | **Process**     | Is all AI-generated code reviewed before merge?     |             |
+| 8   | **Process**     | Do you have quality gates for AI output?            |             |
+| 9   | **Measurement** | Do you track AI usage and effectiveness?            |             |
+| 10  | **Measurement** | Can you audit AI interactions when needed?          |             |
 
 ### Scoring Guide
 
-| Total Score | Recommended Level | Next Steps |
-|-------------|-------------------|------------|
-| **10-20** | Pre-Foundation | Focus on basic governance and training |
-| **21-30** | Ready for L1 | Implement Foundation-level principles |
-| **31-40** | Ready for L2 | Expand to Enhanced-level practices |
-| **41-50** | Ready for L3 | Progress to Advanced-level capabilities |
+| Total Score | Recommended Level | Next Steps                              |
+| ----------- | ----------------- | --------------------------------------- |
+| **10-20**   | Pre-Foundation    | Focus on basic governance and training  |
+| **21-30**   | Ready for L1      | Implement Foundation-level principles   |
+| **31-40**   | Ready for L2      | Expand to Enhanced-level practices      |
+| **41-50**   | Ready for L3      | Progress to Advanced-level capabilities |
 
 ---
 
@@ -139,15 +139,15 @@ Rate your organization (1-5) on each dimension below. Be honest - underestimatin
 
 Each principle category has specific requirements at each maturity level:
 
-| Category | L1 (Foundation) | L2 (Enhanced) | L3 (Advanced) |
-|----------|-----------------|---------------|---------------|
-| **PS** | Basic AI planning | Integrated AI strategy | AI-native planning |
-| **TSI** | Tool evaluation | MCP integration | Full A2A protocols |
-| **TTA** | Basic training | Advanced prompting | Continuous learning |
-| **DC** | Human review all | Selective review | Autonomous low-risk |
-| **TQC** | Manual QA | Automated gates | AI-assisted testing |
-| **DM** | Manual deployment | AI-monitored | AI-assisted ops |
-| **GSC** | Basic permissions | Full sandboxing | Predictive security |
+| Category | L1 (Foundation)   | L2 (Enhanced)          | L3 (Advanced)       |
+| -------- | ----------------- | ---------------------- | ------------------- |
+| **PS**   | Basic AI planning | Integrated AI strategy | AI-native planning  |
+| **TSI**  | Tool evaluation   | MCP integration        | Full A2A protocols  |
+| **TTA**  | Basic training    | Advanced prompting     | Continuous learning |
+| **DC**   | Human review all  | Selective review       | Autonomous low-risk |
+| **TQC**  | Manual QA         | Automated gates        | AI-assisted testing |
+| **DM**   | Manual deployment | AI-monitored           | AI-assisted ops     |
+| **GSC**  | Basic permissions | Full sandboxing        | Predictive security |
 
 ---
 
@@ -205,20 +205,20 @@ flowchart LR
 
 ## Common Pitfalls
 
-| Pitfall | Impact | Prevention |
-|---------|--------|------------|
-| Skipping L1 | Governance gaps, security incidents | Complete Foundation before advancing |
-| Overestimating maturity | Premature autonomy, quality issues | Honest self-assessment |
-| Underinvesting in training | Inconsistent AI usage, poor prompts | Structured TTA implementation |
-| Ignoring measurement | Cannot demonstrate value or identify issues | Implement GSC-006 early |
+| Pitfall                    | Impact                                      | Prevention                           |
+| -------------------------- | ------------------------------------------- | ------------------------------------ |
+| Skipping L1                | Governance gaps, security incidents         | Complete Foundation before advancing |
+| Overestimating maturity    | Premature autonomy, quality issues          | Honest self-assessment               |
+| Underinvesting in training | Inconsistent AI usage, poor prompts         | Structured TTA implementation        |
+| Ignoring measurement       | Cannot demonstrate value or identify issues | Implement GSC-006 early              |
 
 ---
 
 ## Related Resources
 
-| Resource | Purpose |
-|----------|---------|
-| [Principles Overview](../principles/) | All 22 principles by category |
-| [Implementation Guides](../guides/) | Practical adoption guidance |
+| Resource                                                          | Purpose                            |
+| ----------------------------------------------------------------- | ---------------------------------- |
+| [Principles Overview](../principles/)                             | All 22 principles by category      |
+| [Implementation Guides](../guides/)                               | Practical adoption guidance        |
 | [GSC Category](../principles/governance_security_and_compliance/) | Security and governance principles |
-| [TTA Category](../principles/team_training_and_adoption/) | Training and adoption principles |
+| [TTA Category](../principles/team_training_and_adoption/)         | Training and adoption principles   |

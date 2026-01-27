@@ -28,7 +28,7 @@ These five tenets underpin all principles in the framework:
 
 ```mermaid
 flowchart TB
-    subgraph TENETS["LocalM AiD CORE TENETS"]
+    subgraph TENETS["LOCALM-AID CORE TENETS"]
         direction TB
         T1["HUMAN AGENCY<br/>Programmer directs; AI assists"]
         T2["STRUCTURED INTERACTION<br/>Methodology over vibe coding"]
@@ -52,7 +52,7 @@ flowchart TB
 
 ## Principle Structure
 
-Every LocalM AiD principle follows the **TOGAF-aligned four-part structure**:
+Every LocalM-AiD principle follows the **TOGAF-aligned four-part structure**:
 
 | Component        | Description                                  |
 | ---------------- | -------------------------------------------- |
@@ -61,7 +61,7 @@ Every LocalM AiD principle follows the **TOGAF-aligned four-part structure**:
 | **Rationale**    | Business/technical justification ("why")     |
 | **Implications** | Consequences and requirements for adoption   |
 
-Plus LocalM AiD-specific additions:
+Plus LocalM-AiD-specific additions:
 
 | Component              | Description                               |
 | ---------------------- | ----------------------------------------- |
@@ -166,7 +166,7 @@ flowchart TB
 
 ## Standards Alignment
 
-LocalM AiD principles align with established EA and AI development standards:
+LocalM-AiD principles align with established EA and AI development standards:
 
 | Standard      | Alignment                                                      |
 | ------------- | -------------------------------------------------------------- |

@@ -9,6 +9,8 @@ main:
     url: /principles/
   - title: "Maturity Model"
     url: /maturity/
+  - title: "Blog"
+    url: /blog/
   - title: "Governance"
     url: /governance/
 
