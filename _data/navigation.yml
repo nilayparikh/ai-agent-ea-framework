@@ -48,11 +48,11 @@ maturity:
   - title: "Overview"
     url: /maturity/
   - title: "Base (L1) - Foundation"
-    url: /maturity/base/
+    url: /maturity/#l1-foundation-base
   - title: "Medium (L2) - Enhanced"
-    url: /maturity/medium/
+    url: /maturity/#l2-enhanced-medium
   - title: "High (L3) - Advanced"
-    url: /maturity/high/
+    url: /maturity/#l3-advanced-high
 
 governance:
   - title: "Overview"

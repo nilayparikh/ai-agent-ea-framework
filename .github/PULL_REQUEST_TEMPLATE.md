@@ -42,7 +42,7 @@ Closes #(issue number)
 
 ## Core Tenet Alignment
 
-How does this change align with LocalM-AiD core tenets?
+How does this change align with LocalM AiD core tenets?
 
 - [ ] Human Agency - The programmer directs; AI assists
 - [ ] Structured Interaction - Methodology over "vibe coding"

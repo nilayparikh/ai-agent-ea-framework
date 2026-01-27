@@ -1,6 +1,6 @@
-# LocalM-AiD Framework
+# LocalM AiD Framework
 
-**LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Software Development**
+**LocalM AiD: Enterprise Architecture Framework for AI-Assisted Software Development**
 
 > **⚠️ Work in Progress**: This framework is actively under development as we assess additional operational areas, refine existing principles, and gather community feedback. Content structure and principles may evolve as the framework matures.
 
@@ -8,7 +8,7 @@
 [![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://nilayparikh.github.io/ai-agent-ea-framework/)
 [![Header Check](https://github.com/nilayparikh/ai-agent-ea-framework/workflows/Header%20Check/badge.svg)](https://github.com/nilayparikh/ai-agent-ea-framework/actions)
 
-This repository contains the publishable LocalM-AiD (AI-Integrated Development) Enterprise Architecture Framework, structured for GitHub Pages with Jekyll.
+This repository contains the publishable LocalM AiD (AI-Integrated Development) Enterprise Architecture Framework, structured for GitHub Pages with Jekyll.
 
 ## Structure
 
@@ -53,7 +53,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Visit `http://localhost:4000/localm-aid/`
+Visit `http://localhost:4000/LocalM AiD/`
 
 ## Deployment
 
@@ -69,7 +69,7 @@ In repository settings:
 
 ## Content Guidelines
 
-All content must follow LocalM-AiD quality criteria:
+All content must follow LocalM AiD quality criteria:
 
 - **Actionable** - Practical guidance included
 - **Agnostic** - No tool/vendor references

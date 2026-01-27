@@ -3,7 +3,7 @@ layout: default
 title: LocalM™ AiD Framework
 ---
 
-# LocalM<sup>™</sup>-AiD Framework
+# LocalM<sup>™</sup> AiD Framework
 
 **Enterprise Architecture Principles for AI-Assisted Software Development**
 

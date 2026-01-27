@@ -5,7 +5,7 @@ title: Appendix
 
 # Appendix
 
-Supporting materials and resources for the LocalM™-AiD framework.
+Supporting materials and resources for the LocalM™ AiD framework.
 
 <div class="page-meta-table">
   <div class="page-meta-item">
@@ -24,7 +24,7 @@ Supporting materials and resources for the LocalM™-AiD framework.
 
 | Resource                             | Description                    |
 | ------------------------------------ | ------------------------------ |
-| [About LocalM™-AiD](../about)        | Framework overview and purpose |
+| [About LocalM™ AiD](../about)        | Framework overview and purpose |
 | [Research Sources](../research)      | Full research bibliography     |
 | [How to Contribute](../contributing) | Community contribution guide   |
 | [Implementation Guides](../guides/)  | Practical implementation help  |
@@ -33,7 +33,7 @@ Supporting materials and resources for the LocalM™-AiD framework.
 
 ## Research Foundation
 
-The LocalM™-AiD framework synthesizes insights from peer-reviewed research, industry practitioners, and emerging standards.
+The LocalM™ AiD framework synthesizes insights from peer-reviewed research, industry practitioners, and emerging standards.
 
 ### Primary Academic Sources
 

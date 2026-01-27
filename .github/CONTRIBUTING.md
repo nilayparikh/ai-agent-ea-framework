@@ -1,6 +1,6 @@
-# Contributing to LocalM-AiD Framework
+# Contributing to LocalM AiD Framework
 
-First off, thank you for considering contributing to the LocalM-AiD Enterprise Architecture Framework! 🎉
+First off, thank you for considering contributing to the LocalM AiD Enterprise Architecture Framework! 🎉
 
 This document provides guidelines and best practices for contributing to this project.
 
@@ -40,7 +40,7 @@ Enhancement suggestions are tracked as GitHub issues. When creating an enhanceme
 
 ### Contributing Principles
 
-The LocalM-AiD framework consists of Enterprise Architecture principles. When contributing new principles or modifications:
+The LocalM AiD framework consists of Enterprise Architecture principles. When contributing new principles or modifications:
 
 1. **Follow TOGAF Structure**: All principles must include:
    - Statement (clear, actionable)
@@ -149,7 +149,7 @@ All Markdown files must include the MPL 2.0 header comment. Use the template fro
 
 ```html
 <!--
-  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
+  LocalM AiD: Enterprise Architecture Framework for AI-Assisted Development
   
   Copyright (c) 2025 Nilay Parikh
   
@@ -192,7 +192,7 @@ All Markdown files must include the MPL 2.0 header comment. Use the template fro
 
 ## License
 
-By contributing to LocalM-AiD Framework, you agree that your contributions will be licensed under the Mozilla Public License 2.0.
+By contributing to LocalM AiD Framework, you agree that your contributions will be licensed under the Mozilla Public License 2.0.
 
 ---
 

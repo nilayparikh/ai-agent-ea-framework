@@ -488,7 +488,7 @@ flowchart LR
 
 ## License
 
-**LocalM-AiD Framework Principles**
+**LocalM AiD Framework Principles**
 
 This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at <a href="http://mozilla.org/MPL/2.0/" target="_blank" rel="noopener">http://mozilla.org/MPL/2.0/</a>.
 
@@ -496,7 +496,7 @@ This Source Code Form is subject to the terms of the Mozilla Public License, v. 
 
 When using or redistributing these principles, you must:
 
-- ✅ **Provide visible credit** to the LocalM-AiD Framework and <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
+- ✅ **Provide visible credit** to the LocalM AiD Framework and <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
 - ✅ **Keep this license** with any modified versions
 - ✅ **Release modifications** under MPL 2.0
 - ✅ **Indicate changes** you've made to the original

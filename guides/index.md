@@ -5,7 +5,7 @@ title: Implementation Guides
 
 # Implementation Guides
 
-Practical, actionable guides for implementing the LocalM™-AiD framework in your organization.
+Practical, actionable guides for implementing the LocalM™ AiD framework in your organization.
 
 <div class="page-meta-table">
   <div class="page-meta-item">

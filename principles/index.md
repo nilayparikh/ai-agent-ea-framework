@@ -6,7 +6,7 @@ description: 27 principles across 7 categories for operating, managing, and secu
 
 # Enterprise Architecture Principles
 
-The LocalM-AiD Framework defines **27 principles** across **7 categories** for **operating, managing, and securing AI-assisted software development**.
+The LocalM AiD Framework defines **27 principles** across **7 categories** for **operating, managing, and securing AI-assisted software development**.
 
 <div class="page-meta-table">
   <div class="page-meta-item">
@@ -219,15 +219,15 @@ flowchart TB
 
 ## Principle Structure
 
-Each principle follows the **TOGAF-aligned structure** with LocalM-AiD extensions:
+Each principle follows the **TOGAF-aligned structure** with LocalM AiD extensions:
 
 ```mermaid
 flowchart TB
     Statement["📋 STATEMENT<br/><i>What the principle declares - clear, concise, actionable</i>"]
     Rationale["💡 RATIONALE<br/><i>Why it matters: Business Value, Technical Foundation, Risk</i>"]
     Implications["⚙️ IMPLICATIONS<br/><i>Development, Governance, Skills, Tools requirements</i>"]
-    Maturity["📊 MATURITY ALIGNMENT<br/><i>[LocalM-AiD Extension]</i><br/>Requirements at Base (L1), Medium (L2), High (L3)"]
-    Governance["🔒 GOVERNANCE<br/><i>[LocalM-AiD Extension]</i><br/>Compliance checklists, exception processes, audit"]
+    Maturity["📊 MATURITY ALIGNMENT<br/><i>[LocalM AiD Extension]</i><br/>Requirements at Base (L1), Medium (L2), High (L3)"]
+    Governance["🔒 GOVERNANCE<br/><i>[LocalM AiD Extension]</i><br/>Compliance checklists, exception processes, audit"]
 
     Statement --> Rationale --> Implications --> Maturity --> Governance
 ```
@@ -275,7 +275,7 @@ flowchart LR
 
 ## License
 
-**LocalM-AiD Framework Principles**
+**LocalM AiD Framework Principles**
 
 This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at [http://mozilla.org/MPL/2.0/](http://mozilla.org/MPL/2.0/){:target="\_blank" rel="noopener"}.
 
@@ -283,7 +283,7 @@ This Source Code Form is subject to the terms of the Mozilla Public License, v. 
 
 When using or redistributing these principles, you must:
 
-- ✅ **Provide visible credit** to the LocalM-AiD Framework
+- ✅ **Provide visible credit** to the LocalM AiD Framework
 - ✅ **Keep this license** with any modified versions
 - ✅ **Release modifications** under MPL 2.0
 - ✅ **Indicate changes** you've made to the original

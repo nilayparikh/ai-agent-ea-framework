@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Enterprise Licensing
-description: Enterprise licensing options for the LocalM-AiD Framework
+description: Enterprise licensing options for the LocalM AiD Framework
 ---
 
 # Enterprise Licensing
 
 ## Beyond Open Source
 
-The LocalM-AiD™ Framework is available under the **Mozilla Public License 2.0 (MPL 2.0)**, which allows free use, modification, and distribution with proper attribution.
+The LocalM AiD™ Framework is available under the **Mozilla Public License 2.0 (MPL 2.0)**, which allows free use, modification, and distribution with proper attribution.
 
 However, we understand that some organizations have specific requirements that may not align with open-source licensing terms.
 
@@ -57,7 +57,7 @@ However, we understand that some organizations have specific requirements that m
 
 ## Contact Us
 
-Interested in enterprise licensing? We'd love to discuss how LocalM-AiD™ can support your organization's AI-assisted development journey.
+Interested in enterprise licensing? We'd love to discuss how LocalM AiD™ can support your organization's AI-assisted development journey.
 
 <div class="contact-cta">
   <a href="mailto:nilay@localm.dev" class="btn-primary">

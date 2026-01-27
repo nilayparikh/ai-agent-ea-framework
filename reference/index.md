@@ -5,7 +5,7 @@ title: Reference Documentation
 
 # Reference Documentation
 
-Technical reference materials for the LocalM™-AiD framework.
+Technical reference materials for the LocalM™ AiD framework.
 
 <div class="page-meta-table">
   <div class="page-meta-item">
@@ -94,9 +94,9 @@ Google's protocol for inter-agent communication:
 
 ## TOGAF Alignment
 
-LocalM™-AiD principles follow TOGAF's architecture principle structure:
+LocalM™ AiD principles follow TOGAF's architecture principle structure:
 
-| TOGAF Component | LocalM™-AiD Implementation                       |
+| TOGAF Component | LocalM™ AiD Implementation                       |
 | --------------- | ------------------------------------------------ |
 | Statement       | Clear, actionable principle statement            |
 | Rationale       | 4-dimension rationale table                      |
