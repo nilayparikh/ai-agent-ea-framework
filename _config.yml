@@ -1,8 +1,8 @@
-# LocalM-AiD Framework Site Configuration
+# LocalM AiD Framework Site Configuration
 # GitHub Pages Jekyll Configuration
 
 # Site Settings
-title: LocalM-AiD Framework
+title: LocalM AiD Framework
 description: Enterprise Architecture Principles for AI-Assisted Software Development
 baseurl: "/ai-agent-ea-framework"
 url: "https://nilayparikh.github.io"
@@ -57,7 +57,7 @@ header_pages:
 # Framework Metadata
 framework:
   version: "1.0.0"
-  name: "LocalM-AiD"
+  name: "LocalM AiD"
   full_name: "AI-Integrated Development"
 
 # Maturity Model
