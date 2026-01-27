@@ -1,7 +1,7 @@
 # LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
-# 
+#
 # Copyright (c) 2025 Nilay Parikh
-# 
+#
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -12,15 +12,15 @@
 name: Header Check (Disabled)
 
 on:
-  workflow_dispatch:  # Manual trigger only
+  workflow_dispatch: # Manual trigger only
 
 jobs:
   check-headers:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Workflow disabled
-      run: |
-        echo "✅ This workflow is disabled."
-        echo "License compliance is now enforced through visible License sections on principle pages."
-        echo "See LICENSE file for complete MPL 2.0 + Attribution Notice requirements."
+      - name: Workflow disabled
+        run: |
+          echo "✅ This workflow is disabled."
+          echo "License compliance is now enforced through visible License sections on principle pages."
+          echo "See LICENSE file for complete MPL 2.0 + Attribution Notice requirements."

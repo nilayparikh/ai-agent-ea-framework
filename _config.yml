@@ -4,8 +4,8 @@
 # Site Settings
 title: LocalM-AiD Framework
 description: Enterprise Architecture Principles for AI-Assisted Software Development
-baseurl: "/localm-aid"
-url: ""
+baseurl: "/ai-agent-ea-framework"
+url: "https://nilayparikh.github.io"
 
 # Build Settings
 markdown: kramdown
