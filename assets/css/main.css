@@ -232,6 +232,18 @@ body {
   flex-direction: column;
   overflow-y: auto;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  max-height: 100vh;
+}
+
+/* TM Trademark Symbol */
+.sidebar-logo .tm {
+  font-size: 0.5em;
+  vertical-align: super;
+  color: var(--color-primary-light);
+  opacity: 0.8;
 }
 
 .sidebar-header {
@@ -1101,71 +1113,55 @@ hr {
 }
 
 /* ========================================
-   Footer (Compact)
+   Footer (Compact Single Line)
    ======================================== */
 .site-footer {
   background: rgba(30, 41, 59, 0.95);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: var(--color-text-sidebar);
-  padding: var(--spacing-lg) var(--spacing-xl);
+  padding: var(--spacing-md) var(--spacing-xl);
   margin-top: auto;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
   max-width: var(--content-max-width);
   margin: 0 auto;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
 }
 
-.footer-left {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
+.footer-content span,
+.footer-content a {
+  color: var(--color-text-sidebar);
 }
 
-.footer-left strong {
+.footer-content a {
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-content a:hover {
   color: var(--color-text-inverse);
 }
 
 .footer-sep {
   color: var(--color-text-muted);
+  opacity: 0.5;
 }
 
-.footer-left a {
-  color: var(--color-primary-light);
-  text-decoration: none;
-  transition: color var(--transition-fast);
-}
-
-.footer-left a:hover {
-  color: var(--color-text-inverse);
-}
-
-.footer-right {
-  display: flex;
-  gap: var(--spacing-md);
-}
-
-.footer-right a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  color: var(--color-text-sidebar);
-  font-size: 1.125rem;
+.footer-content i {
+  font-size: 1rem;
   transition: all var(--transition-fast);
-  text-decoration: none;
 }
 
-.footer-right a:hover {
-  color: var(--color-text-inverse);
-  transform: translateY(-2px);
+.footer-content a:hover i {
+  transform: translateY(-1px);
 }
 
 /* ========================================
@@ -1333,6 +1329,98 @@ hr {
 }
 .mb-lg {
   margin-bottom: var(--spacing-lg);
+}
+
+/* ========================================
+   Enterprise Page Styles
+   ======================================== */
+.enterprise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spacing-lg);
+  margin: var(--spacing-xl) 0;
+}
+
+.enterprise-card {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(167, 139, 250, 0.05) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.enterprise-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.15);
+  border-color: var(--color-primary);
+}
+
+.enterprise-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
+
+.enterprise-card h3 i {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+}
+
+.enterprise-card p {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.contact-cta {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  text-align: center;
+  margin: var(--spacing-xl) 0;
+  color: white;
+}
+
+.contact-cta h3 {
+  color: white;
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.25rem;
+}
+
+.contact-cta p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--spacing-lg);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background: white;
+  color: var(--color-primary-dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.btn-primary i {
+  font-size: 1rem;
 }
 
 /* ========================================
