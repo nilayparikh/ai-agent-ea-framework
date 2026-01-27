@@ -371,18 +371,23 @@
     document.addEventListener('DOMContentLoaded', function () {
       mermaid.initialize({
         startOnLoad: false,
-        theme: 'default',
+        theme: 'dark',
         themeVariables: {
-          primaryColor: '#818cf8',
-          primaryTextColor: '#1e293b',
-          primaryBorderColor: '#6366f1',
-          lineColor: '#64748b',
-          secondaryColor: '#e0f2fe',
-          tertiaryColor: '#f1f5f9',
-          background: '#ffffff',
-          fontFamily: 'Inter, sans-serif',
+          primaryColor: '#241f19',
+          primaryTextColor: '#e6e1d6',
+          primaryBorderColor: '#ffb800',
+          lineColor: '#ffb800',
+          secondaryColor: '#1a1713',
+          tertiaryColor: '#14120f',
+          background: '#1a1713',
+          mainBkg: '#241f19',
+          nodeBkg: '#241f19',
+          clusterBkg: 'rgba(255, 184, 0, 0.1)',
+          fontFamily: 'Plus Jakarta Sans, sans-serif',
           fontSize: '14px',
-          nodeBorder: '#6366f1'
+          nodeBorder: '#ffb800',
+          edgeLabelBackground: '#1a1713',
+          textColor: '#e6e1d6'
         },
         flowchart: {
           htmlLabels: true,

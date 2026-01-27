@@ -790,13 +790,14 @@ h1 {
   font-size: 2.25rem;
   margin-bottom: var(--spacing-md);
   color: var(--color-secondary);
+  border-bottom: none;
 }
 
 /* Page Header with Metadata */
 .page-header {
   margin-bottom: var(--spacing-xl);
   padding-bottom: var(--spacing-lg);
-  border-bottom: 2px solid var(--color-border-light);
+  border-bottom: none;
 }
 
 /* Hero badges on homepage */
@@ -900,14 +901,15 @@ h2 {
   font-size: 1.5rem;
   margin-top: var(--spacing-2xl);
   margin-bottom: var(--spacing-md);
-  padding-bottom: var(--spacing-sm);
-  border-bottom: 2px solid var(--color-border-light);
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 h3 {
   font-size: 1.25rem;
   margin-top: var(--spacing-xl);
   margin-bottom: var(--spacing-sm);
+  border-bottom: none;
 }
 
 h4 {
@@ -966,7 +968,7 @@ strong {
 .page-header {
   margin-bottom: var(--spacing-2xl);
   padding-bottom: var(--spacing-lg);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: none;
 }
 
 .page-title {
@@ -1121,12 +1123,12 @@ li::marker {
 }
 
 /* ========================================
-   Mermaid Diagrams
+   Mermaid Diagrams - Dark Theme
    ======================================== */
 pre.mermaid,
 .mermaid,
 div.mermaid {
-  background: #ffffff !important;
+  background: var(--color-surface) !important;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--spacing-xl);
@@ -1147,24 +1149,45 @@ pre:has(code.language-mermaid) {
   margin: 0 auto;
 }
 
-/* Mermaid flowchart styling */
+/* Mermaid flowchart styling - Dark Theme */
 .mermaid .node rect,
 .mermaid .node circle,
 .mermaid .node ellipse,
 .mermaid .node polygon {
   stroke-width: 2px;
-  fill: #f8fafc;
+  fill: var(--color-surface-hover) !important;
+  stroke: var(--color-primary) !important;
+}
+
+.mermaid .nodeLabel,
+.mermaid .label {
+  color: var(--color-text) !important;
+  fill: var(--color-text) !important;
 }
 
 .mermaid .edgeLabel {
-  background-color: #ffffff;
+  background-color: var(--color-surface) !important;
+  color: var(--color-text) !important;
   padding: 2px 6px;
   border-radius: var(--radius-sm);
 }
 
+.mermaid .edgePath .path {
+  stroke: var(--color-primary) !important;
+}
+
+.mermaid .arrowheadPath {
+  fill: var(--color-primary) !important;
+}
+
 .mermaid .cluster rect {
-  fill: #f1f5f9 !important;
-  stroke: #94a3b8 !important;
+  fill: rgba(255, 184, 0, 0.1) !important;
+  stroke: var(--color-primary) !important;
+}
+
+.mermaid .cluster-label .nodeLabel {
+  color: var(--color-primary) !important;
+  fill: var(--color-primary) !important;
 }
 
 /* Hide empty mermaid subgraph labels */
@@ -1264,13 +1287,14 @@ pre:has(code.language-mermaid) {
 }
 
 /* ========================================
-   HR Separator
+   HR Separator - Very subtle
    ======================================== */
 hr {
   border: none;
   height: 1px;
-  background: var(--color-border);
-  margin: var(--spacing-xl) 0;
+  background: rgba(255, 184, 0, 0.1);
+  margin: var(--spacing-2xl) 0;
+  opacity: 0.5;
 }
 
 /* ========================================
