@@ -1,22 +1,26 @@
-LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
-  
+<!--
+  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
+
   Copyright (c) 2025 Nilay Parikh
-  
+
   This Source Code Form is subject to the terms of the Mozilla Public
   License, v. 2.0. If a copy of the MPL was not distributed with this
   file, You can obtain one at http://mozilla.org/MPL/2.0/.
-  
+
   Author: Nilay Parikh
-  Contact: 
+  Contact:
     - Twitter: @nilayparikh
     - LinkedIn: https://www.linkedin.com/in/niparikh/
-  
+
   Feel free to contact for questions or queries.
+-->
 
 ---
+
 layout: default
 title: Enterprise Licensing
 description: Enterprise licensing options for the LocalM-AiD Framework
+
 ---
 
 # Enterprise Licensing
@@ -27,13 +31,14 @@ The LocalM<sup>™</sup> AiD Framework is available under dual licensing:
 
 <div class="license-comparison">
 
-| **MPL 2.0 + Attribution** | **Enterprise License** |
-|---------------------------|------------------------|
-| Free and open source | Commercial license |
-| Attribution required | No attribution required |
-| Modifications disclosed | Keep derivatives private |
-| Community support | Expert support |
-| Self-service | Training & coaching |
+| **MPL 2.0 + Attribution**            | **Enterprise License**       |
+| ------------------------------------ | ---------------------------- |
+| Free and open source                 | Commercial license           |
+| Commercial use allowed               | Commercial use allowed       |
+| Attribution required                 | No attribution required      |
+| Modifications to MPL files disclosed | Keep all derivatives private |
+| Community support                    | Expert support               |
+| Self-service                         | Training & coaching          |
 
 </div>
 
@@ -80,16 +85,16 @@ The LocalM<sup>™</sup> AiD Framework is available under dual licensing:
 
 ## When to Choose Enterprise
 
-| Scenario                               | MPL 2.0 + Attribution | Enterprise |
-| -------------------------------------- | --------------------- | ---------- |
-| Internal use with attribution          | ✅                    | ✅         |
-| Open-source projects                   | ✅                    | ✅         |
-| Private derivative works               | ❌                    | ✅         |
-| Remove attribution requirements        | ❌                    | ✅         |
-| Expert support & guidance              | ❌                    | ✅         |
-| Custom framework modifications         | ❌                    | ✅         |
-| Training and workshops                 | ❌                    | ✅         |
-| AI coaching and consulting             | ❌                    | ✅         |
+| Scenario                        | MPL 2.0 + Attribution | Enterprise |
+| ------------------------------- | --------------------- | ---------- |
+| Internal use with attribution   | ✅                    | ✅         |
+| Open-source projects            | ✅                    | ✅         |
+| Private derivative works        | ❌                    | ✅         |
+| Remove attribution requirements | ❌                    | ✅         |
+| Expert support & guidance       | ❌                    | ✅         |
+| Custom framework modifications  | ❌                    | ✅         |
+| Training and workshops          | ❌                    | ✅         |
+| AI coaching and consulting      | ❌                    | ✅         |
 
 ---
 

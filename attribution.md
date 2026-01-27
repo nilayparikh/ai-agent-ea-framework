@@ -1,22 +1,24 @@
-LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
-  
+<!--
+  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
+
   Copyright (c) 2025 Nilay Parikh
-  
+
   This Source Code Form is subject to the terms of the Mozilla Public
   License, v. 2.0. If a copy of the MPL was not distributed with this
   file, You can obtain one at http://mozilla.org/MPL/2.0/.
-  
+
   Author: Nilay Parikh
-  Contact: 
+  Contact:
     - Twitter: @nilayparikh
     - LinkedIn: https://www.linkedin.com/in/niparikh/
-  
-  Feel free to contact for questions or queries.
 
----
+  Feel free to contact for questions or queries.
+-->
+
 layout: default
 title: Attribution & Licensing
 description: Attribution requirements for the LocalM™ AiD Framework and enterprise licensing options
+
 ---
 
 # Attribution & Licensing
@@ -33,10 +35,10 @@ description: Attribution requirements for the LocalM™ AiD Framework and enterp
 
 The **LocalM<sup>™</sup> AiD Framework** is dual-licensed:
 
-| Option | Use Case | Requirements |
-|--------|----------|--------------|
-| **MPL 2.0 + Attribution** | Open-source, non-commercial, educational | Attribution required |
-| **Enterprise License** | Commercial, proprietary, enterprise | Contact for licensing |
+| Option                    | Use Case                                 | Requirements          |
+| ------------------------- | ---------------------------------------- | --------------------- |
+| **MPL 2.0 + Attribution** | Open-source, non-commercial, educational | Attribution required  |
+| **Enterprise License**    | Commercial, proprietary, enterprise      | Contact for licensing |
 
 ---
 
@@ -55,9 +57,11 @@ https://localm.ai
 ### Attribution Examples
 
 **In Documentation:**
+
 > This project uses the LocalM™ AiD Framework, created by Nilay Parikh. Learn more at [localm.ai](https://localm.ai).
 
 **In Code Comments:**
+
 ```
 // Based on LocalM™ AiD Framework
 // Created by Nilay Parikh | localm.ai
@@ -65,6 +69,7 @@ https://localm.ai
 ```
 
 **In README Files:**
+
 ```markdown
 ## Acknowledgments
 
@@ -73,36 +78,42 @@ https://localm.ai
 
 ### Attribution Placement
 
-| Context | Location |
-|---------|----------|
+| Context           | Location                                             |
+| ----------------- | ---------------------------------------------------- |
 | **Documentation** | README, footer, or dedicated acknowledgments section |
-| **Applications** | About page, credits, or settings/info screen |
-| **Presentations** | Opening or closing slide |
-| **Publications** | References or acknowledgments section |
+| **Applications**  | About page, credits, or settings/info screen         |
+| **Presentations** | Opening or closing slide                             |
+| **Publications**  | References or acknowledgments section                |
 
 ---
 
 ## What's Allowed (MPL 2.0 + Attribution)
 
 ✅ **You CAN:**
-- Use the framework for any purpose (personal, educational, commercial*)
+
+- Use the framework for any purpose (personal, educational, **commercial**)
 - Modify and create derivative works
 - Distribute the framework and modifications
 - Use in open-source projects
+- Use in proprietary projects (with attribution)
 - Reference principles in your governance documentation
 
 ⚠️ **You MUST:**
+
 - Provide attribution to the framework, Nilay Parikh, and localm.ai
 - Include the original license in distributed copies
-- Disclose source code of modifications to the framework itself
-- Use the same license for modifications to framework files
+- Disclose source code of modifications to **MPL-licensed framework files only**
+- Use the same license (MPL 2.0) for modifications to MPL framework files
 
 ❌ **You CANNOT:**
+
 - Remove or obscure attribution
 - Claim the framework as your own work
-- Use without attribution in any context
+- Use LocalM™ trademarks without permission
 
-*Commercial use requires attribution. For commercial use without attribution requirements, see Enterprise License.
+**Note:** MPL 2.0 is a "file-level" copyleft license. Only modifications to the original MPL-licensed files must be disclosed. Your own proprietary code that uses or integrates the framework can remain private.
+
+_For commercial use without attribution requirements, or to keep framework modifications private, see Enterprise License._
 
 ---
 
@@ -110,15 +121,15 @@ https://localm.ai
 
 For organizations requiring:
 
-| Benefit | Description |
-|---------|-------------|
-| **No Attribution** | Deploy without public attribution requirements |
+| Benefit                      | Description                                                 |
+| ---------------------------- | ----------------------------------------------------------- |
+| **No Attribution**           | Deploy without public attribution requirements              |
 | **Keep Derivatives Private** | Adopt and derive without open-sourcing your enterprise work |
-| **Privacy** | Internal use without disclosure requirements |
-| **Expert Support** | Priority technical support and guidance |
-| **Training** | On-demand training for your teams |
-| **AI Coaching** | Personalized guidance on AI governance implementation |
-| **Custom Policies** | Tailored governance policies for your organization |
+| **Privacy**                  | Internal use without disclosure requirements                |
+| **Expert Support**           | Priority technical support and guidance                     |
+| **Training**                 | On-demand training for your teams                           |
+| **AI Coaching**              | Personalized guidance on AI governance implementation       |
+| **Custom Policies**          | Tailored governance policies for your organization          |
 
 ### Enterprise Pricing
 
