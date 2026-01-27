@@ -123,14 +123,14 @@ LocalM™-AiD synthesizes insights from academic research, industry practitioner
 
 ### Key Sources
 
-| Source | Key Contribution |
-| ------ | ---------------- |
-| AI4SE Taxonomy | AI classification in SE lifecycle |
-| V-Bounce Model | AI-native SDLC methodology |
-| Ten Simple Rules | Evidence-based coding guidelines |
-| Metacognitive Framework | AI education principles |
-| Single Conversation | Session management patterns |
-| Security Guidelines | Security rules for AI agents |
+| Source                  | Key Contribution                  |
+| ----------------------- | --------------------------------- |
+| AI4SE Taxonomy          | AI classification in SE lifecycle |
+| V-Bounce Model          | AI-native SDLC methodology        |
+| Ten Simple Rules        | Evidence-based coding guidelines  |
+| Metacognitive Framework | AI education principles           |
+| Single Conversation     | Session management patterns       |
+| Security Guidelines     | Security rules for AI agents      |
 
 See [Research Sources](research) for complete bibliography.
 
@@ -141,7 +141,7 @@ See [Research Sources](research) for complete bibliography.
 - [Principles Overview](principles/) - Browse all 27 governance principles
 - [Implementation Guides](guides/) - Practical guidance for adoption
 - [Research Sources](research) - Academic and industry foundation
-- [Community](https://www.reddit.com/r/agentic_sdlc/){:target="_blank" rel="noopener"} - Join the discussion on r/agentic_sdlc
+- [Community](https://www.reddit.com/r/agentic_sdlc/){:target="\_blank" rel="noopener"} - Join the discussion on r/agentic_sdlc
 
 ---
 
@@ -170,7 +170,7 @@ Requirements:
 - Must include license
 - Must state changes
 
-See [full license text](https://opensource.org/licenses/MPL-2.0){:target="_blank" rel="noopener"}.
+See [full license text](https://opensource.org/licenses/MPL-2.0){:target="\_blank" rel="noopener"}.
 
 ---
 

@@ -149,11 +149,11 @@ We use GitHub for **code** and the subreddit for **ideas and feedback**.
 
 Stay connected through our Build-in-Public channels:
 
-| Platform   | Purpose                           | Link                                                                            |
-| ---------- | --------------------------------- | ------------------------------------------------------------------------------- |
-| **Reddit** | Community discussions, feedback   | [r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/){:target="_blank" rel="noopener"}  |
-| **GitHub** | Source code, releases             | [ai-agent-ea-framework](https://github.com/nilayparikh/ai-agent-ea-framework){:target="_blank" rel="noopener"} |
-| **Web**    | Official site                     | [localm.ai](https://localm.ai/){:target="_blank" rel="noopener"}                           |
+| Platform   | Purpose                         | Link                                                                                                            |
+| ---------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Reddit** | Community discussions, feedback | [r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/){:target="\_blank" rel="noopener"}                      |
+| **GitHub** | Source code, releases           | [ai-agent-ea-framework](https://github.com/nilayparikh/ai-agent-ea-framework){:target="\_blank" rel="noopener"} |
+| **Web**    | Official site                   | [localm.ai](https://localm.ai/){:target="\_blank" rel="noopener"}                                               |
 
 ---
 
@@ -181,8 +181,8 @@ Contributors are recognized in:
 
 ## Questions?
 
-- **General questions**: Post on [r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/){:target="_blank" rel="noopener"}
-- **Framework inquiries**: Visit [localm.ai](https://localm.ai/){:target="_blank" rel="noopener"}
+- **General questions**: Post on [r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/){:target="\_blank" rel="noopener"}
+- **Framework inquiries**: Visit [localm.ai](https://localm.ai/){:target="\_blank" rel="noopener"}
 
 ---
 

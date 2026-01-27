@@ -317,17 +317,19 @@ flowchart LR
 
 **LocalM-AiD Framework Principles**
 
-Copyright (c) 2025 Nilay Parikh
-
-This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at [http://mozilla.org/MPL/2.0/](http://mozilla.org/MPL/2.0/).
+This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at <a href="http://mozilla.org/MPL/2.0/" target="_blank" rel="noopener">http://mozilla.org/MPL/2.0/</a>.
 
 ### Attribution Required
 
 When using or redistributing these principles, you must:
 
-- ✅ **Provide visible credit** to the LocalM-AiD Framework and Nilay Parikh
+- ✅ **Provide visible credit** to the LocalM-AiD Framework and <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
 - ✅ **Keep this license** with any modified versions
 - ✅ **Release modifications** under MPL 2.0
 - ✅ **Indicate changes** you've made to the original
 
-**Contact**: [@nilayparikh](https://twitter.com/nilayparikh) | [LinkedIn](https://www.linkedin.com/in/niparikh/)
+---
+
+<div class="credits">
+Developed with ❤️ by <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
+</div>
