@@ -1,21 +1,25 @@
-LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
-  
+<!--
+  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
+
   Copyright (c) 2025 Nilay Parikh
-  
+
   This Source Code Form is subject to the terms of the Mozilla Public
   License, v. 2.0. If a copy of the MPL was not distributed with this
   file, You can obtain one at http://mozilla.org/MPL/2.0/.
-  
+
   Author: Nilay Parikh
-  Contact: 
+  Contact:
     - Twitter: @nilayparikh
     - LinkedIn: https://www.linkedin.com/in/niparikh/
-  
+
   Feel free to contact for questions or queries.
+-->
 
 ---
+
 layout: default
 title: How to Contribute
+
 ---
 
 # How to Contribute
@@ -37,7 +41,7 @@ The LocalM™ AiD Framework is developed following **Build-in-Public** principle
   </div>
   <div class="page-meta-item">
     <span class="page-meta-label">LICENSE</span>
-    <span class="page-meta-value">MPL 2.0</span>
+    <span class="page-meta-value"><a href="attribution">MPL 2.0 + Attribution</a> | <a href="https://localm.ai/enterprise" target="_blank" rel="noopener">Enterprise</a></span>
   </div>
 </div>
 

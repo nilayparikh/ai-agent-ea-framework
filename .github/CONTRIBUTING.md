@@ -1,4 +1,5 @@
-LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
+<!--
+  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
   
   Copyright (c) 2025 Nilay Parikh
   
@@ -12,7 +13,7 @@ LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
     - LinkedIn: https://www.linkedin.com/in/niparikh/
   
   Feel free to contact for questions or queries.
-
+-->
 # Contributing to LocalM AiD Framework
 
 First off, thank you for considering contributing to the LocalM AiD Enterprise Architecture Framework! 🎉

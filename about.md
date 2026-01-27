@@ -1,21 +1,25 @@
-LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
-  
+<!--
+  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
+
   Copyright (c) 2025 Nilay Parikh
-  
+
   This Source Code Form is subject to the terms of the Mozilla Public
   License, v. 2.0. If a copy of the MPL was not distributed with this
   file, You can obtain one at http://mozilla.org/MPL/2.0/.
-  
+
   Author: Nilay Parikh
-  Contact: 
+  Contact:
     - Twitter: @nilayparikh
     - LinkedIn: https://www.linkedin.com/in/niparikh/
-  
+
   Feel free to contact for questions or queries.
+-->
 
 ---
+
 layout: default
 title: About LocalM™ AiD
+
 ---
 
 # About LocalM™ AiD
@@ -33,7 +37,7 @@ title: About LocalM™ AiD
   </div>
   <div class="page-meta-item">
     <span class="page-meta-label">LICENSE</span>
-    <span class="page-meta-value">MPL 2.0</span>
+    <span class="page-meta-value"><a href="attribution">MPL 2.0 + Attribution</a> | <a href="https://localm.ai/enterprise" target="_blank" rel="noopener">Enterprise</a></span>
   </div>
   <div class="page-meta-item">
     <span class="page-meta-label">DEVELOPED BY</span>
@@ -170,19 +174,28 @@ See [How to Contribute](contributing) for details.
 
 ## License
 
-This framework is released under the **Mozilla Public License 2.0 (MPL 2.0)**.
+<div class="license-info">
 
-You are free to:
+**LocalM<sup>™</sup> AiD Framework** is available under dual licensing:
 
-- ✅ Use commercially
-- ✅ Modify and adapt
-- ✅ Distribute
-- ✅ Use privately
+| License                                        | Use Case                                                                                             |
+| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **[MPL 2.0 + Attribution](attribution)**       | Free for any use (including commercial) with attribution. Modifications to MPL files must be shared. |
+| **[Enterprise](https://localm.ai/enterprise)** | No attribution required. Keep all modifications private. Expert support & training included.         |
 
-Requirements:
+**MPL 2.0 allows you to:**
 
-- Must disclose source
-- Must include license
-- Must state changes
+- ✅ Use commercially (with attribution)
+- ✅ Modify and create derivatives
+- ✅ Distribute freely
+- ✅ Use in proprietary projects
 
-See [full license text](https://opensource.org/licenses/MPL-2.0){:target="\_blank" rel="noopener"}.
+**Requirements:**
+
+- Provide visible credit to LocalM™ AiD Framework and <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
+- Modifications to MPL-licensed files must be shared under MPL 2.0
+- Include original license in distributed copies
+
+[View full attribution requirements →](attribution)
+
+</div>
