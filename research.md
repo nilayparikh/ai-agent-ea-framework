@@ -141,8 +141,3 @@ Share it on **[r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/){:target="
 - [Contribute](../contributing) - Contribution guidelines
 - [Principles](../principles/) - Principles derived from research
 
----
-
-<div class="credits">
-Developed with ❤️ by <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
-</div>

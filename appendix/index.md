@@ -92,8 +92,3 @@ The LocalM™-AiD framework synthesizes insights from peer-reviewed research, in
 - [Guides](../guides/) - Implementation guidance
 - [Reference](../reference/) - Technical reference
 
----
-
-<div class="credits">
-Developed with ❤️ by <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
-</div>

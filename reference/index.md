@@ -130,8 +130,3 @@ Standard for multi-agent coordination. See [Protocol Integration](../principles/
 - [Implementation Guides](../guides/)
 - [Research Sources](../research)
 
----
-
-<div class="credits">
-Developed with ❤️ by <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
-</div>

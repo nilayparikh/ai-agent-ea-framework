@@ -184,8 +184,3 @@ Contributors are recognized in:
 - **General questions**: Post on [r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/){:target="\_blank" rel="noopener"}
 - **Framework inquiries**: Visit [localm.ai](https://localm.ai/){:target="\_blank" rel="noopener"}
 
----
-
-<div class="credits">
-Developed with ❤️ by <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
-</div>

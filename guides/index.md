@@ -272,8 +272,3 @@ Rate your organization (1-5) on each dimension:
 - **Feedback**: Share what's working (or not)
 - **Contributions**: See [How to Contribute](../contributing)
 
----
-
-<div class="credits">
-Developed with ❤️ by <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
-</div>

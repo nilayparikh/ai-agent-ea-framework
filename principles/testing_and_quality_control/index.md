@@ -488,9 +488,3 @@ When using or redistributing these principles, you must:
 - ✅ **Keep this license** with any modified versions
 - ✅ **Release modifications** under MPL 2.0
 - ✅ **Indicate changes** you've made to the original
-
----
-
-<div class="credits">
-Developed with ❤️ by <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
-</div>

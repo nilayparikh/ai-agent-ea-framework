@@ -390,13 +390,13 @@ defined by the Mozilla Public License, v. 2.0.
 In addition to the requirements of the Mozilla Public License v. 2.0, any use, distribution, or derivative work of the materials in the `principles/` directory must include the following attribution:
 
 > **Based on the LocalM-AiD Framework**  
-> Copyright (c) 2025 Nilay Parikh  
+> Developed by [localm.ai](https://localm.ai/)  
 > Licensed under Mozilla Public License v. 2.0  
 > Source: https://github.com/nilayparikh/ai-agent-ea-framework
 
 ### Attribution Requirements:
 
-1. **Visible Credit**: Attribution must appear in a reasonably prominent location (e.g., documentation, README, or about page).
+1. **Visible Credit**: Attribution must appear in a reasonably prominent location (e.g., documentation, README, or about page) and must reference "LocalM-AiD Framework" and "localm.ai".
 
 2. **Modifications**: If you modify any principle files, you must:
    - Release modified files under MPL 2.0
@@ -411,8 +411,8 @@ In addition to the requirements of the Mozilla Public License v. 2.0, any use, d
 
 ### Contact:
 
-- **Author**: Nilay Parikh
-- **Twitter**: [@nilayparikh](https://twitter.com/nilayparikh)
-- **LinkedIn**: [linkedin.com/in/niparikh](https://www.linkedin.com/in/niparikh/)
+- **Website**: [localm.ai](https://localm.ai/)
+- **GitHub**: [ai-agent-ea-framework](https://github.com/nilayparikh/ai-agent-ea-framework)
+- **Community**: [r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/)
 
-For questions or permissions beyond this license, please contact the author.
+For questions or permissions beyond this license, please visit localm.ai.

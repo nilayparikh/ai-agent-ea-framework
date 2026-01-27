@@ -172,8 +172,3 @@ Requirements:
 
 See [full license text](https://opensource.org/licenses/MPL-2.0){:target="\_blank" rel="noopener"}.
 
----
-
-<div class="credits">
-Developed with ❤️ by <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
-</div>
