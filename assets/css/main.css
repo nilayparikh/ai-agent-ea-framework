@@ -1762,7 +1762,8 @@ hr {
   transition: all var(--transition-base);
   text-decoration: none;
   color: inherit;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .license-card:hover {
@@ -1809,13 +1810,15 @@ hr {
   font-size: 0.9rem;
   color: var(--color-text-secondary);
   line-height: 1.5;
+  flex-grow: 1;
 }
 
 .license-card-link {
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-xs);
-  margin-top: var(--spacing-md);
+  margin-top: auto;
+  padding-top: var(--spacing-md);
   color: var(--color-primary);
   font-size: 0.875rem;
   font-weight: 500;

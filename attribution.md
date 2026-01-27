@@ -1,7 +1,24 @@
+<!--
+  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
+  
+  Copyright (c) 2025 Nilay Parikh
+  
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+  
+  Author: Nilay Parikh
+  Contact: 
+    - Twitter: @nilayparikh
+    - LinkedIn: https://www.linkedin.com/in/niparikh/
+  
+  Feel free to contact for questions or queries.
+-->
 ---
 layout: default
 title: Attribution & Licensing
 description: Attribution requirements for the LocalM™ AiD Framework and enterprise licensing options
+
 ---
 
 # Attribution & Licensing
@@ -128,11 +145,11 @@ Contact us for enterprise licensing tailored to your organization's size and nee
 
 ## Trademark Notice
 
-**LocalM™** and **LocalM AiD™** are trademarks of localm.ai. Use of these marks is subject to trademark guidelines:
+**LocalM™** is a trademark of localm.ai. Use of this mark is subject to trademark guidelines:
 
-- ✅ Reference the framework by name with appropriate trademark symbols (™)
+- ✅ Reference the framework by name with appropriate trademark symbol (™)
 - ✅ Link to the official framework when mentioning it
-- ❌ Do not use LocalM™ trademarks to imply endorsement
+- ❌ Do not use LocalM™ trademark to imply endorsement
 - ❌ Do not create confusingly similar marks
 
 ---
@@ -215,20 +232,3 @@ For licensing questions or to discuss enterprise options:
   color: #fff;
 }
 </style>
-
-<!--
-  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
-  
-  Copyright (c) 2025 Nilay Parikh
-  
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
-  
-  Author: Nilay Parikh
-  Contact: 
-    - Twitter: @nilayparikh
-    - LinkedIn: https://www.linkedin.com/in/niparikh/
-  
-  Feel free to contact for questions or queries.
--->

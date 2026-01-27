@@ -399,17 +399,24 @@ flowchart TB
 
 ## License
 
-<div class="license-banner-compact">
-  <a href="{{ '/attribution' | relative_url }}" class="mpl-link">
-    <i class="fas fa-scale-balanced"></i> MPL 2.0 + Attribution
+<div class="license-cards">
+  <a href="{{ '/attribution' | relative_url }}" class="license-card">
+    <div class="license-card-header">
+      <span class="license-card-badge mpl">MPL 2.0 + Attribution</span>
+    </div>
+    <div class="license-card-title">Open Source</div>
+    <div class="license-card-desc">Free for any use including commercial. Credit required to LocalM™ AiD Framework, Nilay Parikh, and localm.ai.</div>
+    <span class="license-card-link">View requirements →</span>
   </a>
-  <span class="separator">|</span>
-  <a href="https://localm.ai/enterprise" target="_blank" rel="noopener" class="enterprise-link">
-    <i class="fas fa-building"></i> Enterprise License
+  <a href="https://localm.ai/enterprise" target="_blank" rel="noopener" class="license-card">
+    <div class="license-card-header">
+      <span class="license-card-badge enterprise">Enterprise</span>
+    </div>
+    <div class="license-card-title">Commercial License</div>
+    <div class="license-card-desc">No attribution required. Keep modifications private. Includes expert support and training.</div>
+    <span class="license-card-link">Contact sales →</span>
   </a>
 </div>
-
-Credit required to **LocalM™ AiD Framework**, **Nilay Parikh**, and **<a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>** when using these principles.
 <!--
   LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
   
