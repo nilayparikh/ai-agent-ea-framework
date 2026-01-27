@@ -47,10 +47,11 @@ This article examines why AI-generated code poses existential risks to regulator
 8. [ISO 27001: Secure Development Lifecycle Gaps](#iso-27001-secure-development-lifecycle-gaps)
 9. [FDA 21 CFR Part 11: Regulated Software Industries](#fda-21-cfr-part-11-regulated-software-industries)
 10. [DORA: Financial Services Operational Resilience](#dora-financial-services-operational-resilience)
-11. [The Case for Enterprise Architecture Governance](#the-case-for-enterprise-architecture-governance)
-12. [Building Mature AI Development Principles](#building-mature-ai-development-principles)
-13. [Conclusion: The Path Forward](#conclusion-the-path-forward)
-14. [References](#references)
+11. [Global Compliance Landscape: Beyond Europe and US](#global-compliance-landscape-beyond-europe-and-us)
+12. [The Case for Enterprise Architecture Governance](#the-case-for-enterprise-architecture-governance)
+13. [Building Mature AI Development Principles](#building-mature-ai-development-principles)
+14. [Conclusion: The Path Forward](#conclusion-the-path-forward)
+15. [References](#references)
 
 ---
 
@@ -58,14 +59,14 @@ This article examines why AI-generated code poses existential risks to regulator
 
 The adoption of AI coding agents has outpaced the development of governance frameworks to manage them. Consider these statistics from leading research organizations:
 
-| Statistic | Source |
-|-----------|--------|
-| **80%** of organizations encountered risky AI agent behaviors | <a href="https://www.pwc.com/us/en/industries/tmt/library/trust-and-safety-outlook/rise-and-risks-of-agentic-ai.html" target="_blank" rel="noopener">PwC, 2025</a> |
-| **97%** of AI breach victims lack proper access controls | <a href="https://www.knostic.ai/blog/ai-governance-statistics" target="_blank" rel="noopener">Knostic AI Governance Report, 2025</a> |
-| **45%** of enterprises run AI agents with access to critical systems | <a href="https://www.obsidiansecurity.com/blog/ai-agent-market-landscape" target="_blank" rel="noopener">Obsidian Security, 2025</a> |
-| **Only 20%** of companies have AI risk policies | <a href="https://www.insight.com/en_US/content-and-resources/blog/the-truth-about-ai-agent-risks-and-what-to-do-about-them.html" target="_blank" rel="noopener">Insight, 2025</a> |
-| **85%** of AI projects fail to deliver business value | <a href="https://medium.com/@shaowngp/why-over-85-of-ai-projects-fail-and-how-to-turn-the-tide-8058069b2d37" target="_blank" rel="noopener">Industry Analysis, 2025</a> |
-| **Over 40%** of agentic AI projects predicted to be canceled by 2027 | <a href="https://www.klover.ai/ai-agents-in-enterprise-market-survey-mckinsey-pwc-deloitte-gartner" target="_blank" rel="noopener">Gartner via Klover AI, 2025</a> |
+| Statistic                                                            | Source                                                                                                                                                                            |
+| -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **80%** of organizations encountered risky AI agent behaviors        | <a href="https://www.pwc.com/us/en/industries/tmt/library/trust-and-safety-outlook/rise-and-risks-of-agentic-ai.html" target="_blank" rel="noopener">PwC, 2025</a>                |
+| **97%** of AI breach victims lack proper access controls             | <a href="https://www.knostic.ai/blog/ai-governance-statistics" target="_blank" rel="noopener">Knostic AI Governance Report, 2025</a>                                              |
+| **45%** of enterprises run AI agents with access to critical systems | <a href="https://www.obsidiansecurity.com/blog/ai-agent-market-landscape" target="_blank" rel="noopener">Obsidian Security, 2025</a>                                              |
+| **Only 20%** of companies have AI risk policies                      | <a href="https://www.insight.com/en_US/content-and-resources/blog/the-truth-about-ai-agent-risks-and-what-to-do-about-them.html" target="_blank" rel="noopener">Insight, 2025</a> |
+| **85%** of AI projects fail to deliver business value                | <a href="https://medium.com/@shaowngp/why-over-85-of-ai-projects-fail-and-how-to-turn-the-tide-8058069b2d37" target="_blank" rel="noopener">Industry Analysis, 2025</a>           |
+| **Over 40%** of agentic AI projects predicted to be canceled by 2027 | <a href="https://www.klover.ai/ai-agents-in-enterprise-market-survey-mckinsey-pwc-deloitte-gartner" target="_blank" rel="noopener">Gartner via Klover AI, 2025</a>                |
 
 Perhaps most alarming: **33% of workers admit to pasting sensitive client or company data into external AI platforms**, creating data leakage vectors that bypass every traditional security control.
 
@@ -148,14 +149,14 @@ The <a href="https://www.pcisecuritystandards.org/" target="_blank" rel="noopene
 
 ### Relevant Requirements
 
-| Requirement | Description | AI Risk |
-|-------------|-------------|---------|
-| **6.2.1** | Bespoke and custom software are developed securely | AI may generate insecure patterns |
-| **6.2.2** | Software development personnel trained in secure coding | Does training cover AI tool usage? |
-| **6.2.3** | Bespoke software reviewed prior to release | Review must cover AI-generated code |
-| **6.2.4** | Software engineering techniques prevent common vulnerabilities | AI may reintroduce known vulnerabilities |
-| **6.3.1** | Security vulnerabilities identified and addressed | AI-generated vulnerabilities harder to detect |
-| **6.3.2** | Inventory of custom software | AI complicates software inventory |
+| Requirement | Description                                                    | AI Risk                                       |
+| ----------- | -------------------------------------------------------------- | --------------------------------------------- |
+| **6.2.1**   | Bespoke and custom software are developed securely             | AI may generate insecure patterns             |
+| **6.2.2**   | Software development personnel trained in secure coding        | Does training cover AI tool usage?            |
+| **6.2.3**   | Bespoke software reviewed prior to release                     | Review must cover AI-generated code           |
+| **6.2.4**   | Software engineering techniques prevent common vulnerabilities | AI may reintroduce known vulnerabilities      |
+| **6.3.1**   | Security vulnerabilities identified and addressed              | AI-generated vulnerabilities harder to detect |
+| **6.3.2**   | Inventory of custom software                                   | AI complicates software inventory             |
 
 ### The PCI-DSS AI Gap
 
@@ -191,12 +192,12 @@ The <a href="https://www.sec.gov/spotlight/sarbanes-oxley.htm" target="_blank" r
 
 SOX compliance relies heavily on IT General Controls (ITGCs), which include:
 
-| Control Area | Purpose | AI Risk |
-|--------------|---------|---------|
-| **Change Management** | Ensure changes are authorized, tested, approved | AI generates changes that may bypass formal approval |
-| **Access Controls** | Limit system access to authorized personnel | AI agents may have excessive permissions |
-| **Segregation of Duties** | Prevent single individuals from controlling entire processes | AI may combine roles that should be separated |
-| **Audit Trails** | Maintain evidence of control operation | AI attribution creates audit gaps |
+| Control Area              | Purpose                                                      | AI Risk                                              |
+| ------------------------- | ------------------------------------------------------------ | ---------------------------------------------------- |
+| **Change Management**     | Ensure changes are authorized, tested, approved              | AI generates changes that may bypass formal approval |
+| **Access Controls**       | Limit system access to authorized personnel                  | AI agents may have excessive permissions             |
+| **Segregation of Duties** | Prevent single individuals from controlling entire processes | AI may combine roles that should be separated        |
+| **Audit Trails**          | Maintain evidence of control operation                       | AI attribution creates audit gaps                    |
 
 ### The Material Weakness Problem
 
@@ -227,14 +228,14 @@ The <a href="https://www.hhs.gov/hipaa/for-professionals/security/index.html" ta
 
 ### Security Rule Requirements
 
-| Requirement | Citation | AI Implication |
-|-------------|----------|----------------|
-| **Risk Analysis** | §164.308(a)(1)(ii)(A) | Must assess AI-introduced risks |
-| **Risk Management** | §164.308(a)(1)(ii)(B) | Must implement measures to reduce AI risks |
-| **Workforce Training** | §164.308(a)(5) | Training must cover AI tool security |
-| **Audit Controls** | §164.312(b) | Must log AI-related system activity |
-| **Access Controls** | §164.312(a)(1) | Must control AI access to ePHI |
-| **Integrity Controls** | §164.312(c)(1) | AI-generated code must preserve data integrity |
+| Requirement            | Citation              | AI Implication                                 |
+| ---------------------- | --------------------- | ---------------------------------------------- |
+| **Risk Analysis**      | §164.308(a)(1)(ii)(A) | Must assess AI-introduced risks                |
+| **Risk Management**    | §164.308(a)(1)(ii)(B) | Must implement measures to reduce AI risks     |
+| **Workforce Training** | §164.308(a)(5)        | Training must cover AI tool security           |
+| **Audit Controls**     | §164.312(b)           | Must log AI-related system activity            |
+| **Access Controls**    | §164.312(a)(1)        | Must control AI access to ePHI                 |
+| **Integrity Controls** | §164.312(c)(1)        | AI-generated code must preserve data integrity |
 
 ### The ePHI Exposure Risk
 
@@ -276,12 +277,12 @@ Article 35 requires DPIAs for processing "likely to result in a high risk to the
 
 Organizations should consider:
 
-| DPIA Trigger | AI Code Context |
-|--------------|-----------------|
-| New technology | AI coding tools are new technology |
-| Automated processing | AI generates automated processing logic |
+| DPIA Trigger           | AI Code Context                                  |
+| ---------------------- | ------------------------------------------------ |
+| New technology         | AI coding tools are new technology               |
+| Automated processing   | AI generates automated processing logic          |
 | Large-scale processing | AI enables faster large-scale system development |
-| Systematic monitoring | AI may generate monitoring features |
+| Systematic monitoring  | AI may generate monitoring features              |
 
 ### Article 22: Automated Decision-Making
 
@@ -302,14 +303,14 @@ AI-generated code implementing loan approvals, insurance underwriting, or employ
 
 ### Annex A Controls for Development
 
-| Control | Requirement | AI Gap |
-|---------|-------------|--------|
-| **A.8.25** | Secure development lifecycle | Must include AI tool governance |
-| **A.8.26** | Application security requirements | Must define AI-specific requirements |
-| **A.8.27** | Secure architecture principles | AI may generate insecure architectures |
-| **A.8.28** | Secure coding | AI-generated code requires validation |
-| **A.8.29** | Security testing | Must specifically test AI-generated code |
-| **A.8.31** | Environment separation | AI tools may bridge environments |
+| Control    | Requirement                       | AI Gap                                   |
+| ---------- | --------------------------------- | ---------------------------------------- |
+| **A.8.25** | Secure development lifecycle      | Must include AI tool governance          |
+| **A.8.26** | Application security requirements | Must define AI-specific requirements     |
+| **A.8.27** | Secure architecture principles    | AI may generate insecure architectures   |
+| **A.8.28** | Secure coding                     | AI-generated code requires validation    |
+| **A.8.29** | Security testing                  | Must specifically test AI-generated code |
+| **A.8.31** | Environment separation            | AI tools may bridge environments         |
 
 ### The A.8.28 Secure Coding Challenge
 
@@ -347,23 +348,23 @@ Part 11 Section 11.10(a) requires:
 
 For AI-generated code in regulated systems:
 
-| Requirement | Traditional Approach | AI Challenge |
-|-------------|---------------------|--------------|
-| **Accuracy** | Code review validates logic | AI logic may be subtle/unexpected |
-| **Reliability** | Testing validates behavior | AI patterns may fail edge cases |
-| **Intended performance** | Requirements tracing | AI may not trace to requirements |
-| **Discern alterations** | Version control | AI contributions hard to isolate |
+| Requirement              | Traditional Approach        | AI Challenge                      |
+| ------------------------ | --------------------------- | --------------------------------- |
+| **Accuracy**             | Code review validates logic | AI logic may be subtle/unexpected |
+| **Reliability**          | Testing validates behavior  | AI patterns may fail edge cases   |
+| **Intended performance** | Requirements tracing        | AI may not trace to requirements  |
+| **Discern alterations**  | Version control             | AI contributions hard to isolate  |
 
 ### FDA Guidance on AI/ML
 
 The FDA has published specific guidance on AI in medical devices:
 
-| Document | Date | Key Points |
-|----------|------|------------|
+| Document                                                                                                                                                                                                                       | Date     | Key Points                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- | ---------------------------------------- |
 | <a href="https://www.fda.gov/medical-devices/software-medical-device-samd/good-machine-learning-practice-medical-device-development-guiding-principles" target="_blank" rel="noopener">Good ML Practice Guiding Principles</a> | Oct 2021 | Developed with Health Canada and UK MHRA |
-| Predetermined Change Control Plans | Oct 2023 | Addresses ML model modifications |
-| Transparency for ML Devices | Jun 2024 | User communication requirements |
-| AI-Enabled Device Software Functions | Jan 2025 | Lifecycle management |
+| Predetermined Change Control Plans                                                                                                                                                                                             | Oct 2023 | Addresses ML model modifications         |
+| Transparency for ML Devices                                                                                                                                                                                                    | Jun 2024 | User communication requirements          |
+| AI-Enabled Device Software Functions                                                                                                                                                                                           | Jan 2025 | Lifecycle management                     |
 
 ### Computer Software Assurance (CSA)
 
@@ -382,15 +383,15 @@ The <a href="https://eur-lex.europa.eu/eli/reg/2022/2554/oj" target="_blank" rel
 
 ### Key DORA Requirements
 
-| Article | Requirement | AI Implication |
-|---------|-------------|----------------|
-| **Article 6** | ICT risk management framework | Must address AI coding tool risks |
-| **Article 8** | Identification of ICT risks | AI tools are an ICT risk source |
-| **Article 9** | Protection and prevention | Controls must cover AI-generated code |
-| **Article 10** | Detection capabilities | Must detect AI-introduced anomalies |
-| **Article 17** | Incident management | AI-related incidents must be managed |
-| **Article 25** | Testing requirements | AI-generated code requires testing |
-| **Article 28** | Third-party risk | AI vendors are ICT third parties |
+| Article        | Requirement                   | AI Implication                        |
+| -------------- | ----------------------------- | ------------------------------------- |
+| **Article 6**  | ICT risk management framework | Must address AI coding tool risks     |
+| **Article 8**  | Identification of ICT risks   | AI tools are an ICT risk source       |
+| **Article 9**  | Protection and prevention     | Controls must cover AI-generated code |
+| **Article 10** | Detection capabilities        | Must detect AI-introduced anomalies   |
+| **Article 17** | Incident management           | AI-related incidents must be managed  |
+| **Article 25** | Testing requirements          | AI-generated code requires testing    |
+| **Article 28** | Third-party risk              | AI vendors are ICT third parties      |
 
 ### ICT Third-Party Risk Management
 
@@ -409,6 +410,40 @@ The ESAs (EBA, EIOPA, ESMA) have published regulatory technical standards implem
 - Business continuity planning
 - ICT asset management
 - Change management
+
+---
+
+## Global Compliance Landscape: Beyond Europe and US
+
+While this article focuses on major frameworks like PCI-DSS, SOX, HIPAA, and GDPR, organizations operating globally face additional AI-related compliance requirements. The following jurisdictions have enacted or are developing frameworks with similar challenges for AI-generated code:
+
+### International AI Regulatory Overview
+
+| Country/Region | Framework | Status | Key AI Code Implications |
+|----------------|-----------|--------|--------------------------|
+| **EU** | <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689" target="_blank" rel="noopener">EU AI Act</a> | Enacted | Risk classification, conformity assessment, human oversight |
+| **Singapore** | <a href="https://www.pdpc.gov.sg/help-and-resources/2020/01/model-ai-governance-framework" target="_blank" rel="noopener">Model AI Governance Framework</a> | Voluntary | Explainable AI, AI Verify testing framework |
+| **China** | PIPL + Generative AI Measures | Enacted | Algorithm registration, content moderation, data localization |
+| **Canada** | AIDA (Bill C-27) | Proposed | High-impact AI assessment, algorithmic impact assessment |
+| **Australia** | AI Ethics Framework | Voluntary | 8 AI ethics principles, proposed mandatory guardrails |
+| **Japan** | Social Principles for Human-Centric AI | Voluntary | Human-centric design, education requirements |
+| **Brazil** | LGPD + AI Bill | Mixed | GDPR-style protection, AI governance under development |
+| **South Korea** | PIPA + AI Basic Act | Proposed | AI impact assessments, transparency requirements |
+| **India** | DPDP Act 2023 | Enacted | Digital data protection, sector-specific AI guidance developing |
+| **UK** | Pro-Innovation AI Approach | Framework | Principles-based, existing regulators apply AI standards |
+| **International** | <a href="https://www.iso.org/standard/81230.html" target="_blank" rel="noopener">ISO/IEC 42001:2023</a> | Standard | AI Management System certification |
+
+### Key Observation
+
+Regardless of jurisdiction, **all frameworks share common requirements** that affect AI-generated code:
+
+1. **Human Oversight** - AI decisions must have human review mechanisms
+2. **Transparency** - AI usage must be documented and disclosed
+3. **Risk Assessment** - Potential harms must be evaluated before deployment
+4. **Audit Trails** - AI contributions must be traceable for accountability
+5. **Data Governance** - Training data and outputs must comply with privacy laws
+
+Organizations operating in multiple jurisdictions should design AI governance frameworks that meet the **highest common denominator** of requirements—ensuring compliance across all applicable regulations.
 
 ---
 
@@ -439,13 +474,13 @@ flowchart LR
 
 Enterprise Architecture principles provide:
 
-| Capability | Compliance Benefit |
-|------------|-------------------|
+| Capability          | Compliance Benefit                                  |
+| ------------------- | --------------------------------------------------- |
 | **Standardization** | Consistent AI tool controls across the organization |
-| **Governance** | Clear accountability for AI-generated code |
-| **Traceability** | Attribution and audit trail requirements |
-| **Risk Management** | Systematic identification of AI risks |
-| **Maturity Models** | Progressive adoption with appropriate controls |
+| **Governance**      | Clear accountability for AI-generated code          |
+| **Traceability**    | Attribution and audit trail requirements            |
+| **Risk Management** | Systematic identification of AI risks               |
+| **Maturity Models** | Progressive adoption with appropriate controls      |
 
 ### The Three Pillars of AI Development Governance
 
@@ -465,11 +500,11 @@ Organizations need structured principles governing AI tool operations in develop
 
 ### 1. Permission and Sandboxing Principles
 
-| Maturity Level | AI Permissions |
-|----------------|----------------|
-| **L1 Foundation** | Read-only access to approved repositories |
-| **L2 Enhanced** | Create branches, submit PRs for review |
-| **L3 Advanced** | Merge to non-protected branches with monitoring |
+| Maturity Level    | AI Permissions                                  |
+| ----------------- | ----------------------------------------------- |
+| **L1 Foundation** | Read-only access to approved repositories       |
+| **L2 Enhanced**   | Create branches, submit PRs for review          |
+| **L3 Advanced**   | Merge to non-protected branches with monitoring |
 
 ### 2. Review and Validation Principles
 
@@ -513,15 +548,15 @@ Organizations face a choice:
 
 ### Key Takeaways
 
-| Framework | Primary Action |
-|-----------|----------------|
-| **PCI-DSS** | Extend secure coding requirements to AI-generated code |
-| **SOX** | Ensure ITGC controls cover AI tool change management |
-| **HIPAA** | Include AI tools in risk analysis and workforce training |
-| **GDPR** | Conduct DPIAs for AI-assisted development of personal data systems |
-| **ISO 27001** | Apply A.8.25-A.8.31 controls to AI development lifecycle |
-| **FDA Part 11** | Validate AI-generated code per CSA principles |
-| **DORA** | Manage AI providers as ICT third parties |
+| Framework       | Primary Action                                                     |
+| --------------- | ------------------------------------------------------------------ |
+| **PCI-DSS**     | Extend secure coding requirements to AI-generated code             |
+| **SOX**         | Ensure ITGC controls cover AI tool change management               |
+| **HIPAA**       | Include AI tools in risk analysis and workforce training           |
+| **GDPR**        | Conduct DPIAs for AI-assisted development of personal data systems |
+| **ISO 27001**   | Apply A.8.25-A.8.31 controls to AI development lifecycle           |
+| **FDA Part 11** | Validate AI-generated code per CSA principles                      |
+| **DORA**        | Manage AI providers as ICT third parties                           |
 
 ### The LocalM AiD Framework
 
@@ -567,11 +602,30 @@ Each principle follows TOGAF-aligned structure with maturity levels enabling pro
 17. <a href="https://www.knostic.ai/blog/ai-governance-statistics" target="_blank" rel="noopener">Knostic</a> - AI Governance Statistics 2025
 18. <a href="https://www.helpnetsecurity.com/2025/05/30/ai-agents-organizations-risk" target="_blank" rel="noopener">Help Net Security</a> - AI Agents Organization Risk
 
-### Microsoft Azure Documentation
+### Cloud Provider AI Governance Documentation
 
+#### Microsoft Azure
 19. <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/govern" target="_blank" rel="noopener">Microsoft Azure</a> - Govern AI (Cloud Adoption Framework)
 20. <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/secure" target="_blank" rel="noopener">Microsoft Azure</a> - Secure AI Workloads
 21. <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization" target="_blank" rel="noopener">Microsoft Azure</a> - AI Agent Governance and Security
+22. <a href="https://www.microsoft.com/ai/responsible-ai" target="_blank" rel="noopener">Microsoft</a> - Responsible AI Principles
+
+#### Google Cloud
+23. <a href="https://cloud.google.com/responsible-ai" target="_blank" rel="noopener">Google Cloud</a> - Responsible AI
+24. <a href="https://ai.google/principles/" target="_blank" rel="noopener">Google AI</a> - AI Principles
+25. <a href="https://cloud.google.com/explainable-ai" target="_blank" rel="noopener">Google Cloud</a> - Explainable AI
+26. <a href="https://ai.google/responsibilities/responsible-ai-practices/" target="_blank" rel="noopener">Google AI</a> - Responsible AI Practices
+
+#### Amazon Web Services
+27. <a href="https://aws.amazon.com/ai/responsible-ai/" target="_blank" rel="noopener">AWS</a> - Responsible AI
+28. <a href="https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html" target="_blank" rel="noopener">AWS</a> - Well-Architected Responsible AI Lens
+29. <a href="https://aws.amazon.com/bedrock/guardrails/" target="_blank" rel="noopener">AWS</a> - Amazon Bedrock Guardrails
+30. <a href="https://aws.amazon.com/ai/responsible-ai/resources/#service" target="_blank" rel="noopener">AWS</a> - AI Service Cards
+
+### International AI Standards
+31. <a href="https://www.iso.org/standard/81230.html" target="_blank" rel="noopener">ISO/IEC</a> - ISO/IEC 42001:2023 AI Management System
+32. <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689" target="_blank" rel="noopener">European Union</a> - EU AI Act (Regulation 2024/1689)
+33. <a href="https://www.pdpc.gov.sg/help-and-resources/2020/01/model-ai-governance-framework" target="_blank" rel="noopener">Singapore PDPC</a> - Model AI Governance Framework
 
 ---
 
@@ -582,10 +636,14 @@ This article is part of the **LocalM™ AiD Framework** - Enterprise Architectur
 <div style="background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: 8px; padding: 1.5rem; margin-top: 2rem;">
 <strong>Author:</strong> Nilay Parikh<br>
 <strong>Framework:</strong> <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a><br>
-<strong>License:</strong> <a href="https://opensource.org/licenses/MPL-2.0" target="_blank" rel="noopener">MPL 2.0</a><br>
+<strong>License:</strong> <a href="https://opensource.org/licenses/MPL-2.0" target="_blank" rel="noopener">MPL 2.0</a> + Attribution <em>or</em> <a href="{{ '/enterprise' | relative_url }}">Enterprise</a><br>
 <br>
 <em>Developed with ❤️ by <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a></em>
 </div>
+
+<p style="font-size: 0.75rem; color: rgba(255,255,255,0.5); margin-top: 1rem; line-height: 1.4;">
+<strong>Disclaimer:</strong> This content is provided "as is" without warranty of any kind, express or implied. The information contained herein is for general informational purposes only and does not constitute legal, compliance, or professional advice. Organizations should consult with qualified legal and compliance professionals for specific guidance. The authors and LocalM™ AiD Framework accept no liability for any actions taken based on this content.
+</p>
 
 ---
 
