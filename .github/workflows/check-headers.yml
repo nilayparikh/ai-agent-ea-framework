@@ -1,0 +1,36 @@
+# LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
+# 
+# Copyright (c) 2025 Nilay Parikh
+# 
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+name: Header Check
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  check-headers:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Check MPL 2.0 headers
+      shell: pwsh
+      run: |
+        Write-Host "Checking headers in all Markdown files..."
+        ./Check-Headers.ps1 -ShowDetails
+        
+    - name: Report results
+      if: failure()
+      run: |
+        echo "❌ Some files are missing the required MPL 2.0 header."
+        echo "Please run './Check-Headers.ps1 -Fix' locally to add headers."
+        exit 1

@@ -1,0 +1,73 @@
+# Navigation Structure
+# Used by Jekyll to build site navigation
+# Scope: 100% Enterprise Architecture Principles
+
+main:
+  - title: "Home"
+    url: /
+  - title: "Principles"
+    url: /principles/
+  - title: "Maturity Model"
+    url: /maturity/
+  - title: "Governance"
+    url: /governance/
+
+principles:
+  - title: "All Principles"
+    url: /principles/
+  - title: "Planning & Strategy (PS)"
+    url: /principles/planning_and_strategy/
+    code: PS
+    count: 4
+  - title: "Tool Selection & Integration (TSI)"
+    url: /principles/tool_selection_and_integration/
+    code: TSI
+    count: 3
+  - title: "Team Training & Adoption (TTA)"
+    url: /principles/team_training_and_adoption/
+    code: TTA
+    count: 2
+  - title: "Development & Coding (DC)"
+    url: /principles/development_and_coding/
+    code: DC
+    count: 6
+  - title: "Testing & Quality Control (TQC)"
+    url: /principles/testing_and_quality_control/
+    code: TQC
+    count: 3
+  - title: "Deployment & Maintenance (DM)"
+    url: /principles/deployment_and_maintenance/
+    code: DM
+    count: 2
+  - title: "Governance, Security & Compliance (GSC)"
+    url: /principles/governance_security_and_compliance/
+    code: GSC
+    count: 2
+
+maturity:
+  - title: "Overview"
+    url: /maturity/
+  - title: "Base (L1) - Foundation"
+    url: /maturity/base/
+  - title: "Medium (L2) - Enhanced"
+    url: /maturity/medium/
+  - title: "High (L3) - Advanced"
+    url: /maturity/high/
+
+governance:
+  - title: "Overview"
+    url: /governance/
+  - title: "Principle Index"
+    url: /governance/principle_index/
+  - title: "Exception Process"
+    url: /governance/exceptions/
+  - title: "Glossary"
+    url: /governance/glossary/
+
+footer:
+  - title: "About"
+    url: /appendix/
+  - title: "FAQs"
+    url: /appendix/faqs/
+  - title: "Resources"
+    url: /appendix/resources/

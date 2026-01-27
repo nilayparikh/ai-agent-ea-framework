@@ -1,0 +1,41 @@
+# LocalM-AiD Enterprise Architecture Framework
+# Open Source - MPL 2.0
+
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby / Bundler
+*.gem
+.bundle/
+vendor/bundle/
+Gemfile.lock
+
+# Dependencies
+node_modules/
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Local development
+.env.local
+*.local

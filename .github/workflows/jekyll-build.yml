@@ -1,0 +1,45 @@
+# LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
+# 
+# Copyright (c) 2025 Nilay Parikh
+# 
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+name: Jekyll Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.1'
+        bundler-cache: true
+        
+    - name: Install dependencies
+      run: bundle install
+      
+    - name: Build Jekyll site
+      run: bundle exec jekyll build
+      env:
+        JEKYLL_ENV: production
+        
+    - name: Test site build
+      run: |
+        if [ ! -d "_site" ]; then
+          echo "❌ Jekyll build failed - _site directory not created"
+          exit 1
+        fi
+        echo "✅ Jekyll site built successfully"
