@@ -128,4 +128,10 @@ Standard for multi-agent coordination. See [Protocol Integration](../principles/
 
 - [Principles Overview](../principles/)
 - [Implementation Guides](../guides/)
-- [FAQs](../appendix/faqs/)
+- [Research Sources](../research)
+
+---
+
+<div class="credits">
+Developed with ❤️ by <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
+</div>

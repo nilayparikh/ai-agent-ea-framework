@@ -21,8 +21,8 @@ title: About LocalM™-AiD
     <span class="page-meta-value">MPL 2.0</span>
   </div>
   <div class="page-meta-item">
-    <span class="page-meta-label">AUTHOR</span>
-    <span class="page-meta-value">Nilay Parikh</span>
+    <span class="page-meta-label">DEVELOPED BY</span>
+    <span class="page-meta-value"><a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a></span>
   </div>
 </div>
 
@@ -35,7 +35,7 @@ LocalM™-AiD (Local Model - AI-Integrated Development) is an **Enterprise Archi
 ### The Name
 
 - **LocalM™** - Emphasizes that AI should operate within defined local boundaries and permissions
-- **AiD** - AI-integrated Development; also suggests the framework "aids" proper adoption
+- **AiD** - AI-integrated Development; also suggests the framework can "aid" proper adoption
 
 ---
 
@@ -123,25 +123,25 @@ LocalM™-AiD synthesizes insights from academic research, industry practitioner
 
 ### Key Sources
 
-| Source                  | Authors               | Year | Contribution                      |
-| ----------------------- | --------------------- | ---- | --------------------------------- |
-| AI4SE Taxonomy          | Schieferdecker et al. | 2025 | AI classification in SE lifecycle |
-| V-Bounce Model          | Hymel                 | 2024 | AI-native SDLC methodology        |
-| Ten Simple Rules        | Poldrack et al.       | 2025 | Evidence-based coding guidelines  |
-| Metacognitive Framework | Phung et al.          | 2025 | AI education principles           |
-| Single Conversation     | Escobedo              | 2025 | Session management patterns       |
-| Karpathy Guidelines     | Karpathy              | 2025 | Security rules for AI agents      |
+| Source | Key Contribution |
+| ------ | ---------------- |
+| AI4SE Taxonomy | AI classification in SE lifecycle |
+| V-Bounce Model | AI-native SDLC methodology |
+| Ten Simple Rules | Evidence-based coding guidelines |
+| Metacognitive Framework | AI education principles |
+| Single Conversation | Session management patterns |
+| Security Guidelines | Security rules for AI agents |
 
-See [Appendix](appendix/) for complete research bibliography.
+See [Research Sources](research) for complete bibliography.
 
 ---
 
-## Getting Started
+## Explore the Framework
 
-1. **Read the [Principles Overview](principles/)** - Understand the framework structure
-2. **Assess your maturity** - Use the [Maturity Assessment](guides/maturity_assessment/)
-3. **Start with your category** - Focus on your role's relevant principles
-4. **Join the community** - Follow on [X](https://x.com/nilayparikh) and [r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/)
+- [Principles Overview](principles/) - Browse all 27 governance principles
+- [Implementation Guides](guides/) - Practical guidance for adoption
+- [Research Sources](research) - Academic and industry foundation
+- [Community](https://www.reddit.com/r/agentic_sdlc/){:target="_blank" rel="noopener"} - Join the discussion on r/agentic_sdlc
 
 ---
 
@@ -170,4 +170,10 @@ Requirements:
 - Must include license
 - Must state changes
 
-See [full license text](https://opensource.org/licenses/MPL-2.0).
+See [full license text](https://opensource.org/licenses/MPL-2.0){:target="_blank" rel="noopener"}.
+
+---
+
+<div class="credits">
+Developed with ❤️ by <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
+</div>

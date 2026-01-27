@@ -175,3 +175,9 @@ LocalM-AiD principles align with established EA and AI development standards:
 | **SKILL.md**  | Capability definition standards                                |
 | **MCP**       | Model Context Protocol integration (TSI)                       |
 | **A2A**       | Agent-to-Agent coordination (TSI)                              |
+
+---
+
+<div class="credits">
+Developed with ❤️ by <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
+</div>

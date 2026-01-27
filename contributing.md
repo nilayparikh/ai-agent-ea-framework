@@ -149,12 +149,11 @@ We use GitHub for **code** and the subreddit for **ideas and feedback**.
 
 Stay connected through our Build-in-Public channels:
 
-| Platform        | Purpose                              | Link                                                                          |
-| --------------- | ------------------------------------ | ----------------------------------------------------------------------------- |
-| **X (Twitter)** | Daily updates, thoughts, discussions | [@nilayparikh](https://x.com/nilayparikh)                                     |
-| **LinkedIn**    | Professional updates, articles       | [Nilay Parikh](https://www.linkedin.com/in/niparikh/)                         |
-| **Reddit**      | Community discussions, feedback      | [r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/)                      |
-| **GitHub**      | Source code, releases                | [ai-agent-ea-framework](https://github.com/nilayparikh/ai-agent-ea-framework) |
+| Platform   | Purpose                           | Link                                                                            |
+| ---------- | --------------------------------- | ------------------------------------------------------------------------------- |
+| **Reddit** | Community discussions, feedback   | [r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/){:target="_blank" rel="noopener"}  |
+| **GitHub** | Source code, releases             | [ai-agent-ea-framework](https://github.com/nilayparikh/ai-agent-ea-framework){:target="_blank" rel="noopener"} |
+| **Web**    | Official site                     | [localm.ai](https://localm.ai/){:target="_blank" rel="noopener"}                           |
 
 ---
 
@@ -182,6 +181,11 @@ Contributors are recognized in:
 
 ## Questions?
 
-- **General questions**: Post on [r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/)
-- **Urgent matters**: DM [@nilayparikh](https://x.com/nilayparikh) on X
-- **Professional inquiries**: Connect on [LinkedIn](https://www.linkedin.com/in/niparikh/)
+- **General questions**: Post on [r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/){:target="_blank" rel="noopener"}
+- **Framework inquiries**: Visit [localm.ai](https://localm.ai/){:target="_blank" rel="noopener"}
+
+---
+
+<div class="credits">
+Developed with ❤️ by <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
+</div>

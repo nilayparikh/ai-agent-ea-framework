@@ -37,27 +37,27 @@ The LocalM™-AiD framework synthesizes insights from peer-reviewed research, in
 
 ### Primary Academic Sources
 
-| Source                  | Authors                     | Contribution                                 |
-| ----------------------- | --------------------------- | -------------------------------------------- |
-| AI4SE Taxonomy          | Schieferdecker et al., 2025 | Systematic AI classification in SE lifecycle |
-| Metacognitive Framework | Phung et al., 2025          | AI education and critical evaluation         |
-| Ten Simple Rules        | Poldrack et al., 2025       | Evidence-based coding guidelines             |
+| Source                  | Contribution                                 |
+| ----------------------- | -------------------------------------------- |
+| AI4SE Taxonomy          | Systematic AI classification in SE lifecycle |
+| Metacognitive Framework | AI education and critical evaluation         |
+| Ten Simple Rules        | Evidence-based coding guidelines             |
 
 ### Primary Industry Sources
 
-| Source              | Author/Org     | Contribution                 |
-| ------------------- | -------------- | ---------------------------- |
-| V-Bounce Model      | Hymel, 2024    | AI-native SDLC methodology   |
-| Single Conversation | Escobedo, 2025 | Session management patterns  |
-| Karpathy Guidelines | Karpathy, 2025 | Security rules for AI agents |
+| Source              | Contribution                 |
+| ------------------- | ---------------------------- |
+| V-Bounce Model      | AI-native SDLC methodology   |
+| Single Conversation | Session management patterns  |
+| Security Guidelines | Security rules for AI agents |
 
 ### Standards Referenced
 
-| Standard               | Organization   | Relevance                    |
-| ---------------------- | -------------- | ---------------------------- |
-| AGENTS.md              | Community      | Agent capability declaration |
-| Model Context Protocol | Anthropic      | AI-tool integration          |
-| TOGAF                  | The Open Group | EA principle structure       |
+| Standard               | Relevance                    |
+| ---------------------- | ---------------------------- |
+| AGENTS.md              | Agent capability declaration |
+| Model Context Protocol | AI-tool integration          |
+| TOGAF                  | EA principle structure       |
 
 ➡️ See [Research Sources](../research) for complete bibliography.
 
@@ -88,6 +88,12 @@ The LocalM™-AiD framework synthesizes insights from peer-reviewed research, in
 
 ## Related Pages
 
-- [Principles Overview](../principles/) - All 27 EA principles
+- [Principles Overview](../principles/) - All 22 EA principles
 - [Guides](../guides/) - Implementation guidance
 - [Reference](../reference/) - Technical reference
+
+---
+
+<div class="credits">
+Developed with ❤️ by <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
+</div>
