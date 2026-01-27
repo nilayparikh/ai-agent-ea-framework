@@ -314,11 +314,164 @@ body {
   color: var(--color-text-muted);
 }
 
-/* GitHub Link */
+/* Social Links & Header Actions */
 .header-actions {
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
+  gap: var(--spacing-lg);
+  position: relative;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding-right: var(--spacing-md);
+  border-right: 1px solid var(--color-border);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--color-surface-hover);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.social-link:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.social-link.linkedin:hover {
+  background: #0077b5;
+  border-color: #0077b5;
+  color: white;
+}
+
+.social-link.twitter:hover {
+  background: #000000;
+  border-color: #000000;
+  color: white;
+}
+
+.social-link.reddit:hover {
+  background: #ff4500;
+  border-color: #ff4500;
+  color: white;
+}
+
+.social-link.reddit-user:hover {
+  background: #ff8717;
+  border-color: #ff8717;
+  color: white;
+}
+
+.social-link.github:hover {
+  background: #24292e;
+  border-color: #24292e;
+  color: white;
+}
+
+/* Share Button */
+.share-button {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  border: none;
+  border-radius: var(--radius-md);
+  color: white;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-family: inherit;
+}
+
+.share-button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.share-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Share Menu */
+.share-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: var(--spacing-sm);
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all var(--transition-base);
+  z-index: 1000;
+}
+
+.share-menu.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.share-menu-header {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border-light);
+  margin-bottom: var(--spacing-xs);
+}
+
+.share-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.share-option {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font-size: 0.875rem;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  width: 100%;
+}
+
+.share-option:hover {
+  background: var(--color-surface-hover);
+  color: var(--color-primary);
+}
+
+.share-option svg {
+  flex-shrink: 0;
 }
 
 .github-link {
@@ -573,10 +726,28 @@ pre.mermaid,
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  padding: var(--spacing-lg);
-  margin: var(--spacing-lg) 0;
-  text-align: center;
-  color: var(--color-text);
+  padding: var(--spacing-xl);
+  margin: var(--spacing-xl) 0;
+  overflow: visible !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mermaid flowchart styling */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon {
+  stroke-width: 2px;
+}
+
+.mermaid .edgeLabel {
+  background-color: var(--color-surface);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
 }
 
 /* ========================================
@@ -764,6 +935,22 @@ hr {
   table {
     display: block;
     overflow-x: auto;
+  }
+
+  /* Mobile social links */
+  .social-links {
+    display: none;
+  }
+
+  .share-button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.875rem;
+  }
+
+  .share-menu {
+    right: 0;
+    left: auto;
+    min-width: 200px;
   }
 }
 
