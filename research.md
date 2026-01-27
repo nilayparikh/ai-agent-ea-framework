@@ -5,7 +5,7 @@ title: Research Sources
 
 # Research Sources
 
-The LocalM™-AiD framework is built on a foundation of academic research, industry best practices, and emerging standards in AI-assisted software development.
+The LocalM™ AiD framework is built on a foundation of academic research, industry best practices, and emerging standards in AI-assisted software development.
 
 <div class="page-meta-table">
   <div class="page-meta-item">

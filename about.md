@@ -1,9 +1,9 @@
 ---
 layout: default
-title: About LocalM™-AiD
+title: About LocalM™ AiD
 ---
 
-# About LocalM™-AiD
+# About LocalM™ AiD
 
 **Enterprise Architecture Principles for AI-Assisted Software Development Operations**
 
@@ -28,9 +28,9 @@ title: About LocalM™-AiD
 
 ---
 
-## What is LocalM™-AiD?
+## What is LocalM™ AiD?
 
-LocalM™-AiD (Local Model - AI-Integrated Development) is an **Enterprise Architecture Framework** that provides governance principles for organizations adopting AI-assisted software development tools.
+LocalM™ AiD (Local Model - AI-Integrated Development) is an **Enterprise Architecture Framework** that provides governance principles for organizations adopting AI-assisted software development tools.
 
 ### The Name
 
@@ -41,7 +41,7 @@ LocalM™-AiD (Local Model - AI-Integrated Development) is an **Enterprise Archi
 
 ## Framework Scope
 
-LocalM™-AiD is **narrowly focused** on AI tool operations, NOT general software engineering:
+LocalM™ AiD is **narrowly focused** on AI tool operations, NOT general software engineering:
 
 | ✅ IN SCOPE                    | ❌ OUT OF SCOPE             |
 | ------------------------------ | --------------------------- |
@@ -81,7 +81,7 @@ Organizations are rapidly adopting AI coding assistants without:
 
 ### The Solution
 
-LocalM™-AiD provides:
+LocalM™ AiD provides:
 
 - **27 actionable principles** across 7 categories
 - **Maturity model** for progressive adoption
@@ -119,7 +119,7 @@ Every principle follows a modified TOGAF structure:
 
 ## Research Foundation
 
-LocalM™-AiD synthesizes insights from academic research, industry practitioners, and emerging standards.
+LocalM™ AiD synthesizes insights from academic research, industry practitioners, and emerging standards.
 
 ### Key Sources
 

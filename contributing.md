@@ -5,7 +5,7 @@ title: How to Contribute
 
 # How to Contribute
 
-The LocalM™-AiD Framework is developed following **Build-in-Public** principles. We welcome community participation through open, transparent collaboration.
+The LocalM™ AiD Framework is developed following **Build-in-Public** principles. We welcome community participation through open, transparent collaboration.
 
 <div class="page-meta-table">
   <div class="page-meta-item">

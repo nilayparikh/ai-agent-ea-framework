@@ -47,7 +47,7 @@
           <a href="{{ '/' | relative_url }}" class="sidebar-logo">
             <div class="sidebar-logo-icon">L-A</div>
             <div>
-              <span class="sidebar-logo-text">LocalM<sup class="tm">™</sup>-AiD</span>
+              <span class="sidebar-logo-text">LocalM<sup class="tm">™</sup> AiD</span>
               <span class="sidebar-logo-sub">EA Framework</span>
             </div>
           </a>
@@ -87,21 +87,55 @@
           <div class="nav-section">
             <div class="nav-section-title">Categories</div>
             <ul class="nav-tree">
-              {% for item in site.data.navigation.principles %}
-              {% if item.code %}
               <li class="nav-item">
-                <a href="{{ item.url | relative_url }}" class="nav-link {% if page.url == item.url %}active{% endif %}">
-                  <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z">
-                    </path>
-                  </svg>
-                  {{ item.code }}
-                  <span class="nav-link-badge">{{ item.count }}</span>
+                <a href="{{ '/principles/planning_and_strategy/' | relative_url }}" class="nav-link {% if page.url contains '/principles/planning_and_strategy' %}active{% endif %}">
+                  <i class="fas fa-compass nav-link-icon"></i>
+                  PS
+                  <span class="nav-link-badge">4</span>
                 </a>
               </li>
-              {% endif %}
-              {% endfor %}
+              <li class="nav-item">
+                <a href="{{ '/principles/tool_selection_and_integration/' | relative_url }}" class="nav-link {% if page.url contains '/principles/tool_selection_and_integration' %}active{% endif %}">
+                  <i class="fas fa-plug nav-link-icon"></i>
+                  TSI
+                  <span class="nav-link-badge">3</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ '/principles/team_training_and_adoption/' | relative_url }}" class="nav-link {% if page.url contains '/principles/team_training_and_adoption' %}active{% endif %}">
+                  <i class="fas fa-users nav-link-icon"></i>
+                  TTA
+                  <span class="nav-link-badge">2</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ '/principles/development_and_coding/' | relative_url }}" class="nav-link {% if page.url contains '/principles/development_and_coding' %}active{% endif %}">
+                  <i class="fas fa-code nav-link-icon"></i>
+                  DC
+                  <span class="nav-link-badge">6</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ '/principles/testing_and_quality_control/' | relative_url }}" class="nav-link {% if page.url contains '/principles/testing_and_quality_control' %}active{% endif %}">
+                  <i class="fas fa-vial nav-link-icon"></i>
+                  TQC
+                  <span class="nav-link-badge">3</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ '/principles/deployment_and_maintenance/' | relative_url }}" class="nav-link {% if page.url contains '/principles/deployment_and_maintenance' %}active{% endif %}">
+                  <i class="fas fa-rocket nav-link-icon"></i>
+                  DM
+                  <span class="nav-link-badge">2</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ '/principles/governance_security_and_compliance/' | relative_url }}" class="nav-link {% if page.url contains '/principles/governance_security_and_compliance' %}active{% endif %}">
+                  <i class="fas fa-shield-alt nav-link-icon"></i>
+                  GSC
+                  <span class="nav-link-badge">10</span>
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -207,13 +241,6 @@
             </ul>
           </div>
         </nav>
-
-        <div class="sidebar-footer">
-          <p><a href="https://opensource.org/licenses/MPL-2.0" target="_blank"><i class="fas fa-balance-scale"></i> MPL
-              2.0</a></p>
-          <p class="enterprise-contact"><a href="{{ '/enterprise' | relative_url }}"><i class="fas fa-building"></i>
-              Enterprise</a></p>
-        </div>
       </aside>
 
       <!-- Main Content -->
@@ -285,16 +312,15 @@
             <span class="footer-credit">Developed with <i class="fas fa-heart" style="color:#ef4444"></i> by <a
                 href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a></span>
             <span class="footer-sep">•</span>
-            <div class="footer-badges">
-              <span class="version-badge">v0.0.1</span>
-              <span class="status-badge">In Peer Review</span>
-            </div>
+            <span class="version-badge">v0.0.1</span>
             <span class="footer-sep">•</span>
             <div class="footer-links">
               <a href="https://opensource.org/licenses/MPL-2.0" target="_blank" rel="noopener">MPL 2.0</a>
-              <a href="{{ '/contributing' | relative_url }}">Contribute</a>
+              <span class="footer-link-sep">|</span>
               <a href="{{ '/enterprise' | relative_url }}">Enterprise</a>
             </div>
+            <span class="footer-sep">•</span>
+            <a href="{{ '/contributing' | relative_url }}">Contribute</a>
             <span class="footer-sep">•</span>
             <div class="footer-social">
               <a href="https://github.com/nilayparikh/ai-agent-ea-framework" target="_blank" rel="noopener"
@@ -455,12 +481,12 @@
       navigator.clipboard.writeText(window.location.href).then(() => {
         const btn = event.target.closest('.content-share-btn');
         const originalHTML = btn.innerHTML;
-        btn.innerHTML = '<i class="fas fa-check"></i>';
+        btn.innerHTML = '<i class="fas fa-check"></i> <span style="font-size:0.75rem">Link copied!</span>';
         btn.style.color = '#10b981';
         setTimeout(() => {
           btn.innerHTML = originalHTML;
           btn.style.color = '';
-        }, 1500);
+        }, 2000);
       });
     }
   </script>

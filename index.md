@@ -1,6 +1,6 @@
 ---
 layout: default
-title: LocalM™-AiD Framework
+title: LocalM™ AiD Framework
 ---
 
 # LocalM<sup>™</sup>-AiD Framework
@@ -16,7 +16,7 @@ title: LocalM™-AiD Framework
 
 ## Framework Purpose
 
-LocalM™-AiD defines **27 Enterprise Architecture Principles** organized across seven categories to enable organizations to adopt AI-assisted software development with appropriate governance, quality standards, and human oversight.
+LocalM™ AiD defines **27 Enterprise Architecture Principles** organized across seven categories to enable organizations to adopt AI-assisted software development with appropriate governance, quality standards, and human oversight.
 
 > **Scope**: This framework is 100% focused on EA Principles - foundational statements that guide technology decisions for AI-assisted development.
 
