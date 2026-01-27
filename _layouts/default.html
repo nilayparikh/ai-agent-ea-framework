@@ -45,7 +45,7 @@
           <a href="{{ '/' | relative_url }}" class="sidebar-logo">
             <div class="sidebar-logo-icon">L-A</div>
             <div>
-              <span class="sidebar-logo-text">LocalM-AiD<sup class="tm">™</sup></span>
+              <span class="sidebar-logo-text">LocalM<sup class="tm">™</sup>-AiD</span>
               <span class="sidebar-logo-sub">EA Framework</span>
             </div>
           </a>
@@ -182,6 +182,8 @@
           </div>
 
           <div class="header-actions">
+            <span class="header-status">v0.0.1 • In Peer Review</span>
+            <span class="header-divider"></span>
             <span class="follow-label">Follow:</span>
             <a href="https://www.linkedin.com/in/niparikh/" class="social-link" target="_blank" rel="noopener"
               title="LinkedIn">
@@ -226,6 +228,9 @@
         <!-- Footer (Compact) -->
         <footer class="site-footer">
           <div class="footer-content">
+            <span class="version-badge">v0.0.1</span>
+            <span class="status-badge">In Peer Review</span>
+            <span class="footer-sep">•</span>
             <span>© 2024-2025 <a href="https://x.com/nilayparikh" target="_blank">Nilay Parikh</a></span>
             <span class="footer-sep">•</span>
             <a href="https://opensource.org/licenses/MPL-2.0" target="_blank">MPL 2.0</a>
@@ -289,14 +294,19 @@
         code = code.replace(/\*([^*]+)\*/g, '$1');
         code = code.replace(/_([^_]+)_/g, '$1');
 
-        // Remove empty brackets and labels
+        // Remove empty brackets and labels - various formats
         code = code.replace(/\[\"\"\]/g, '');
         code = code.replace(/\[\" \"\]/g, '');
         code = code.replace(/\[\s*\]/g, '');
+        code = code.replace(/\["\\s*"\]/g, '');
 
-        // Fix subgraph definitions - remove empty node labels
-        code = code.replace(/(\w+)\[\" \"\]/g, '$1');
-        code = code.replace(/(\w+)\[\"\"\]/g, '$1');
+        // Fix subgraph definitions with empty or space-only labels
+        code = code.replace(/subgraph\s+(\w+)\[\s*"\s*"\s*\]/g, 'subgraph $1');
+        code = code.replace(/subgraph\s+(\w+)\[\s*""\s*\]/g, 'subgraph $1');
+
+        // Remove node definitions with empty labels
+        code = code.replace(/(\w+)\[\s*"\s*"\s*\]/g, '');
+        code = code.replace(/(\w+)\[\s*""\s*\]/g, '');
 
         return code;
       }
@@ -391,7 +401,7 @@
     }
 
     // Position share widget after metadata table
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       const metaTable = document.querySelector('.page-meta-table');
       const shareWidget = document.getElementById('shareWidget');
       if (metaTable && shareWidget) {

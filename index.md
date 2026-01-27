@@ -1,17 +1,22 @@
 ---
 layout: default
-title: LocalM-AiD Framework
+title: LocalM™-AiD Framework
 ---
 
-# LocalM-AiD Framework
+# LocalM<sup>™</sup>-AiD Framework
 
 **Enterprise Architecture Principles for AI-Assisted Software Development**
+
+<div class="hero-badges">
+  <span class="hero-version">v0.0.1</span>
+  <span class="hero-status">In Peer Review</span>
+</div>
 
 ---
 
 ## Framework Purpose
 
-LocalM-AiD defines **22 Enterprise Architecture Principles** organized across seven categories to enable organizations to adopt AI-assisted software development with appropriate governance, quality standards, and human oversight.
+LocalM™-AiD defines **27 Enterprise Architecture Principles** organized across seven categories to enable organizations to adopt AI-assisted software development with appropriate governance, quality standards, and human oversight.
 
 > **Scope**: This framework is 100% focused on EA Principles - foundational statements that guide technology decisions for AI-assisted development.
 
@@ -24,20 +29,23 @@ These five tenets underpin all principles in the framework:
 ```mermaid
 flowchart TB
     subgraph TENETS["LOCALM-AID CORE TENETS"]
-        subgraph ROW1[" "]
-            T1["**HUMAN AGENCY**<br/>Programmer directs;<br/>AI assists"]
-            T2["**STRUCTURED INTERACTION**<br/>Methodology over<br/>vibe coding"]
-            T3["**CONTINUOUS VALIDATION**<br/>Quality gates<br/>throughout"]
-        end
-        subgraph ROW2[" "]
-            T4["**TRACEABILITY**<br/>All interactions<br/>auditable"]
-            T5["**PROGRESSIVE MATURITY**<br/>Grow<br/>responsibly"]
-        end
+        direction TB
+        T1["HUMAN AGENCY<br/>Programmer directs; AI assists"]
+        T2["STRUCTURED INTERACTION<br/>Methodology over vibe coding"]
+        T3["CONTINUOUS VALIDATION<br/>Quality gates throughout"]
+        T4["TRACEABILITY<br/>All interactions auditable"]
+        T5["PROGRESSIVE MATURITY<br/>Grow responsibly"]
+        
+        T1 --- T2 --- T3
+        T4 --- T5
     end
 
-    style TENETS fill:#f9f9f9,stroke:#333
-    style ROW1 fill:none,stroke:none
-    style ROW2 fill:none,stroke:none
+    style TENETS fill:#f8fafc,stroke:#6366f1,stroke-width:2px
+    style T1 fill:#e0e7ff,stroke:#6366f1
+    style T2 fill:#e0e7ff,stroke:#6366f1
+    style T3 fill:#e0e7ff,stroke:#6366f1
+    style T4 fill:#e0e7ff,stroke:#6366f1
+    style T5 fill:#e0e7ff,stroke:#6366f1
 ```
 
 ---
