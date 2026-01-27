@@ -1,19 +1,3 @@
-<!--
-  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
-  
-  Copyright (c) 2025 Nilay Parikh
-  
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
-  
-  Author: Nilay Parikh
-  Contact: 
-    - Twitter: @nilayparikh
-    - LinkedIn: https://www.linkedin.com/in/niparikh/
-  
-  Feel free to contact for questions or queries.
--->
 ---
 layout: default
 title: Maturity Model
@@ -238,3 +222,20 @@ flowchart LR
 | [Implementation Guides](../guides/)                               | Practical adoption guidance        |
 | [GSC Category](../principles/governance_security_and_compliance/) | Security and governance principles |
 | [TTA Category](../principles/team_training_and_adoption/)         | Training and adoption principles   |
+
+<!--
+  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
+  
+  Copyright (c) 2025 Nilay Parikh
+  
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+  
+  Author: Nilay Parikh
+  Contact: 
+    - Twitter: @nilayparikh
+    - LinkedIn: https://www.linkedin.com/in/niparikh/
+  
+  Feel free to contact for questions or queries.
+-->

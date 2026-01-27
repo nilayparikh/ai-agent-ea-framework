@@ -1000,7 +1000,7 @@ This Source Code Form is subject to the terms of the Mozilla Public License, v. 
 
 When using or redistributing these principles, you must:
 
-- ✅ **Provide visible credit** to the LocalM AiD Framework and <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
+- ✅ **Provide visible credit** to the LocalM™ AiD Framework, Nilay Parikh, and <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
 - ✅ **Keep this license** with any modified versions
 - ✅ **Release modifications** under MPL 2.0
 - ✅ **Indicate changes** you've made to the original

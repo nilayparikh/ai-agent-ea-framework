@@ -1,19 +1,3 @@
-<!--
-  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
-  
-  Copyright (c) 2025 Nilay Parikh
-  
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
-  
-  Author: Nilay Parikh
-  Contact: 
-    - Twitter: @nilayparikh
-    - LinkedIn: https://www.linkedin.com/in/niparikh/
-  
-  Feel free to contact for questions or queries.
--->
 ---
 layout: default
 title: Testing & Quality Control Principles
@@ -500,7 +484,24 @@ This Source Code Form is subject to the terms of the Mozilla Public License, v. 
 
 When using or redistributing these principles, you must:
 
-- ✅ **Provide visible credit** to the LocalM AiD Framework and <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
+- ✅ **Provide visible credit** to the LocalM™ AiD Framework, Nilay Parikh, and <a href="https://localm.ai/" target="_blank" rel="noopener">localm.ai</a>
 - ✅ **Keep this license** with any modified versions
 - ✅ **Release modifications** under MPL 2.0
 - ✅ **Indicate changes** you've made to the original
+
+<!--
+  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
+  
+  Copyright (c) 2025 Nilay Parikh
+  
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+  
+  Author: Nilay Parikh
+  Contact: 
+    - Twitter: @nilayparikh
+    - LinkedIn: https://www.linkedin.com/in/niparikh/
+  
+  Feel free to contact for questions or queries.
+-->

@@ -1,10 +1,11 @@
 <#
 .SYNOPSIS
-    Checks that all Markdown files in the repository have the required MPL 2.0 header.
+    Checks that all Markdown files in the repository have the required MPL 2.0 header at the BOTTOM.
 
 .DESCRIPTION
     This script validates that all .md files (except those in excluded directories)
-    contain the LocalM-AiD MPL 2.0 copyright header as specified in .eaf_header.txt.
+    contain the LocalM-AiD MPL 2.0 copyright header at the END of the file.
+    Headers at the bottom prevent Jekyll rendering issues.
 
 .PARAMETER Fix
     If specified, automatically adds the header to files that are missing it.
@@ -18,7 +19,7 @@
 
 .EXAMPLE
     .\Check-Headers.ps1 -Fix
-    Checks and automatically adds missing headers.
+    Checks and automatically adds missing headers at the bottom.
 
 .NOTES
     LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
@@ -91,8 +92,8 @@ function Test-FileHasHeader {
     $normalizedContent = $content -replace "`r`n", "`n" -replace "[ \t]+", " "
     $normalizedHeader = $ExpectedHeader -replace "`r`n", "`n" -replace "[ \t]+", " "
     
-    # Check if the file starts with the header
-    return $normalizedContent.TrimStart().StartsWith($normalizedHeader.TrimStart())
+    # Check if the file ENDS with the header (at bottom, not top)
+    return $normalizedContent.TrimEnd().EndsWith($normalizedHeader.TrimEnd())
 }
 
 function Add-HeaderToFile {
@@ -104,11 +105,11 @@ function Add-HeaderToFile {
     try {
         $content = Get-Content $FilePath -Raw -ErrorAction SilentlyContinue
         
-        # Add header at the beginning with proper spacing
-        $newContent = $Header + "`n`n" + $content
+        # Add header at the END with proper spacing (bottom of file)
+        $newContent = $content.TrimEnd() + "`n`n" + $Header + "`n"
         
         Set-Content -Path $FilePath -Value $newContent -NoNewline -Encoding UTF8
-        Write-ColorOutput "  ✓ Added header to: $FilePath" "Success"
+        Write-ColorOutput "  ✓ Added header to bottom of: $FilePath" "Success"
         return $true
     }
     catch {
