@@ -271,4 +271,3 @@ Rate your organization (1-5) on each dimension:
 - **Questions**: Post on [r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/){:target="\_blank" rel="noopener"}
 - **Feedback**: Share what's working (or not)
 - **Contributions**: See [How to Contribute](../contributing)
-

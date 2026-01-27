@@ -91,4 +91,3 @@ The LocalM™-AiD framework synthesizes insights from peer-reviewed research, in
 - [Principles Overview](../principles/) - All 22 EA principles
 - [Guides](../guides/) - Implementation guidance
 - [Reference](../reference/) - Technical reference
-

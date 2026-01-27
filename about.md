@@ -171,4 +171,3 @@ Requirements:
 - Must state changes
 
 See [full license text](https://opensource.org/licenses/MPL-2.0){:target="\_blank" rel="noopener"}.
-

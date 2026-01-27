@@ -140,4 +140,3 @@ Share it on **[r/agentic_sdlc](https://www.reddit.com/r/agentic_sdlc/){:target="
 - [Appendix](../appendix/) - Framework supporting materials
 - [Contribute](../contributing) - Contribution guidelines
 - [Principles](../principles/) - Principles derived from research
-

@@ -129,4 +129,3 @@ Standard for multi-agent coordination. See [Protocol Integration](../principles/
 - [Principles Overview](../principles/)
 - [Implementation Guides](../guides/)
 - [Research Sources](../research)
-
