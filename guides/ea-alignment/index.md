@@ -138,11 +138,3 @@ Start with foundational principles that align with your current maturity level. 
 3. **Map existing governance** - Identify how AI governance fits into current processes
 4. **Identify gaps** - Determine which LocalM™ AiD principles address unmet needs
 5. **Plan integration** - Create a roadmap for incorporating AI governance principles
-
----
-
-<p class="mpl-notice">
-This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. 
-If a copy of the MPL was not distributed with this file, You can obtain one at 
-<a href="https://mozilla.org/MPL/2.0/" target="_blank" rel="noopener">https://mozilla.org/MPL/2.0/</a>.
-</p>
