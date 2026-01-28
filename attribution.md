@@ -1,24 +1,7 @@
-<!--
-  LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
-  
-  Copyright (c) 2025 Nilay Parikh
-  
-  This Source Code Form is subject to the terms of the Mozilla Public
-  License, v. 2.0. If a copy of the MPL was not distributed with this
-  file, You can obtain one at http://mozilla.org/MPL/2.0/.
-  
-  Author: Nilay Parikh
-  Contact: 
-    - Twitter: @nilayparikh
-    - LinkedIn: https://www.linkedin.com/in/niparikh/
-  
-  Feel free to contact for questions or queries.
--->
 ---
 layout: default
 title: Attribution & Licensing
 description: Attribution requirements for the LocalM™ AiD Framework and enterprise licensing options
-
 ---
 
 # Attribution & Licensing
@@ -35,10 +18,10 @@ description: Attribution requirements for the LocalM™ AiD Framework and enterp
 
 The **LocalM<sup>™</sup> AiD Framework** is dual-licensed:
 
-| Option                    | Use Case                                                      | Requirements                           |
-| ------------------------- | ------------------------------------------------------------- | -------------------------------------- |
+| Option                    | Use Case                                                         | Requirements                           |
+| ------------------------- | ---------------------------------------------------------------- | -------------------------------------- |
 | **MPL 2.0 + Attribution** | Any use including commercial. Modifications to MPL files shared. | Attribution to framework and localm.ai |
-| **Enterprise License**    | Commercial without attribution. Keep modifications private.    | Contact for licensing                  |
+| **Enterprise License**    | Commercial without attribution. Keep modifications private.      | Contact for licensing                  |
 
 ---
 
