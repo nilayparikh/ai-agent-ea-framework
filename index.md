@@ -27,12 +27,12 @@ LocalM™ AiD provides **27 Enterprise Architecture Principles** for governing A
 
 ## Who Should Use This?
 
-| Role                    | Use Case                                       |
-| ----------------------- | ---------------------------------------------- |
-| **Enterprise Architects** | Define AI governance standards                 |
-| **Security Teams**        | Establish AI agent permission boundaries       |
-| **Engineering Leaders**   | Implement AI coding tool policies              |
-| **Platform Engineers**    | Configure MCP servers and agent environments   |
+| Role                      | Use Case                                        |
+| ------------------------- | ----------------------------------------------- |
+| **Enterprise Architects** | Define AI governance standards                  |
+| **Security Teams**        | Establish AI agent permission boundaries        |
+| **Engineering Leaders**   | Implement AI coding tool policies               |
+| **Platform Engineers**    | Configure MCP servers and agent environments    |
 | **Compliance Officers**   | Create audit trails for AI-assisted development |
 
 ---

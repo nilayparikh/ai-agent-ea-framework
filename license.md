@@ -36,21 +36,21 @@ The LocalM™ AiD Framework is provided under the **Mozilla Public License 2.0 (
 
 The MPL 2.0 is a permissive open-source license that allows you to:
 
-| Permission                   | Description                                                 |
-| ---------------------------- | ----------------------------------------------------------- |
-| ✅ **Use Freely**            | Use the framework in any organization                       |
-| ✅ **Modify**                | Adapt principles to your needs                              |
-| ✅ **Distribute**            | Share with others                                           |
-| ✅ **Commercial Use**        | Use in commercial settings                                  |
-| ✅ **Create Derivative Work** | Build upon this framework                                   |
+| Permission                    | Description                           |
+| ----------------------------- | ------------------------------------- |
+| ✅ **Use Freely**             | Use the framework in any organization |
+| ✅ **Modify**                 | Adapt principles to your needs        |
+| ✅ **Distribute**             | Share with others                     |
+| ✅ **Commercial Use**         | Use in commercial settings            |
+| ✅ **Create Derivative Work** | Build upon this framework             |
 
 ### Requirements
 
-| Requirement                          | Description                                                                                          |
-| ------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| 📋 **Preserve License**              | Include this license in distributions                                                                |
-| 📋 **Attribution**                   | Credit LocalM™ AiD Framework, Nilay Parikh, and <a href="https://localm.ai" target="_blank">localm.ai</a> |
-| 📋 **Share Modifications**           | Modified files must be shared under MPL 2.0                                                          |
+| Requirement                | Description                                                                                               |
+| -------------------------- | --------------------------------------------------------------------------------------------------------- |
+| 📋 **Preserve License**    | Include this license in distributions                                                                     |
+| 📋 **Attribution**         | Credit LocalM™ AiD Framework, Nilay Parikh, and <a href="https://localm.ai" target="_blank">localm.ai</a> |
+| 📋 **Share Modifications** | Modified files must be shared under MPL 2.0                                                               |
 
 ---
 
@@ -210,17 +210,17 @@ For questions about licensing or enterprise arrangements:
 
 <!--
   LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
-  
+
   Copyright (c) 2025 Nilay Parikh
-  
+
   This Source Code Form is subject to the terms of the Mozilla Public
   License, v. 2.0. If a copy of the MPL was not distributed with this
   file, You can obtain one at http://mozilla.org/MPL/2.0/.
-  
+
   Author: Nilay Parikh
-  Contact: 
+  Contact:
     - Twitter: @nilayparikh
     - LinkedIn: https://www.linkedin.com/in/niparikh/
-  
+
   Feel free to contact for questions or queries.
 -->

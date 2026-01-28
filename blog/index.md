@@ -26,6 +26,14 @@ Insights, research, and analysis on AI-assisted software development governance.
 
 ## Featured Articles
 
+### [Why AI Governance Must Integrate with Your Existing EA Framework](ea-framework-integration/)
+
+**January 2026** • _12 min read_
+
+Organizations treating AI governance as separate from enterprise architecture create governance gaps and duplicate efforts. This article explains why AI governance must integrate with TOGAF, Zachman, and SAFe—and how LocalM™ AiD principles enable this integration.
+
+---
+
 ### [The Hidden Compliance Crisis: Why AI-Generated Code Demands Enterprise Architecture Governance](ai-agents-compliance-crisis/)
 
 **January 2026** • _15 min read_
@@ -64,17 +72,17 @@ Stay informed about enterprise AI governance developments:
 
 <!--
   LocalM-AiD: Enterprise Architecture Framework for AI-Assisted Development
-  
+
   Copyright (c) 2025 Nilay Parikh
-  
+
   This Source Code Form is subject to the terms of the Mozilla Public
   License, v. 2.0. If a copy of the MPL was not distributed with this
   file, You can obtain one at http://mozilla.org/MPL/2.0/.
-  
+
   Author: Nilay Parikh
-  Contact: 
+  Contact:
     - Twitter: @nilayparikh
     - LinkedIn: https://www.linkedin.com/in/niparikh/
-  
+
   Feel free to contact for questions or queries.
 -->
