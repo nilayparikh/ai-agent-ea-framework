@@ -169,9 +169,9 @@ flowchart TB
 
 ### Related Principles
 
-- **PS-001**: Architecture First (architecture guides collaboration)
-- **DC-002**: Prompt Engineering (prompts enable collaboration)
-- **DC-003**: Code Review Practices (review validates collaboration)
+- [PS-001: Operations Planning](../planning_and_strategy/#ps-001) — plan guides AI-human collaboration
+- [DC-002: Prompt Engineering](#dc-002) — prompts enable collaboration
+- [DC-003: Code Review Practices](#dc-003) — review validates collaboration
 
 ---
 

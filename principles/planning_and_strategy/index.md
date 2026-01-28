@@ -335,9 +335,9 @@ flowchart LR
 
 ### Related Principles
 
-- **TQC-002**: Security Practices (security risk mitigation)
-- **GSC-002**: Compliance Management (compliance risk)
-- **DM-002**: Observability First (operational risk monitoring)
+- [TQC-002: Security Practices](../testing_and_quality_control/#tqc-002) — security risk mitigation
+- [GSC-002: Permission Boundaries](../governance_security_and_compliance/#gsc-002) — compliance risk
+- [DM-002: Observability First](../deployment_and_maintenance/#dm-002) — operational risk monitoring
 
 ---
 

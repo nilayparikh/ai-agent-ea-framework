@@ -171,35 +171,35 @@ Rate your organization (1-5) on each dimension:
 
 ## Implementation Roadmap
 
-### Phase 1: Foundation (Months 1-3)
+### Phase 1: Foundation (Weeks 1-6)
 
-**Objective**: Establish baseline governance
+**Objective**: Establish baseline governance for AI coding agent operations
 
-| Month | Milestone             | Principles       |
-| ----- | --------------------- | ---------------- |
-| 1     | Policies documented   | GSC-001, GSC-002 |
-| 2     | Pilot team trained    | TTA-001          |
-| 3     | Review process active | TQC-002          |
+| Week | Milestone             | Principles       |
+| ---- | --------------------- | ---------------- |
+| 1-2  | Policies documented   | GSC-001, GSC-002 |
+| 3-4  | Pilot team trained    | TTA-001          |
+| 5-6  | Review process active | TQC-002          |
 
-### Phase 2: Expansion (Months 4-6)
+### Phase 2: Expansion (Weeks 7-12)
 
-**Objective**: Scale to all teams
+**Objective**: Scale AI coding agent governance to all teams
 
-| Month | Milestone                 | Principles       |
+| Week  | Milestone                 | Principles       |
 | ----- | ------------------------- | ---------------- |
-| 4     | Organization-wide rollout | TTA-002          |
-| 5     | Advanced practices        | DC-004, DC-005   |
-| 6     | Integration complete      | TSI-001, TSI-002 |
+| 7-8   | Organization-wide rollout | TTA-002          |
+| 9-10  | Advanced practices        | DC-004, DC-005   |
+| 11-12 | Integration complete      | TSI-001, TSI-002 |
 
-### Phase 3: Optimization (Months 7-12)
+### Phase 3: Optimization (Weeks 13-24)
 
-**Objective**: Achieve advanced maturity
+**Objective**: Achieve advanced maturity in AI-assisted development
 
-| Month | Milestone                  | Principles     |
+| Week  | Milestone                  | Principles     |
 | ----- | -------------------------- | -------------- |
-| 7-8   | Metrics-driven improvement | All            |
-| 9-10  | Process automation         | DM-001, DM-002 |
-| 11-12 | Continuous improvement     | All            |
+| 13-16 | Metrics-driven improvement | All            |
+| 17-20 | Process automation         | DM-001, DM-002 |
+| 21-24 | Continuous improvement     | All            |
 
 ---
 

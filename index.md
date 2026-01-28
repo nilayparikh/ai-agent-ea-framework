@@ -5,20 +5,35 @@ title: LocalM™ AiD Framework
 
 # LocalM<sup>™</sup> AiD Framework
 
-**Enterprise Architecture Principles for AI-Assisted Software Development**
+**Enterprise Architecture Principles for AI Coding Agent Operations & AI-Assisted Software Development**
 
 <div class="hero-badges">
   <span class="hero-version">v0.0.1</span>
   <span class="hero-status">In Peer Review</span>
+  <span class="hero-license"><a href="license">MPL 2.0</a></span>
 </div>
 
 ---
 
-## Framework Purpose
+## What Is This Framework?
 
-LocalM™ AiD defines **27 Enterprise Architecture Principles** organized across seven categories to enable organizations to adopt AI-assisted software development with appropriate governance, quality standards, and human oversight.
+LocalM™ AiD provides **27 Enterprise Architecture Principles** for organizations adopting AI coding agents (GitHub Copilot, Cursor, Claude Code, etc.) and AI-assisted software development practices.
 
-> **Scope**: This framework is 100% focused on EA Principles - foundational statements that guide technology decisions for AI-assisted development.
+> **Scope**: This framework governs **AI coding agent operations**—how AI tools are configured, controlled, secured, and monitored. It is NOT about general software engineering patterns but specifically about governing the AI tools that assist developers.
+
+> **Notice**: This framework is provided "AS IS" under the <a href="license">Mozilla Public License 2.0</a>. Adapt it to your organization's specific requirements.
+
+---
+
+## Who Should Use This?
+
+| Role                    | Use Case                                       |
+| ----------------------- | ---------------------------------------------- |
+| **Enterprise Architects** | Define AI governance standards                 |
+| **Security Teams**        | Establish AI agent permission boundaries       |
+| **Engineering Leaders**   | Implement AI coding tool policies              |
+| **Platform Engineers**    | Configure MCP servers and agent environments   |
+| **Compliance Officers**   | Create audit trails for AI-assisted development |
 
 ---
 

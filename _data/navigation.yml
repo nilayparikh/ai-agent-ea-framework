@@ -1,6 +1,6 @@
 # Navigation Structure
 # Used by Jekyll to build site navigation
-# Scope: 100% Enterprise Architecture Principles
+# Scope: 100% Enterprise Architecture Principles for AI Coding Agent Operations
 
 main:
   - title: "Home"
@@ -9,10 +9,10 @@ main:
     url: /principles/
   - title: "Maturity Model"
     url: /maturity/
-  - title: "Blog"
-    url: /blog/
-  - title: "Governance"
-    url: /governance/
+  - title: "Guides"
+    url: /guides/
+  - title: "Reference"
+    url: /reference/
 
 principles:
   - title: "All Principles"
@@ -68,8 +68,13 @@ governance:
 
 footer:
   - title: "About"
-    url: /appendix/
-  - title: "FAQs"
-    url: /appendix/faqs/
-  - title: "Resources"
-    url: /appendix/resources/
+    url: /about/
+  - title: "License (MPL 2.0)"
+    url: /license/
+  - title: "Contributing"
+    url: /contributing/
+  - title: "Research"
+    url: /research/
+  - title: "localm.ai"
+    url: https://localm.ai
+    external: true

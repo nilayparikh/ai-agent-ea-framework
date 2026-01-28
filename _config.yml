@@ -96,6 +96,10 @@ categories:
     name: "Governance, Security & Compliance"
     folder: "governance_security_and_compliance"
 
+# Favicon configuration
+favicon: /assets/images/favicon_32.png
+apple_touch_icon: /assets/images/apple-touch-icon.png
+
 # Exclude from build
 exclude:
   - Gemfile

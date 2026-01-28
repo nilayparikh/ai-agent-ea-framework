@@ -258,9 +258,9 @@ flowchart TB
 
 ### Related Principles
 
-- **DC-003**: Code Review Practices (security in review)
-- **DM-001**: Pipeline Integration (security gates)
-- **GSC-002**: Compliance Management (security compliance)
+- [DC-003: Code Review Practices](../development_and_coding/#dc-003) — security in review
+- [DM-001: Pipeline Integration](../deployment_and_maintenance/#dm-001) — security gates
+- [GSC-002: Permission Boundaries](../governance_security_and_compliance/#gsc-002) — security compliance
 
 ---
 

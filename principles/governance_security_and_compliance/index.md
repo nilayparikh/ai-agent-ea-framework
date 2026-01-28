@@ -600,9 +600,9 @@ AI-Session: <session-id>
 
 ### Related Principles
 
-- **GSC-001**: Governance Framework (audit supports governance)
-- **GSC-004**: Git Access Controls (git audit trail)
-- **DM-002**: AI Operations (operational monitoring)
+- [GSC-001: Governance Framework](#gsc-001) — audit supports governance
+- [GSC-004: Git Access Controls](#gsc-004) — git audit trail
+- [DM-002: Observability First](../deployment_and_maintenance/#dm-002) — operational monitoring
 
 ---
 
