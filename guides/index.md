@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Implementation Guides
+title: Principle Application Guides
 ---
 
-# Implementation Guides
+# Principle Application Guides
 
-Practical, actionable guides for implementing the LocalM™ AiD framework in your organization.
+Guidance for understanding and applying LocalM™ AiD EA principles in your organization.
 
 <div class="page-meta-table">
   <div class="page-meta-item">
@@ -14,11 +14,11 @@ Practical, actionable guides for implementing the LocalM™ AiD framework in you
   </div>
   <div class="page-meta-item">
     <span class="page-meta-label">GUIDES</span>
-    <span class="page-meta-value">5 Core Guides</span>
+    <span class="page-meta-value">Role-Based Guidance</span>
   </div>
   <div class="page-meta-item">
     <span class="page-meta-label">FORMAT</span>
-    <span class="page-meta-value">Step-by-Step</span>
+    <span class="page-meta-value">EA Principles</span>
   </div>
   <div class="page-meta-item">
     <span class="page-meta-label">STATUS</span>
@@ -28,13 +28,13 @@ Practical, actionable guides for implementing the LocalM™ AiD framework in you
 
 ---
 
-## Quick Start Path
+## How to Use These Principles
 
 ```mermaid
 flowchart LR
-    A["1. Assess<br/>Current State"] --> B["2. Choose<br/>Starting Point"]
-    B --> C["3. Implement<br/>First Principles"]
-    C --> D["4. Measure<br/>& Iterate"]
+    A["1. Assess<br/>Current State"] --> B["2. Identify<br/>Relevant Principles"]
+    B --> C["3. Understand<br/>Maturity Levels"]
+    C --> D["4. Apply<br/>& Iterate"]
 
     style A fill:#e0e7ff,stroke:#6366f1
     style B fill:#e0e7ff,stroke:#6366f1
@@ -44,42 +44,22 @@ flowchart LR
 
 ---
 
-## Getting Started Guide
+## Getting Started
 
-### Week 1-2: Assessment
+### Foundation Principles
 
-| Day  | Activity                   | Outcome              |
-| ---- | -------------------------- | -------------------- |
-| 1-2  | Inventory current AI tools | List of tools in use |
-| 3-4  | Review existing policies   | Gap analysis         |
-| 5-7  | Stakeholder interviews     | Buy-in assessment    |
-| 8-10 | Risk assessment            | Priority areas       |
+Begin with these high-impact principles that establish essential governance:
 
-### Week 3-4: Foundation
+| Principle | Name | Why Start Here |
+| --------- | ---- | -------------- |
+| **GSC-002** | Permission Boundaries | Defines what AI can and cannot access |
+| **TQC-002** | Review Process | Ensures human oversight of AI output |
+| **DC-002** | Interaction Protocols | Establishes structured prompting practices |
+| **GSC-006** | Audit Trails | Enables traceability of AI interactions |
 
-| Day   | Activity                     | Outcome            |
-| ----- | ---------------------------- | ------------------ |
-| 11-12 | Select pilot team            | Team identified    |
-| 13-14 | Define permission boundaries | GSC-002 compliance |
-| 15-17 | Establish review process     | TQC-002 compliance |
-| 18-20 | Create training plan         | TTA-001 compliance |
+### Assessment Questions
 
-### Quick Wins
-
-Start with these high-impact, low-effort principles:
-
-1. **GSC-002: Permission Boundaries** - Define what AI can access
-2. **TQC-002: Review Process** - Mandatory human review of AI output
-3. **DC-002: Interaction Protocols** - Structured prompting practices
-4. **GSC-006: Audit Trails** - Log AI interactions
-
----
-
-## Maturity Assessment
-
-### Self-Assessment Questions
-
-Rate your organization (1-5) on each dimension:
+Rate your organization (1-5) on each dimension to identify focus areas:
 
 | Dimension       | Question                               | L1 Target | L2 Target | L3 Target |
 | --------------- | -------------------------------------- | --------- | --------- | --------- |
@@ -91,115 +71,66 @@ Rate your organization (1-5) on each dimension:
 
 ### Scoring Guide
 
-- **5-10 points**: Pre-Foundation - Focus on basics
+- **5-10 points**: Pre-Foundation — Focus on basics
 - **11-15 points**: Ready for L1 (Foundation)
 - **16-20 points**: Ready for L2 (Enhanced)
 - **21-25 points**: Ready for L3 (Advanced)
 
 ---
 
-## Role-Based Implementation
+## Principles by Role
 
 ### For Developers
 
-**Focus Principles**: DC-001 through DC-006
+**Focus Area**: Development & Coding (DC) Principles
 
-| Week | Focus                         | Key Actions                |
-| ---- | ----------------------------- | -------------------------- |
-| 1    | DC-002: Interaction Protocols | Learn structured prompting |
-| 2    | DC-003: Review Process        | Establish review habits    |
-| 3    | DC-004: Context Management    | Master context engineering |
-| 4    | DC-001: Human Agency          | Practice directed AI use   |
+| Principle | Focus | Application |
+| --------- | ----- | ----------- |
+| DC-001 | Human Agency | Maintain direction over AI assistance |
+| DC-002 | Interaction Protocols | Use structured prompting |
+| DC-003 | Review Process | Validate all AI output |
+| DC-004 | Context Management | Engineer context effectively |
 
-**Success Metrics**:
-
-- Code review approval rate
-- Time to resolution
-- AI-generated code quality scores
+**Success Indicators**: Code review approval rate, AI-generated code quality, context utilization
 
 ### For Architects
 
-**Focus Principles**: PS-001 through PS-004
+**Focus Area**: Planning & Strategy (PS) Principles
 
-| Week | Focus                           | Key Actions                   |
-| ---- | ------------------------------- | ----------------------------- |
-| 1    | PS-001: Architecture First      | AI in architecture decisions  |
-| 2    | PS-002: AI Application Taxonomy | Classify AI use cases         |
-| 3    | PS-003: Spec-Driven Development | Contract-first AI development |
-| 4    | PS-004: Risk Assessment         | AI risk governance            |
+| Principle | Focus | Application |
+| --------- | ----- | ----------- |
+| PS-001 | Architecture First | AI in architecture decisions |
+| PS-002 | AI Application Taxonomy | Classify AI use cases |
+| PS-003 | Spec-Driven Development | Contract-first AI development |
+| PS-004 | Risk Assessment | AI risk governance |
 
-**Success Metrics**:
-
-- Architecture decision quality
-- Technical debt trends
-- Risk mitigation effectiveness
+**Success Indicators**: Architecture decision quality, technical debt trends, risk mitigation
 
 ### For Team Leads
 
-**Focus Principles**: TTA-001 through TTA-003
+**Focus Area**: Team Training & Adoption (TTA) Principles
 
-| Week | Focus                        | Key Actions                 |
-| ---- | ---------------------------- | --------------------------- |
-| 1    | TTA-001: Skills Development  | Design training program     |
-| 2    | TTA-002: Adoption Governance | Define adoption metrics     |
-| 3    | TTA-003: Knowledge Sharing   | Establish sharing practices |
-| 4    | All TTA                      | Monitor and iterate         |
+| Principle | Focus | Application |
+| --------- | ----- | ----------- |
+| TTA-001 | Skills Development | Training programs |
+| TTA-002 | Adoption Governance | Adoption metrics |
+| TTA-003 | Knowledge Sharing | Sharing practices |
 
-**Success Metrics**:
-
-- Team adoption rate
-- Training completion
-- Knowledge sharing activity
+**Success Indicators**: Team adoption rate, training completion, knowledge sharing activity
 
 ### For Security Teams
 
-**Focus Principles**: GSC-001 through GSC-010
+**Focus Area**: Governance, Security & Compliance (GSC) Principles
 
-| Week | Focus            | Key Actions             |
-| ---- | ---------------- | ----------------------- |
-| 1-2  | GSC-002, GSC-003 | Permission & sandboxing |
-| 3    | GSC-008, GSC-010 | Network & secrets       |
-| 4    | GSC-006          | Audit implementation    |
+| Principle | Focus | Application |
+| --------- | ----- | ----------- |
+| GSC-002 | Permission Boundaries | Define access controls |
+| GSC-003 | Sandboxing | Isolate AI operations |
+| GSC-006 | Audit Trails | Log all interactions |
+| GSC-008 | Network Controls | Restrict AI network access |
+| GSC-010 | Secrets Management | Protect credentials |
 
-**Success Metrics**:
-
-- Security incident rate
-- Compliance audit results
-- Vulnerability metrics
-
----
-
-## Implementation Roadmap
-
-### Phase 1: Foundation (Weeks 1-6)
-
-**Objective**: Establish baseline governance for AI coding agent operations
-
-| Week | Milestone             | Principles       |
-| ---- | --------------------- | ---------------- |
-| 1-2  | Policies documented   | GSC-001, GSC-002 |
-| 3-4  | Pilot team trained    | TTA-001          |
-| 5-6  | Review process active | TQC-002          |
-
-### Phase 2: Expansion (Weeks 7-12)
-
-**Objective**: Scale AI coding agent governance to all teams
-
-| Week  | Milestone                 | Principles       |
-| ----- | ------------------------- | ---------------- |
-| 7-8   | Organization-wide rollout | TTA-002          |
-| 9-10  | Advanced practices        | DC-004, DC-005   |
-| 11-12 | Integration complete      | TSI-001, TSI-002 |
-
-### Phase 3: Optimization (Weeks 13-24)
-
-**Objective**: Achieve advanced maturity in AI-assisted development
-
-| Week  | Milestone                  | Principles     |
-| ----- | -------------------------- | -------------- |
-| 13-16 | Metrics-driven improvement | All            |
-| 17-20 | Process automation         | DM-001, DM-002 |
-| 21-24 | Continuous improvement     | All            |
+**Success Indicators**: Security incident rate, compliance audit results, vulnerability metrics
 
 ---
 

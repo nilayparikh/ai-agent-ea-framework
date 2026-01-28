@@ -1,33 +1,43 @@
 ---
 layout: default
-title: Attribution & Licensing
-description: Attribution requirements for the LocalM™ AiD Framework and enterprise licensing options
+title: Attribution Guide
+description: How to properly credit the LocalM™ AiD Framework when using it
 ---
 
-# Attribution & Licensing
+# Attribution Guide
 
-<div class="license-banner">
-  <div class="license-badge">MPL 2.0 + Attribution</div>
-  <span class="license-separator">|</span>
-  <div class="license-badge enterprise">Enterprise</div>
+This page explains how to properly credit the LocalM™ AiD Framework when using, modifying, or distributing it.
+
+<div class="page-meta-table">
+  <div class="page-meta-item">
+    <span class="page-meta-label">LICENSE</span>
+    <span class="page-meta-value">Mozilla Public License 2.0</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">ATTRIBUTION</span>
+    <span class="page-meta-value">Required</span>
+  </div>
+  <div class="page-meta-item">
+    <span class="page-meta-label">ENTERPRISE</span>
+    <span class="page-meta-value">Available</span>
+  </div>
 </div>
 
 ---
 
-## License Overview
+## Why Attribution Matters
 
-The **LocalM<sup>™</sup> AiD Framework** is dual-licensed:
+The LocalM™ AiD Framework is released under the **Mozilla Public License 2.0**. Attribution is a standard requirement of this open-source license and helps:
 
-| Option                    | Use Case                                                         | Requirements                           |
-| ------------------------- | ---------------------------------------------------------------- | -------------------------------------- |
-| **MPL 2.0 + Attribution** | Any use including commercial. Modifications to MPL files shared. | Attribution to framework and localm.ai |
-| **Enterprise License**    | Commercial without attribution. Keep modifications private.      | Contact for licensing                  |
+- Acknowledge the original work
+- Build community around the framework
+- Enable others to find and benefit from the source material
 
 ---
 
-## Attribution Requirements
+## How to Credit
 
-When using the LocalM™ AiD Framework under the MPL 2.0 + Attribution license, you **must** provide visible attribution including:
+When using the LocalM™ AiD Framework, provide visible attribution including:
 
 ### Required Attribution
 

@@ -5,7 +5,7 @@ title: LocalM™ AiD Framework
 
 # LocalM<sup>™</sup> AiD Framework
 
-**Enterprise Architecture Principles for AI Coding Agent Operations & AI-Assisted Software Development**
+**Enterprise Architecture Principles for Governing AI-Assisted Software Development**
 
 <div class="hero-badges">
   <span class="hero-version">v0.0.1</span>
@@ -17,9 +17,9 @@ title: LocalM™ AiD Framework
 
 ## What Is This Framework?
 
-LocalM™ AiD provides **27 Enterprise Architecture Principles** for organizations adopting AI coding agents (GitHub Copilot, Cursor, Claude Code, etc.) and AI-assisted software development practices.
+LocalM™ AiD provides **27 Enterprise Architecture Principles** for governing AI coding agents (GitHub Copilot, Cursor, Claude Code, etc.) and AI-assisted software development practices.
 
-> **Scope**: This framework governs **AI coding agent operations**—how AI tools are configured, controlled, secured, and monitored. It is NOT about general software engineering patterns but specifically about governing the AI tools that assist developers.
+> **Scope**: This framework defines **EA Principles for governing AI-assisted software development**—how AI coding tools are evaluated, configured, controlled, secured, and monitored. It is NOT about implementation timelines or solutions but specifically about foundational principles that guide governance decisions.
 
 > **Notice**: This framework is provided "AS IS" under the <a href="license">Mozilla Public License 2.0</a>. Adapt it to your organization's specific requirements.
 
@@ -196,21 +196,21 @@ LocalM-AiD principles align with established EA and AI development standards:
 ## License
 
 <div class="license-cards">
-  <a href="attribution" class="license-card">
+  <a href="license" class="license-card">
     <div class="license-card-header">
-      <span class="license-card-badge mpl">MPL 2.0 + Attribution</span>
+      <span class="license-card-badge mpl">MPL 2.0</span>
     </div>
     <div class="license-card-title">Open Source</div>
-    <div class="license-card-desc">Free for any use including commercial. Credit required to LocalM™ AiD Framework, Nilay Parikh, and localm.ai.</div>
-    <span class="license-card-link">View requirements →</span>
+    <div class="license-card-desc">Free for any use including commercial. See attribution requirements.</div>
+    <span class="license-card-link">View license →</span>
   </a>
-  <a href="https://localm.ai/enterprise" target="_blank" rel="noopener" class="license-card">
+  <a href="attribution" class="license-card">
     <div class="license-card-header">
-      <span class="license-card-badge enterprise">Enterprise</span>
+      <span class="license-card-badge mpl">Attribution</span>
     </div>
-    <div class="license-card-title">Commercial License</div>
-    <div class="license-card-desc">No attribution required. Keep modifications private. Includes expert support and training.</div>
-    <span class="license-card-link">Contact sales →</span>
+    <div class="license-card-title">Credit Requirements</div>
+    <div class="license-card-desc">How to properly credit LocalM™ AiD Framework when using or adapting.</div>
+    <span class="license-card-link">View requirements →</span>
   </a>
 </div>
 <!--

@@ -51,10 +51,10 @@
       <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
           <a href="{{ '/' | relative_url }}" class="sidebar-logo">
-            <div class="sidebar-logo-icon">L-A</div>
+            <img src="{{ '/assets/images/logo_icon.png' | relative_url }}" alt="LocalM AiD" class="sidebar-logo-img" style="width: 40px; height: 40px; border-radius: 8px;">
             <div>
               <span class="sidebar-logo-text">LocalM<sup class="tm">™</sup> AiD</span>
-              <span class="sidebar-logo-sub">EA Framework</span>
+              <span class="sidebar-logo-sub">EA Principles</span>
             </div>
           </a>
         </div>
@@ -213,6 +213,16 @@
                       d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                   About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ '/license' | relative_url }}"
+                  class="nav-link {% if page.url == '/license' or page.url == '/license/' %}active{% endif %}">
+                  <svg class="nav-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  License (MPL 2.0)
                 </a>
               </li>
               <li class="nav-item">
